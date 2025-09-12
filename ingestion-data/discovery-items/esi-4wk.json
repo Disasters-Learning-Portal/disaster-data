@@ -1,0 +1,18 @@
+{
+    "collection": "esi-4wk",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/servir-esi-cog/4WK/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "esi-4wk": {
+            "description": "Daily estimates of ESI over the previous 4 weeks.",
+            "regex": ".*.tif$",
+            "title": "ESI-4WK"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "esi-4wk-{}"
+}

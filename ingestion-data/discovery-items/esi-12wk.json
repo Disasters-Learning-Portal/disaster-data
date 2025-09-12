@@ -1,0 +1,19 @@
+{
+    "collection": "esi-12wk",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/servir-esi-cog/12WK/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "esi-12wk": {
+            "description": "Daily estimates of ESI over the previous 12 weeks.",
+            "regex": ".*.tif$",
+            "title": "ESI-12WK"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "esi-12wk-{}"
+    
+}
