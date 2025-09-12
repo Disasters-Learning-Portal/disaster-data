@@ -1,5 +1,5 @@
 {
-    "collection": "esi-12wk",
+    "collection": "esi-12wk-global",
     "bucket": "nasa-disasters",
     "prefix": "nrt/servir-esi-cog/12WK/",
     "cogify": false,
@@ -10,7 +10,7 @@
         "esi-12wk": {
             "description": "Daily estimates of ESI over the previous 12 weeks.",
             "regex": ".*.tif$",
-            "title": "ESI-12WK"
+            "title": "Global ESI-12WK"
         }
     },
     "id_regex": ".*_(.*).tif$",
