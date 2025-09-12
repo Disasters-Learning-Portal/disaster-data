@@ -1,0 +1,73 @@
+{
+    "id": "tm54dvar-ch4flux-mask-monthgrid-v1",
+    "type": "Collection",
+    "links": [],
+    "title": "TM5-4DVar Isotopic CH₄ Inverse Fluxes v1",
+    "assets": null,
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.00,
+                    -90.00,
+                    180.00,
+                    90.00
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-01-01T00:00:00Z",
+                    "2016-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": null,
+    "providers": null,
+    "description": "Surface methane (CH₄) emissions are derived from atmospheric measurements of methane and its ¹³C carbon isotope content. Different sources of methane contain different ratios of the two stable isotopologues, ¹²CH₄ and ¹³CH₄. This makes normally indistinguishable collocated sources of methane, say from agriculture and oil and gas exploration, distinguishable. The National Oceanic and Atmospheric Administration (NOAA) collects whole air samples from its global cooperative network of flasks (https://gml.noaa.gov/ccgg/about.html), which are then analyzed for methane and other trace gases. A subset of those flasks are also analyzed for ¹³C of methane in collaboration with the Institute of Arctic and Alpine Research at the University of Colorado Boulder. Scientists at the National Aeronautics and Space Administration (NASA) and NOAA used those measurements of methane and ¹³C of methane in conjunction with a model of atmospheric circulation to estimate emissions of methane separated by three source types: microbial, fossil and pyrogenic. This dataset presents monthly methane emissions in units of grams of methane per square meter per year (g CH₄/m²/year) from microbial, fossil and pyrogenic sources, along with a layer of total methane emissions from all three sources combined, at 1° resolution from 1999 to 2016. The source data can be found at https://doi.org/10.5281/zenodo.8264109",
+    "item_assets": {
+        "total": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Total CH₄ Emission",
+            "description": "Total methane emission from microbial, fossil and pyrogenic sources."
+        },
+        "microbial": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Microbial CH₄ Emission",
+            "description": "Emission of methane from all microbial sources, such as wetlands, agriculture and termites."
+        },
+        "fossil": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Fossil CH₄ Emission",
+            "description": "Emission of methane from all fossil sources, such as oil and gas activities and coal mining."
+        },
+        "pyrogenic": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Pyrogenic CH₄ Emission",
+            "description": "Emission of methane from all sources of biomass burning, such as wildfires and crop residue burning."
+        }
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": null,
+    "dashboard:is_periodic": true,
+    "dashboard:time_density": "month"
+}

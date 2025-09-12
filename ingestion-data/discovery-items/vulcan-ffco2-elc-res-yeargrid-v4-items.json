@@ -1,0 +1,16 @@
+{
+    "collection": "vulcan-ffco2-elc-res-yeargrid-v4",
+    "bucket": "ghgc-data-store",
+    "prefix": "vulcan-ffco2-elc-res-yeargrid-v4/",
+    "filename_regex": ".*.tif$",
+    "datetime_range": "year",
+    "assets": {
+        "elc-res-co2": {
+            "title": "Scope 2 Fossil Fuel CO₂ Emissions",
+            "description": "Estimated total annual FFCO₂ emissions from residential sources (scope 2).",
+            "regex": ".*.tif$"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "vulcan-ffco2-elc-res-yeargrid-v4-{}"
+}

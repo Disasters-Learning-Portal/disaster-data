@@ -1,0 +1,16 @@
+{
+    "collection": "sedac-popdensity-yeargrid5yr-v4.11",
+    "bucket": "ghgc-data-store",
+    "prefix": "sedac-popdensity-yeargrid5yr-v4.11/",
+    "filename_regex": ".*gpw_v4_population_density_rev11.*.tif$",
+    "datetime_range": "year",
+    "assets": {
+        "population-density": {
+            "title": "Population Density",
+            "description": "Gridded population density estimates for the years 2000, 2005, 2010, 2015, and 2020 from Gridded Population of the World (GPW) version 4, revision 11.",
+            "regex": ".*gpw_v4_population_density_rev11.*.tif$"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "sedac-popdensity-yeargrid5yr-v4.11-{}"
+}

@@ -1,0 +1,61 @@
+{
+    "id": "lpjwsl-wetlandch4-daygrid-v1",
+    "type": "Collection",
+    "links": [],
+    "title": "(Daily) Wetland Methane Emissions, LPJ-wsl Model v1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.00,
+                    -90.00,
+                    180.00,
+                    90.00
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2021-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "description": "Wetland methane emissions in units of grams of methane per meter squared per day (g CH₄/m²/day) produced by the Lund–Potsdam–Jena Dynamic Global Vegetation Model (LPJ-DGVM) Wald Schnee und Landscaft version (LPJ-wsl). LPJ-wsl is a prognostic model used to simulate future changes in wetland emissions and independently verified with remote sensing data products. The LPJ-wsl model is regularly used in conjunction with NASA's GEOS model to simulate the impact of wetlands and other methane sources on atmospheric methane concentrations. Data is provided in 0.5° resolution from January 1, 1980 to December 31, 2021. The source data can be found at https://doi.org/10.5281/zenodo.6964918. As of April 2024, this dataset has been replaced by an updated version in the US GHG Center titled Wetland Methane Emissions, LPJ-EOSIM Model v2 (STAC id: lpjeosim-wetlandch4-daygrid-v2).",
+    "item_assets": {
+        "ch4-wetlands-emissions": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "(Daily) LPJ-wsl Model Wetland CH₄ Emissions",
+            "description": "Daily CH₄ emissions from wetlands constructed using the LPJ-wsl model."
+        }
+    },
+    "renders": {
+        "ch4-wetlands-emissions": {
+            "assets": [
+                "ch4-wetlands-emissions"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    0,
+                    0.2
+                ]
+            ],
+            "nodata": 0
+        }
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "dashboard:is_periodic": true,
+    "dashboard:time_density": "day"
+}

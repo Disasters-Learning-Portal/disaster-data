@@ -1,0 +1,85 @@
+{
+    "collection": "eccodarwin-co2flux-monthgrid-v5",
+    "data_type": "cog",
+    "spatial_extent": {
+        "xmin": -180.0,
+        "ymin": -90.0,
+        "xmax": 180.0,
+        "ymax": 90.0
+    },
+    "temporal_extent": {
+        "startdate": "2020-01-01T00:00:00Z",
+        "enddate": "2022-12-31T00:00:00Z"
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "title": "Air-Sea CO\u2082 Flux, ECCO-Darwin Model v5",
+    "description": "Global, monthly average air-sea CO\u2082 flux (negative into ocean) at ~1/3\u00b0 resolution from 2020 to 2022. Data are in units of millimoles of CO\u2082 per meter squared per second (mmol m\u00b2/s). Derived using the ECCO-Darwin model v5, which is an ocean biogeochemical model that assimilates Estimating the Circulation and Climate of the Ocean (ECCO) consortium ocean circulation estimates and biogeochemical processes from the Massachusetts Institute of Technology (MIT) Darwin Project.",
+    "discovery_items": [
+        {
+            "discovery": "s3",
+            "collection": "eccodarwin-co2flux-monthgrid-v5",
+            "bucket": "ghgc-data-store-develop",
+            "prefix": "eccodarwin-co2flux-monthgrid-v5/",
+            "filename_regex": ".*ECCO-Darwin_.*.tif$",
+            "datetime_range": "month",
+            "assets": {
+                "co2": {
+                    "title": "Air-Sea CO\u2082 Flux",
+                    "description": "Monthly mean air-sea CO\u2082 flux (negative into ocean).",
+                    "regex": ".*Darwin_CO2.*.tif$"
+                }
+            },
+            "id_regex": ".*_(.*).tif$",
+            "id_template": "eccodarwin-co2flux-monthgrid-v5-{}"
+        }
+    ],
+    "is_periodic": true,
+    "license": "CC-BY-4.0",
+    "sample_files": [
+        ""
+    ],
+    "providers": null,
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "co2"
+            ],
+            "colormap_name": "bwr",
+            "rescale": [
+                [
+                    -0.0007,
+                    0.0002
+                ]
+            ]
+        },
+        "co2": {
+            "assets": [
+                "co2"
+            ],
+            "colormap_name": "bwr",
+            "rescale": [
+                [
+                    -0.0007,
+                    0.0002
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "co2": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Air-Sea CO\u2082 Flux",
+            "description": "Monthly mean air-sea CO\u2082 flux (negative into ocean)."
+        }
+    },
+    "assets": null,
+    "time_density": "month"
+}

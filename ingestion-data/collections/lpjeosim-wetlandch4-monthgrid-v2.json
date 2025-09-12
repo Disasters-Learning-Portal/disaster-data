@@ -1,0 +1,119 @@
+{
+    "id": "lpjeosim-wetlandch4-monthgrid-v2",
+    "type": "Collection",
+    "links": [],
+    "title": "(Monthly) Wetland Methane Emissions, LPJ-EOSIM Model v2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.00,
+                    -90.00,
+                    180.00,
+                    90.00
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-01-01T00:00:00Z",
+                    "2024-02-27T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "description": "Global, monthly estimates of methane (CH₄) emissions from terrestrial wetlands at 0.5 x 0.5 degree spatial resolution using the Earth Observation SIMulator version (LPJ-EOSIM) of the Lund-Potsdam-Jena Dynamic Global Vegetation Model (LPJ-DGVM). Methane emissions from vegetated wetlands are estimated to be the largest natural source of methane in the global CH₄ budget, contributing to roughly one third of the total of natural and anthropogenic emissions. Wetland CH₄ is produced by microbes breaking down organic matter in the oxygen deprived environment of inundated soils. Due to limited data availability, the details of the role of wetland CH₄ emissions have thus far been underrepresented. The LPJ-EOSIM model estimates wetland methane emissions by simulating wetland extent and using characteristics of these inundated areas such as soil moisture, temperature, and carbon content to estimate CH₄ quantities emitted into the atmosphere. Input climate forcing data comes from Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2) data and ECMWF Re-Analysis data (ERA5). An ensemble layer provides the result of the mean of the MERRA-2 and ERA5 layers. The source data can be found at https://doi.org/10.5067/Community/LPJ-EOSIM/LPJ_EOSIM_L2_MCH4E.001 and https://doi.org/10.5067/Community/LPJ-EOSIM/LPJ_EOSIM_L2_MCH4E_LL.001.",
+    "item_assets": {
+        "ensemble-mean-ch4-wetlands-emissions": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "(Monthly) Wetland Methane Emissions, Ensemble Mean LPJ-EOSIM Model v2",
+            "description": "Methane emissions from wetlands in units of kilograms of methane per meter squared per second. Ensemble of multiple climate forcing data sources input to LPJ-EOSIM model."
+        },
+        "era5-ch4-wetlands-emissions": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "(Monthly) Wetland Methane Emissions, ERA5 LPJ-EOSIM Model v2",
+            "description": "Methane emissions from wetlands in units of kilograms of methane per meter squared per second. ECMWF Re-Analysis (ERA5) as input to LPJ-EOSIM model."
+        },
+        "merra2-ch4-wetlands-emissions": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "(Monthly) Wetland Methane Emissions, MERRA-2 LPJ-EOSIM Model v2",
+            "description": "Methane emissions from wetlands in units of kilograms of methane per meter squared per second. Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2) data as input to LPJ-EOSIM model."
+        }
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "dashboard:is_periodic": true,
+    "dashboard:time_density": "month",
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "ensemble-mean-ch4-wetlands-emissions"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    0,
+                    3e-9
+                ]
+            ]
+        },
+        "ensemble-mean-ch4-wetlands-emissions": {
+            "assets": [
+                "ensemble-mean-ch4-wetlands-emissions"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    0,
+                    3e-9
+                ]
+            ]
+        },
+        "era5-ch4-wetlands-emissions": {
+            "assets": [
+                "era5-ch4-wetlands-emissions"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    0,
+                    3e-9
+                ]
+            ]
+        },
+        "merra2-ch4-wetlands-emissions": {
+            "assets": [
+                "merra2-ch4-wetlands-emissions"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    0,
+                    3e-9
+                ]
+            ]
+        }
+    }
+}

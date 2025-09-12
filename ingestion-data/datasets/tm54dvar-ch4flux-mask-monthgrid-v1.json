@@ -1,0 +1,163 @@
+{
+    "collection": "tm54dvar-ch4flux-mask-monthgrid-v1",
+    "data_type": "cog",
+    "spatial_extent": {
+        "xmin": -180.0,
+        "ymin": -90.0,
+        "xmax": 180.0,
+        "ymax": 90.0
+    },
+    "temporal_extent": {
+        "startdate": "1999-01-01T00:00:00Z",
+        "enddate": "2016-12-31T00:00:00Z"
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "title": "TM5-4DVar Isotopic CH\u2084 Inverse Fluxes v1",
+    "description": "Surface methane (CH\u2084) emissions are derived from atmospheric measurements of methane and its \u00b9\u00b3C carbon isotope content. Different sources of methane contain different ratios of the two stable isotopologues, \u00b9\u00b2CH\u2084 and \u00b9\u00b3CH\u2084. This makes normally indistinguishable collocated sources of methane, say from agriculture and oil and gas exploration, distinguishable. The National Oceanic and Atmospheric Administration (NOAA) collects whole air samples from its global cooperative network of flasks (https://gml.noaa.gov/ccgg/about.html), which are then analyzed for methane and other trace gases. A subset of those flasks are also analyzed for \u00b9\u00b3C of methane in collaboration with the Institute of Arctic and Alpine Research at the University of Colorado Boulder. Scientists at the National Aeronautics and Space Administration (NASA) and NOAA used those measurements of methane and \u00b9\u00b3C of methane in conjunction with a model of atmospheric circulation to estimate emissions of methane separated by three source types: microbial, fossil and pyrogenic. This dataset presents monthly methane emissions in units of grams of methane per square meter per year (g CH\u2084/m\u00b2/year) from microbial, fossil and pyrogenic sources, along with a layer of total methane emissions from all three sources combined, at 1\u00b0 resolution from 1999 to 2016. The source data can be found at https://doi.org/10.5281/zenodo.8264109",
+    "discovery_items": [
+        {
+            "discovery": "s3",
+            "collection": "tm54dvar-ch4flux-mask-monthgrid-v1",
+            "bucket": "ghgc-data-store-develop",
+            "prefix": "tm54dvar-ch4flux-mask-monthgrid-v1/",
+            "filename_regex": ".*methane_emis_.*.tif$",
+            "datetime_range": "month",
+            "assets": {
+                "total": {
+                    "title": "Total CH\u2084 Emission",
+                    "description": "Total methane emission from microbial, fossil and pyrogenic sources.",
+                    "regex": ".*methane_emis_total.*.tif$"
+                },
+                "microbial": {
+                    "title": "Microbial CH\u2084 Emission",
+                    "description": "Emission of methane from all microbial sources, such as wetlands, agriculture and termites.",
+                    "regex": ".*methane_emis_microbial.*.tif$"
+                },
+                "fossil": {
+                    "title": "Fossil CH\u2084 Emission",
+                    "description": "Emission of methane from all fossil sources, such as oil and gas activities and coal mining.",
+                    "regex": ".*methane_emis_fossil.*.tif$"
+                },
+                "pyrogenic": {
+                    "title": "Pyrogenic CH\u2084 Emission",
+                    "description": "Emission of methane from all sources of biomass burning, such as wildfires and crop residue burning.",
+                    "regex": ".*methane_emis_pyrogenic.*.tif$"
+                }
+            },
+            "id_regex": ".*_(.*).tif$",
+            "id_template": "tm54dvar-ch4flux-mask-monthgrid-v1-{}"
+        }
+    ],
+    "is_periodic": true,
+    "license": "CC0-1.0",
+    "sample_files": [
+        ""
+    ],
+    "providers": [],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "total"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0.48,
+                    24
+                ]
+            ]
+        },
+        "total": {
+            "assets": [
+                "total"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0.48,
+                    24
+                ]
+            ]
+        },
+        "microbial": {
+            "assets": [
+                "microbial"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0.3,
+                    15
+                ]
+            ]
+        },
+        "fossil": {
+            "assets": [
+                "fossil"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0.24,
+                    12
+                ]
+            ]
+        },
+        "pyrogenic": {
+            "assets": [
+                "pyrogenic"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0.032,
+                    1.6
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "total": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Total CH\u2084 Emission",
+            "description": "Total methane emission from microbial, fossil and pyrogenic sources"
+        },
+        "microbial": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Microbial CH\u2084 Emission",
+            "description": "Emission of methane from all microbial sources, such as wetlands, agriculture and termites."
+        },
+        "fossil": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Fossil CH\u2084 Emission",
+            "description": "Emission of methane from all fossil sources, such as oil and gas activities and coal mining."
+        },
+        "pyrogenic": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Pyrogenic CH\u2084 Emission",
+            "description": "Emission of methane from all sources of biomass burning, such as wildfires and crop burning."
+        }
+    },
+    "assets": {},
+    "time_density": "month"
+}

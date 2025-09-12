@@ -1,0 +1,81 @@
+{
+    "id": "oco2geos-co2-daygrid-v10r",
+    "type": "Collection",
+    "links": [],
+    "title": "OCO-2 GEOS Column CO₂ Concentrations v10r",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.00,
+                    -90.00,
+                    180.00,
+                    90.00
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2022-02-28T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "description": "This dataset provides global gridded, daily column-averaged carbon dioxide (XCO₂) concentrations from January 1, 2015 - February 28, 2022. The data are derived from Orbiting Carbon Observatory-2 (OCO-2) satellite observations that were input to the Goddard Earth Observing System (GEOS) Constituent Data Assimilation System (CoDAS), a modeling and data assimilation system maintained by NASA’s Global Modeling and Assimilation Office (GMAO). Concentrations are measured in moles of carbon dioxide per mole of dry air (mol CO₂/mol dry) at a spatial resolution of 0.5° x 0.625°. Data assimilation synthesizes simulations and observations, adjusting modeled atmospheric constituents like CO₂ to reflect observed values. With the support of NASA’s Carbon Monitoring System (CMS) Program and the OCO Science Team, this dataset was produced as part of the OCO-2 mission which provides the highest quality space-based XCO₂ retrievals to date. The source data can be found at https://doi.org/10.5067/Y9M4NM9MPCGH",
+    "item_assets": {
+        "xco2": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Average Dry-Air Column CO₂ (XCO₂)",
+            "description": "Daily dry air column-averaged mole fractions of carbon dioxide created from data assimilations of OCO-2 satellite retrievals."
+        },
+        "xco2prec": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Average Dry-Air Column CO₂ Precision (XCO₂PREC)",
+            "description": "Random errors for daily dry air column-averaged mole fractions of carbon dioxide calculated using a posteriori diagnostics."
+        }
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "dashboard:is_periodic": true,
+    "dashboard:time_density": "day",
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "xco2"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    412,
+                    422
+                ]
+            ]
+        },
+        "xco2": {
+            "assets": [
+                "xco2"
+            ],
+            "colormap_name": "magma",
+            "rescale": [
+                [
+                    412,
+                    422
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,214 @@
+{
+    "collection": "gosat-based-ch4budget-yeargrid-v1",
+    "data_type": "cog",
+    "spatial_extent": {
+        "xmin": -180.0,
+        "ymin": -90.0,
+        "xmax": 180.0,
+        "ymax": 90.0
+    },
+    "temporal_extent": {
+        "startdate": "2019-01-01T00:00:00Z",
+        "enddate": "2019-12-31T00:00:00Z"
+    },
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "title": "GOSAT-based Top-down Total and Natural Methane Emissions v1",
+    "description": "As part of the global stock take (GST), countries are asked to provide a record of their greenhouse gas (GHG) emissions to inform decisions on how to reduce GHG emissions. The NASA Carbon Monitoring System Flux (CMS-Flux) team has used remote sensing observations from Japan's Greenhouse gases Observing SATellite (GOSAT) to produce modeled total methane (CH\u2084) emissions and uncertainties on a 1 degree by 1 degree resolution grid for the year 2019. The GOSAT data is used in the model to inform total emission estimates, as well as wetland (the primary natural source of methane), and various human-related sources such as fossil fuel extraction, transport, agriculture, waste, and fires. A prior GHG emission estimate (and assocated uncertainty) is provided for each layer, which is the emissions estimate without GOSAT data. The posterior GHG emission layers are informed by GOSAT total column methane data. An advanced mathematical approach is used with a global chemistry transport model to quantify annual CH\u2084 emissions and uncertainties. These estimates are expressed in teragrams of CH\u2084 per year (Tg/yr). The source data can be found at https://doi.org/10.5281/zenodo.8306874 and more information can also be found on the CEOS website https://ceos.org/gst/methane.html",
+    "discovery_items": [
+        {
+            "discovery": "s3",
+            "collection": "gosat-based-ch4budget-yeargrid-v1",
+            "bucket": "ghgc-data-store-develop",
+            "prefix": "gosat-based-ch4budget-yeargrid-v1/",
+            "filename_regex": ".*Emissions_GOSAT.*.tif$",
+            "assets": {
+                "post-total": {
+                    "title": "Posterior Total Methane Emissions",
+                    "description": "Estimated total methane emissions per grid cell informed by GOSAT satellite total column methane data.",
+                    "regex": ".*Emissions_GOSAT_post_total.*.tif$"
+                },
+                "prior-total": {
+                    "title": "Prior Total Methane Emissions",
+                    "description": "Total methane emissions per grid cell estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+                    "regex": ".*Emissions_GOSAT_prior_total.*.tif$"
+                },
+                "post-wetland-uncertainty": {
+                    "title": "Uncertainty - Wetland Posterior Methane Emissions",
+                    "description": "Uncertainty in estimated methane emissions per grid cell from wetlands informed by GOSAT satellite total column methane data.",
+                    "regex": ".*Emissions_GOSAT_post_unc_wetland.*.tif$"
+                },
+                "post-wetland": {
+                    "title": "Wetland Posterior Methane Emissions",
+                    "description": "Estimated methane emissions per grid cell from wetlands informed by GOSAT satellite total column methane data.",
+                    "regex": ".*Emissions_GOSAT_post_wetland.*.tif$"
+                },
+                "prior-wetland-uncertainty": {
+                    "title": "Uncertainty - Wetland Prior Methane Emissions",
+                    "description": "Uncertainty in methane emissions per grid cell from wetlands estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+                    "regex": ".*Emissions_GOSAT_prior_unc_wetland.*.tif$"
+                },
+                "prior-wetland": {
+                    "title": "Wetland Prior Methane Emissions",
+                    "description": "Methane emissions per grid cell from wetlands estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+                    "regex": ".*Emissions_GOSAT_prior_wetland.*.tif$"
+                }
+            },
+            "id_regex": ".*_(.*).tif$",
+            "id_template": "gosat-based-ch4budget-yeargrid-v1-{}"
+        }
+    ],
+    "is_periodic": false,
+    "license": "CC-BY-4.0",
+    "sample_files": [
+        ""
+    ],
+    "providers": [],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "post-total"
+            ],
+            "colormap_name": "spectral_r",
+            "rescale": [
+                [
+                    0,
+                    0.3
+                ]
+            ]
+        },
+        "prior-total": {
+            "assets": [
+                "prior-total"
+            ],
+            "colormap_name": "spectral_r",
+            "rescale": [
+                [
+                    0,
+                    0.3
+                ]
+            ]
+        },
+        "post-total": {
+            "assets": [
+                "post-total"
+            ],
+            "colormap_name": "spectral_r",
+            "rescale": [
+                [
+                    0,
+                    0.3
+                ]
+            ]
+        },
+        "prior-wetland": {
+            "assets": [
+                "prior-wetland"
+            ],
+            "colormap_name": "spectral_r",
+            "rescale": [
+                [
+                    0,
+                    0.1
+                ]
+            ]
+        },
+        "post-wetland": {
+            "assets": [
+                "post-wetland"
+            ],
+            "colormap_name": "spectral_r",
+            "rescale": [
+                [
+                    0,
+                    0.1
+                ]
+            ]
+        },
+        "prior-wetland-uncertainty": {
+            "assets": [
+                "prior-wetland-uncertainty"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0,
+                    0.05
+                ]
+            ]
+        },
+        "post-wetland-uncertainty": {
+            "assets": [
+                "post-wetland-uncertainty"
+            ],
+            "colormap_name": "purd",
+            "rescale": [
+                [
+                    0,
+                    0.05
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "post-total": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Posterior Total Methane Emissions",
+            "description": "Estimated total methane emissions per grid cell informed by GOSAT satellite total column methane data."
+        },
+        "prior-total": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Prior Total Methane Emissions",
+            "description": "Total methane emissions per grid cell estimated by various inventories or models, excluding satellite based observations from GOSAT."
+        },
+        "post-wetland": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Wetland Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from wetlands informed by GOSAT satellite total column methane data."
+        },
+        "post-wetland-uncertainty": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Uncertainty - Wetland Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from wetlands informed by GOSAT satellite total column methane data."
+        },
+        "prior-wetland": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Wetland Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from wetlands estimated by various inventories or models, excluding satellite based observations from GOSAT."
+        },
+        "prior-wetland-uncertainty": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Uncertainty - Wetland Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from wetlands estimated by various inventories or models, excluding satellite based observations from GOSAT."
+        }
+    },
+    "assets": {},
+    "time_density": "year"
+}

@@ -1,0 +1,200 @@
+{
+    "collection": "gosat-based-ch4budget-yeargrid-v1",
+    "bucket": "ghgc-data-store-develop",
+    "prefix": "gosat-based-ch4budget-yeargrid-v1/",
+    "filename_regex": ".*Emissions_GOSAT.*.tif$",
+    "assets": {
+        "post-total": {
+            "title": "Posterior Total Methane Emissions",
+            "description": "Estimated total methane emissions per grid cell informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_total.*.tif$"
+        },
+        "prior-total": {
+            "title": "Prior Total Methane Emissions",
+            "description": "Total methane emissions per grid cell estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_total.*.tif$"
+        },
+        "post-coal": {
+            "title": "Coal Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from coal sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_coal.*.tif$"
+        },
+        "post-fire": {
+            "title": "Fire Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from fires informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_fire.*.tif$"
+        },
+        "post-gas": {
+            "title": "Gas Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from gas sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_gas.*.tif$"
+        },
+        "post-geo": {
+            "title": "Geological Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from geological sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_geo.*.tif$"
+        },
+        "post-livestock": {
+            "title": "Livestock Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from livestock sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_livestock.*.tif$"
+        },
+        "post-oil": {
+            "title": "Oil Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from oil sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_oil.*.tif$"
+        },
+        "post-rice": {
+            "title": "Rice Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from rice cultivation informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_rice.*.tif$"
+        },
+        "post-coal-uncertainty": {
+            "title": "Uncertainty - Coal Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from coal sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_coal.*.tif$"
+        },
+        "post-fire-uncertainty": {
+            "title": "Uncertainty - Fire Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from fires informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_fire.*.tif$"
+        },
+        "post-gas-uncertainty": {
+            "title": "Uncertainty - Gas Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from gas sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_gas.*.tif$"
+        },
+        "post-geo-uncertainty": {
+            "title": "Uncertainty - Geological Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from geological sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_geo.*.tif$"
+        },
+        "post-livestock-uncertainty": {
+            "title": "Uncertainty - Livestock Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from livestock sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_livestock.*.tif$"
+        },
+        "post-oil-uncertainty": {
+            "title": "Uncertainty - Oil Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from oil sources informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_oil.*.tif$"
+        },
+        "post-rice-uncertainty": {
+            "title": "Uncertainty - Rice Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from rice cultivation informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_rice.*.tif$"
+        },
+        "post-waste-uncertainty": {
+            "title": "Uncertainty - Waste Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from waste (landfills and wastewater) informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_waste.*.tif$"
+        },
+        "post-wetland-uncertainty": {
+            "title": "Uncertainty - Wetland Posterior Methane Emissions",
+            "description": "Uncertainty in estimated methane emissions per grid cell from wetlands informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_unc_wetland.*.tif$"
+        },
+        "post-waste": {
+            "title": "Waste Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from waste (landfills and wastewater) informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_waste.*.tif$"
+        },
+        "post-wetland": {
+            "title": "Wetland Posterior Methane Emissions",
+            "description": "Estimated methane emissions per grid cell from wetlands informed by GOSAT satellite total column methane data.",
+            "regex": ".*Emissions_GOSAT_post_wetland.*.tif$"
+        },
+        "prior-coal": {
+            "title": "Coal Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from coal sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_coal.*.tif$"
+        },
+        "prior-fire": {
+            "title": "Fire Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from fires estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_fire.*.tif$"
+        },
+        "prior-gas": {
+            "title": "Gas Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from gas sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_gas.*.tif$"
+        },
+        "prior-geo": {
+            "title": "Geological Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from geological sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_geo.*.tif$"
+        },
+        "prior-livestock": {
+            "title": "Livestock Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from livestock sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_livestock.*.tif$"
+        },
+        "prior-oil": {
+            "title": "Oil Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from oil sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_oil.*.tif$"
+        },
+        "prior-rice": {
+            "title": "Rice Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from rice cultivation estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_rice.*.tif$"
+        },
+        "prior-coal-uncertainty": {
+            "title": "Uncertainty - Coal Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from coal sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_coal.*.tif$"
+        },
+        "prior-fire-uncertainty": {
+            "title": "Uncertainty - Fire Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from fires estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_fire.*.tif$"
+        },
+        "prior-rice-uncertainty": {
+            "title": "Uncertainty - Rice Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from rice cultivation estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_rice.*.tif$"
+        },
+        "prior-gas-uncertainty": {
+            "title": "Uncertainty - Gas Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from gas sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_gas.*.tif$"
+        },
+        "prior-geo-uncertainty": {
+            "title": "Uncertainty - Geological Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from geological sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_geo.*.tif$"
+        },
+        "prior-livestock-uncertainty": {
+            "title": "Uncertainty - Livestock Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from livestock sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_livestock.*.tif$"
+        },
+        "prior-oil-uncertainty": {
+            "title": "Uncertainty - Oil Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from oil sources estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_oil.*.tif$"
+        },
+        "prior-waste-uncertainty": {
+            "title": "Uncertainty - Waste Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from waste (landfills and wastewater) estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_waste.*.tif$"
+        },
+        "prior-wetland-uncertainty": {
+            "title": "Uncertainty - Wetland Prior Methane Emissions",
+            "description": "Uncertainty in methane emissions per grid cell from wetlands estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_unc_wetland.*.tif$"
+        },
+        "prior-waste": {
+            "title": "Waste Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from waste (landfills and wastewater) estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_waste.*.tif$"
+        },
+        "prior-wetland": {
+            "title": "Wetland Prior Methane Emissions",
+            "description": "Methane emissions per grid cell from wetlands estimated by various inventories or models, excluding satellite based observations from GOSAT.",
+            "regex": ".*Emissions_GOSAT_prior_wetland.*.tif$"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "gosat-based-ch4budget-yeargrid-v1-{}"
+}

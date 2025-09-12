@@ -1,0 +1,5 @@
+requests
+getpass
+pystac
+rasterio
+rio_stac

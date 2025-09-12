@@ -1,0 +1,13 @@
+{
+    "collection": "",
+    "bucket": "ghgc-data-store-develop",
+    "prefix": "transformed_csv/",
+    "filename_regex": ".*.csv$",
+    "id_template": "{}",
+    "vector": true,
+    "x_possible": "longitude",
+    "y_possible": "latitude",
+    "source_projection": "EPSG:4326",
+    "target_projection": "EPSG:4326",
+    "extra_flags": ["-overwrite", "-lco", "OVERWRITE=YES"]
+  }

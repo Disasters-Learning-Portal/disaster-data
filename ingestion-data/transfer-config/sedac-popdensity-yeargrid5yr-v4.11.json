@@ -1,0 +1,7 @@
+{
+    "collection": "sedac-popdensity-yeargrid5yr-v4.11",
+    "origin_bucket": "ghgc-data-store-develop",
+    "origin_prefix": "sedac-popdensity-yeargrid5yr-v4.11/",
+    "target_bucket": "ghgc-data-store",
+    "filename_regex": ".*tif"
+}

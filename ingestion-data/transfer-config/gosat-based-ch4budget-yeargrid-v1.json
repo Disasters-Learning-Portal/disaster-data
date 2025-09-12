@@ -1,0 +1,7 @@
+{
+    "collection": "gosat-based-ch4budget-yeargrid-v1",
+    "origin_bucket": "ghgc-data-store-develop",
+    "origin_prefix": "gosat-based-ch4budget-yeargrid-v1/",
+    "target_bucket": "ghgc-data-store",
+    "filename_regex": ".*tif"
+}

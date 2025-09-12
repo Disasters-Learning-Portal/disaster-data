@@ -1,0 +1,170 @@
+{
+    "collection": "oco2-mip-meanco2budget-yeargrid-v1",
+    "bucket": "ghgc-data-store-develop",
+    "prefix": "oco2-mip-meanco2budget-yeargrid-v1/",
+    "filename_regex": ".*topdown_.*.tif$",
+    "assets": {
+        "is-dc-loss-meanyear": {
+            "title": "(Year Mean) In Situ Net Terrestrial Carbon Stock Loss",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_IS_dC_loss_meanYear_CO2.*.tif$"
+        },
+        "is-dc-loss-std-meanyear": {
+            "title": "(Year Mean) In Situ Net Terrestrial Carbon Stock Loss std",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_IS_dC_loss_std_meanYear_CO2.*.tif$"
+        },
+        "lnlg-dc-loss-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint Net Terrestrial Carbon Stock Loss",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_IS_dC_loss_meanYear_CO2.*.tif$"
+        },
+        "lnlg-dc-loss-std-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint Net Terrestrial Carbon Stock Loss std",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_LNLG_dC_loss_std_meanYear_CO2.*.tif$"
+        },
+        "lnlgis-dc-loss-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint and In Situ Net Terrestrial Carbon Stock Loss",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_LNLGIS_dC_loss_meanYear_CO2.*.tif$"
+        },
+        "lnlgis-dc-loss-std-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint and In Situ Net Terrestrial Carbon Stock Loss std",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_LNLGIS_dC_loss_std_meanYear_CO2.*.tif$"
+        },
+        "lnlgogis-dc-loss-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint, Ocean Glint and In Situ Net Terrestrial Carbon Stock Loss",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_LNLGOGIS_dC_loss_meanYear_CO2.*.tif$"
+        },
+        "lnlgogis-dc-loss-std-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint, Ocean Glint and In Situ Net Terrestrial Carbon Stock Loss std",
+            "description": "Positive values indicate a loss (decrease) of terrestrial carbon stocks (organic matter stored on land), including above- and below-ground biomass in ecosystems and biomass contained in anthropogenic products (lumber, cattle, etc.).",
+            "regex": ".*topdown_LNLGOGIS_dC_loss_std_meanYear_CO2.*.tif$"
+        },
+        "is-nbe-meanyear": {
+            "title": "(Year Mean) In Situ Net Biosphere Exchange",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances).",
+            "regex": ".*topdown_IS_NBE_meanYear_CO2.*.tif$"
+        },
+        "is-nbe-std-meanyear": {
+            "title": "(Year Mean) In Situ Net Biosphere Exchange std",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances).",
+            "regex": ".*topdown_IS_NBE_std_meanYear_CO2.*.tif$"
+        },
+        "lnlg-nbe-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint Net Biosphere Exchange",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances.",
+            "regex": ".*topdown_LNLG_NBE_meanYear_CO2.*.tif$"
+        },
+        "lnlg-nbe-std-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint Net Biosphere Exchange std",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances.",
+            "regex": ".*topdown_LNLG_NBE_std_meanYear_CO2.*.tif$"
+        },
+        "lnlgis-nbe-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint and In Situ Net Biosphere Exchange",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances.",
+            "regex": ".*topdown_LNLGIS_NBE_meanYear_CO2.*.tif$"
+        },
+        "lnlgis-nbe-std-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint In Situ Net Biosphere Exchange std",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances.",
+            "regex": ".*topdown_LNLGIS_NBE_std_meanYear_CO2.*.tif$"
+        },
+        "lnlgogis-nbe-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint, Ocean Glint and In Situ Net Biosphere Exchange",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances.",
+            "regex": ".*topdown_LNLGOGIS_NBE_meanYear_CO2.*.tif$"
+        },
+        "lnlgogis-nbe-std-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint, Ocean Glint and In Situ Net Biosphere Exchange std",
+            "description": "Net flux of carbon from the terrestrial biosphere to the atmosphere due to biomass burning (BB) and Reco minus gross primary production (GPP). It includes both anthropogenic processes (e.g., deforestation, reforestation, farming) and natural processes (e.g., climate-variability-induced carbon fluxes, disturbances, recovery from disturbances.",
+            "regex": ".*topdown_LNLGOGIS_NBE_std_meanYear_CO2.*.tif$"
+        },
+        "is-nce-meanyear": {
+            "title": "(Year Mean) In Situ Terrestrial Net Carbon Exchange",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_IS_NCE_meanYear_CO2.*.tif$"
+        },
+        "is-nce-std-meanyear": {
+            "title": "(Year Mean) In Situ Terrestrial Net Carbon Exchange std",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_IS_NCE_std_meanYear_CO2.*.tif$"
+        },
+        "lnlg-nce-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint Terrestrial Net Carbon Exchange",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_LNLG_NCE_meanYear_CO2.*.tif$"
+        },
+        "lnlg-nce-std-meanyear": {
+            "title": "(Year Mean) Land Nadir and Land Glint Terrestrial Net Carbon Exchange std",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_LNLG_NCE_std_meanYear_CO2.*.tif$"
+        },
+        "lnlgis-nce-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint and In Situ Terrestrial Net Carbon Exchange",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_LNLGIS_NCE_meanYear_CO2.*.tif$"
+        },
+        "lnlgis-nce-std-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint and In Situ Terrestrial Net Carbon Exchange std",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_LNLGIS_NCE_std_meanYear_CO2.*.tif$"
+        },
+        "lnlgogis-nce-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint, Ocean Glint and In Situ Terrestrial Net Carbon Exchange",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions",
+            "regex": ".*topdown_LNLGIS_NCE_meanYear_CO2.*.tif$"
+        },
+        "lnlgogis-nce-std-meanyear": {
+            "title": "(Year Mean) Land Nadir, Land Glint, Ocean Glint and In Situ Terrestrial Net Carbon Exchange std",
+            "description": "Net flux of carbon from the surface to the atmosphere. For land, NCE can be defined as sum of NBE and fossil fuel and cement emissions.",
+            "regex": ".*topdown_LNLGOGIS_NCE_std_meanYear_CO2.*.tif$"
+        },
+        "river-meanyear": {
+            "title": "(Year Mean) Lateral River Flux",
+            "description": "The lateral flux of carbon in (positive) or out (negative) of a region transported by the water cycle.",
+            "regex": ".*topdown_River_meanYear_CO2.*.tif$"
+        },
+        "river-std-meanyear": {
+            "title": "(Year Mean) Lateral River Flux std",
+            "description": "The lateral flux of carbon in (positive) or out (negative) of a region transported by the water cycle.",
+            "regex": ".*topdown_River_std_meanYear_CO2.*.tif$"
+        },
+        "wood-meanyear": {
+            "title": "(Year Mean) Lateral Wood Flux",
+            "description": "The lateral flux of carbon in (positive) or out (negative) of a region due to wood product harvesting and usage.",
+            "regex": ".*topdown_Wood_meanYear_CO2.*.tif$"
+        },
+        "wood-std-meanyear": {
+            "title": "(Year Mean) Lateral Wood Flux std",
+            "description": "The lateral flux of carbon in (positive) or out (negative) of a region due to wood product harvesting and usage.",
+            "regex": ".*topdown_Wood_std_meanYear_CO2.*.tif$"
+        },
+        "crop-meanyear": {
+            "title": "(Year Mean) Lateral Crop Flux",
+            "description": "The lateral flux of carbon in (positive) or out (negative) of a region due to agriculture.",
+            "regex": ".*topdown_Crop_meanYear_CO2.*.tif$"
+        },
+        "crop-std-meanyear": {
+            "title": "(Year Mean) Lateral Crop Flux std",
+            "description": "The lateral flux of carbon in (positive) or out (negative) of a region due to agriculture.",
+            "regex": ".*topdown_Crop_std_meanYear_CO2.*.tif$"
+        },
+        "ff-meanyear": {
+            "title": "(Year Mean) Fossil Fuel and Cement Emissions",
+            "description": "The burning of fossil fuels and release of carbon due to cement production, representing a flux of carbon from the land surface (geologic reservoir) to the atmosphere.",
+            "regex": ".*topdown_FF_meanYear_CO2.*.tif$"
+        },
+        "ff-std-meanyear": {
+            "title": "(Year Mean) Fossil Fuel and Cement Emissions std",
+            "description": "The burning of fossil fuels and release of carbon due to cement production, representing a flux of carbon from the land surface (geologic reservoir) to the atmosphere.",
+            "regex": ".*topdown_FF_std_meanYear_CO2.*.tif$"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "oco2-mip-meanco2budget-yeargrid-v1-{}"
+}

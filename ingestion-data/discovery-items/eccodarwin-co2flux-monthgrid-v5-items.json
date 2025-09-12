@@ -1,0 +1,16 @@
+{
+    "collection": "eccodarwin-co2flux-monthgrid-v5",
+    "bucket": "ghgc-data-store",
+    "prefix": "eccodarwin-co2flux-monthgrid-v5/",
+    "filename_regex": ".*ECCO-Darwin_.*.tif$",
+    "datetime_range": "month",
+    "assets": {
+        "co2": {
+            "title": "Air-Sea CO₂ Flux",
+            "description": "Monthly mean air-sea CO₂ flux (negative into ocean).",
+            "regex": ".*Darwin_CO2.*.tif$"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "eccodarwin-co2flux-monthgrid-v5-{}"
+}

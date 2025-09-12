@@ -1,0 +1,35 @@
+{
+    "collection": "casagfed-carbonflux-monthgrid-v3",
+    "bucket": "ghgc-data-store-dev",
+    "prefix": "GEOS-Carbs/",
+    "filename_regex": ".*GEOSCarb_CASAGFED3v3.*.tif$",
+    "datetime_group": ".*_(.*).tif$",
+    "datetime_range": "month",
+    "assets": {
+        "npp": {
+            "title": "Net Primary Production (NPP)",
+            "description": "Model-estimated net primary production (NPP), which is the amount of carbon available from plants.",
+            "regex": ".*GEOSCarb_CASAGFED3v3_NPP_Flux_.*.tif$"
+        },
+        "rh": {
+            "title": "Heterotrophic Respiration (Rh)",
+            "description": "Model-estimated heterotrophic respiration (Rh), which is the flux of carbon from the soil to the atmosphere.",
+            "regex": ".*GEOSCarb_CASAGFED3v3_Rh_Flux_.*.tif$"
+        },
+        "nee": {
+            "title": "Net Ecosystem Exchange (NEE)",
+            "description": "Model-estimated net ecosystem exchange (NEE), which is the net carbon flux to the atmosphere.",
+            "regex": ".*GEOSCarb_CASAGFED3v3_NEE_Flux_.*.tif$"
+        },
+        "fire": {
+            "title": "Fire Emissions (FIRE)",
+            "description": "Model-estimated flux of carbon to the atmosphere from wildfires.",
+            "regex": ".*GEOSCarb_CASAGFED3v3_FIRE_Flux_.*.tif$"
+        },
+        "fuel": {
+            "title": "Wood Fuel Emissions (FUEL)",
+            "description": "Model-estimated flux of carbon to the atmosphere from wood burned for fuel.",
+            "regex": ".*GEOSCarb_CASAGFED3v3_FUEL_Flux_.*.tif$"
+        }
+    }
+}

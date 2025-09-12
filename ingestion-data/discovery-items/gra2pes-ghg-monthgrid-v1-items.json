@@ -1,0 +1,36 @@
+{
+    "collection":"gra2pes-ghg-monthgrid-v1",
+    "bucket":"ghgc-data-store",
+    "prefix":"gra2pes-ghg-monthgrid-v1",
+    "filename_regex":".*GRA2PESv1.0_total.*.tif$",
+    "datetime_range":"month",
+    "assets":{
+       "co2":{
+          "title":"CO₂ Emissions",
+          "description":"Estimated total CO₂ emissions.",
+          "regex":".*GRA2PESv1.0_total_CO2_.*.tif$"
+       },
+       "co":{
+          "title":"CO Emissions",
+          "description":"Estimated total CO emissions.",
+          "regex":".*GRA2PESv1.0_total_CO_.*.tif$"
+       },
+       "nox":{
+          "title":"Estimated NOx Emissions",
+          "description":"Estimated total NOx emissions.",
+          "regex":".*GRA2PESv1.0_total_NOX_.*.tif$"
+       },
+       "pm25":{
+          "title":"Estimated PM2.5 Emissions",
+          "description":"Estimated total PM2.5.",
+          "regex":".*GRA2PESv1.0_total_PM25-PRI_.*.tif$"
+       },
+       "so2":{
+          "title":"Estimated so₂ Emissions",
+          "description":"Estimated total SO₂ emissions.",
+          "regex":".*GRA2PESv1.0_total_SO2_.*.tif$"
+       }
+    },
+    "id_regex":".*_(.*).tif$",
+    "id_template":"gra2pes-ghg-monthgrid-v1-{}"
+}

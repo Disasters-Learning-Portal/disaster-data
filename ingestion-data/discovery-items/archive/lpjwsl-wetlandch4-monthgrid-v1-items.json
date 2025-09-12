@@ -1,0 +1,14 @@
+{
+    "collection": "lpjwsl-wetlandch4-monthgrid-v1",
+    "bucket": "ghgc-data-store-dev",
+    "prefix": "NASA_GSFC_ch4_wetlands_monthly/",
+    "filename_regex": ".*_ch4_wl_ch4_wetlands.*.tif$",
+    "datetime_group": ".*_(.*).tif$",
+    "assets": {
+        "ch4-wetlands-emissions": {
+            "title": "(Monthly) LPJ-wsl Model Wetland CH₄ Emissions",
+            "description": "Monthly CH₄ emissions from wetlands constructed using the LPJ-wsl model.",
+            "regex": ".*_ch4_wetlands.*.tif$"
+        }
+    }
+}
