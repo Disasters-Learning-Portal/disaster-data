@@ -1,0 +1,18 @@
+{
+    "collection": "rsm0-10cm-alaska",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/sport-lis-cog/rsm0-10cm_alaska/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "rsm0-10cm": {
+            "description": "Daily estimates of relative soil moisture over Alaska.",
+            "regex": ".*.tif$",
+            "title": "Sport LIS Relative soil moisture (0-2m) [Alaska]"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "{}"
+}
