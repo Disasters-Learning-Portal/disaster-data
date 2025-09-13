@@ -1,6 +1,6 @@
 {
     "id": "snod-alaska",
-    "dashboard:is_periodic": false,
+    "dashboard:is_periodic": true,
     "dashboard:time_interval": "P1D",
     "description": "Within LIS, the Noah Land Surface Model (LSM) is forced by this input data and produces analyses of soil temperature and moisture in 4 layers plus the snow state and fluxes of energy and water at the surface.  The Noah LSM accounts for snow accumulation based on the current LIS snow values in the continuous run and the forcing data from the atmospheric model.  Forcing variables influencing the snow depth in LIS include precipitation, air temperature, solar radiation.  Relevant modeled processes include compaction of snow, sublimation, and melting.",
     "extent": {
