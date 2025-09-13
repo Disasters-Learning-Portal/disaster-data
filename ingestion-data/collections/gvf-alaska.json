@@ -1,0 +1,65 @@
+{
+    "id": "gvf-alaska",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P3H",
+    "description": "Alaska SPoRT-LIS uses the Green Vegetation Fraction (GVF) from sensors like VIIRS to monitor vegetation health, particularly during spring snow melt and the summer wildfire season. GVF indicates the fractional amount of green vegetation cover in a specific area. The Alaska SPoRT-LIS system incorporates this near real-time data to inform end-users about soil moisture trends and vegetation stress, helping to manage agricultural, drought, and fire weather conditions.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0, 
+                    51.0,  
+                    -130.0,  
+                    71.5  
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T15:00:00Z",
+                    "2025-09-12T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "gvf": {
+            "description": "Daily estimates of relative soil moisture over Alaska.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sport LIS green vegetation fraction (0-10cm) [Alaska]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "gvf"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Sport LIS green vegetation fraction [Alaska]",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

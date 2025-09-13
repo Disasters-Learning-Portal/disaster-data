@@ -1,16 +1,16 @@
 {
-    "collection": "rsm0-10cm-alaska",
+    "collection": "gvf-alaska",
     "bucket": "nasa-disasters",
-    "prefix": "nrt/sport-lis-cog/rsm0-10cm_alaska/",
+    "prefix": "nrt/sport-lis-cog/snod_alaska/",
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
     "filename_regex": ".*.tif$",
     "assets": {
         "rsm0-10cm": {
-            "description": "Hourly estimates of relative soil moisture over Alaska.",
+            "description": "Hourly estimates of snow depth over Alaska.",
             "regex": ".*.tif$",
-            "title": "Sport LIS Relative soil moisture (0-2m) [Alaska]"
+            "title": "Sport LIS snow depth [Alaska]"
         }
     },
     "id_regex": ".*_(.*).tif$",
