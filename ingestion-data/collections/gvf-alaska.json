@@ -25,12 +25,12 @@
     },
     "item_assets": {
         "gvf": {
-            "description": "Daily estimates of relative soil moisture over Alaska.",
+            "description": "Daily estimates of green vegetation fraction over Alaska.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Sport LIS green vegetation fraction (0-10cm) [Alaska]",
+            "title": "Sport LIS green vegetation fraction [Alaska]",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
