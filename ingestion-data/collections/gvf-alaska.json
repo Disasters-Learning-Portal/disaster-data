@@ -1,7 +1,8 @@
 {
     "id": "gvf-alaska",
     "dashboard:is_periodic": false,
-    "dashboard:time_interval": "P3H",
+    "dashboard:time_interval": "P1D",
+    "dashboard:time_density": "hour",
     "description": "Alaska SPoRT-LIS uses the Green Vegetation Fraction (GVF) from sensors like VIIRS to monitor vegetation health, particularly during spring snow melt and the summer wildfire season. GVF indicates the fractional amount of green vegetation cover in a specific area. The Alaska SPoRT-LIS system incorporates this near real-time data to inform end-users about soil moisture trends and vegetation stress, helping to manage agricultural, drought, and fire weather conditions.",
     "extent": {
         "spatial": {
