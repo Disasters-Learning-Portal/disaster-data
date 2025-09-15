@@ -1,0 +1,70 @@
+{
+    "id": "sentinel2-distAlert",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX)",
+    "description": "The Advanced Rapid Imaging and Analysis (ARIA) team at NASA's Jet Propulsion Laboratory and California Institute of Technology created the Vegetation Disturbance Status and Maximum Vegetation Anomaly maps using the OPERA Surface Disturbance (DIST) product suite derived from Sentinel-2 scene acquisitions.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-10-02T00:00:00Z",
+                    "2024-10-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "202409_Hurricane_Helene_ARIA_OPERA-DIST-ALERT_VEG-ANOM-MAX_S2A-2m": {
+            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly - 2024 Hurricane Helene.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX) [2024 Hurricane Helene]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "202409_Hurricane_Helene_ARIA_OPERA-DIST-ALERT_VEG-ANOM-MAX_S2A-2m"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
