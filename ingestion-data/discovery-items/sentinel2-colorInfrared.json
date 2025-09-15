@@ -5,7 +5,7 @@
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
-    "filename_regex": "202409.*.tif$",
+    "filename_regex": "202409*.tif$",
     "assets": {
       "202409_Hurricane_Helene_S2A_colorInfrared": {
         "description": "S2A color infrared imagery composites - 2024 Hurricane Helene.",
