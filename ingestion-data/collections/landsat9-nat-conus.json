@@ -25,7 +25,7 @@
     },
     "item_assets": {
         "landsat9-nat": {
-            "description": "Landsat-09 Natural Color",
+            "description": "Landsat-09 Natural Color.",
             "roles": [
                 "data",
                 "layer"
