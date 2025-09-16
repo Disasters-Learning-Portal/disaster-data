@@ -25,13 +25,7 @@
         }
     },
     "item_assets": {
-        "ntl": {
-            "description": "Blackmarble HD daily composite",
-            "roles": ["data", "layer"],
-            "title": "Blackmarble HD daily composite",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
-        "ntlc2": {
+        "mosaic": {
             "description": "Blackmarble HD daily composite",
             "roles": ["data", "layer"],
             "title": "Blackmarble HD daily composite",
@@ -50,20 +44,9 @@
           }
     ],
     "renders": {
-        "ntl": {
+        "mosaic": {
             "assets": [
-                "ntl"           
-            ],
-            "rescale": [
-                [
-                    0,
-                    50
-                ]
-            ]
-        },
-        "ntlc2": {
-            "assets": [
-                "ntlc2"           
+                "mosaic"           
             ],
             "rescale": [
                 [
