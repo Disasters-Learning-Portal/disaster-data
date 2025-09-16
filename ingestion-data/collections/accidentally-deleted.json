@@ -1,0 +1,1422 @@
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}
+
+
+{
+    "assets": {
+        "thumbnail": {
+            "description": "HD Black Marble Nightlights output in Houston, TX",
+            "href": "s3://veda-thumbnails/hdblackmarble.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpg"
+        }
+    },
+    "collection": "hd-blackmarble-nightlights",
+    "data_type": "cog",
+    "description": "The High Definition Nightlights dataset is a derived product for measuring light emissions for a given location. Darker colors indicate lower light emissions while lighter colors indicate high light emissions.",
+    "discovery_items": [
+        {
+            "bucket": "veda-data-store-staging",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*hdnightlights_2023-03-15_32_97N90_96W32_83N90_79W-day.tif$",
+            "prefix": "hd-blackmarble-nightlights/",
+            "upload": false
+        }
+    ],
+    "is_periodic": false,
+    "item_assets": {
+        "cog_default": {
+            "description": "Cloud optimized default layer to display on map",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Default COG Layer",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "MIT",
+    "providers": [
+        {
+            "name": "NASA VEDA",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.earthdata.nasa.gov/dashboard/"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "cog_default"
+            ],
+            "bidx": [
+                1,
+                2,
+                3
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "title": "VEDA Dashboard Render Parameters"
+        }
+    },
+    "sample_files": [
+        "s3://veda-data-store-staging/hd-blackmarble-nightlights/hdnightlights_2021-08-24_31N91W29N89W-day.tif"
+    ],
+    "spatial_extent": {
+        "xmax": 180,
+        "xmin": -180,
+        "ymax": 90,
+        "ymin": -90
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "temporal_extent": {
+        "enddate": null,
+        "startdate": "2015-08-09T00:00:00Z"
+    },
+    "time_density": "day",
+    "title": "High Definition Black Marble Nightlights for Disaster Support"
+}

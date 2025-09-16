@@ -1,0 +1,34 @@
+{
+    "collection": "sentinel2-colorinfrared",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-2/cir/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": "202409*.tif$",
+    "assets": {
+      "202409_Hurricane_Helene_S2A_colorInfrared": {
+        "description": "S2A color infrared imagery composites - 2024 Hurricane Helene.",
+        "regex": "202409_Hurricane_Helene_S2A_colorInfrared.*.tif$",
+        "title": "Sentinel-2 A Color Infrared [2024 Hurricane Helene]"
+      },
+      "202409_Hurricane_Helene_S2A_MSIL2A_colorInfrared": {
+        "description": "S2A MSIL color infrared imagery composites - 2024 Hurricane Helene.",
+        "regex": "202409_Hurricane_Helene_S2A_MSIL2A_colorInfrared.*.tif$",
+        "title": "Sentinel-2 A Mission Standard Image Level (MSIL) Color Infrared [2024 Hurricane Helene]"
+      },
+      "202409_Hurricane_Helene_S2B_colorInfrared": {
+        "description": "S2B color infrared imagery composites - 2024 Hurricane Helene.",
+        "regex": "202409_Hurricane_Helene_S2B_colorInfrared.*.tif$",
+        "title": "Sentinel-2 B Color Infrared [2024 Hurricane Helene]"
+      },
+      "202409_Hurricane_Helene_S2B_MSIL2A_colorInfrared": {
+        "description": "S2B MSIL color infrared imagery composites - 2024 Hurricane Helene.",
+        "regex": "202409_Hurricane_Helene_S2B_MSIL2A_colorInfrared.*.tif$",
+        "title": "Sentinel-2 B Mission Standard Image Level (MSIL) Color Infrared [2024 Hurricane Helene]"
+      }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "{}"
+  }
+  

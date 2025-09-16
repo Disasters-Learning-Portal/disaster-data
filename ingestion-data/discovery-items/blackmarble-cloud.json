@@ -1,0 +1,23 @@
+{
+    "collection": "blackmarble-cloud",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Blackmarble/qf-cloud/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*QF_Cloud_.*.tif$",
+    "assets": {
+        "cloud-mask": {
+            "description": "Black marble cloud mask",
+            "regex": ".*_QF_Cloud_Mask_.*",
+            "title": "Black marble cloud mask"
+        },
+        "cloud-mask-c2": {
+            "description": "Black marble cloud mask c2",
+            "regex": ".*_QF_Cloud_MaskC2_.*",
+            "title": "Black marble cloud mask c2"
+        }
+    },
+    "id_regex": ".*blackmarble_(.*)\\.tif$",
+    "id_template": "blackmarble-{}"
+}
