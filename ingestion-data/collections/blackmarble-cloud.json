@@ -1,7 +1,7 @@
 {
     "id": "blackmarble-cloud",
     "dashboard:is_periodic": false,
-    "dashboard:time_interval": "P1M",
+    "dashboard:time_interval": "P1D",
     "title": "Blackmarble cloud",
     "description": "Black Marble HD is NASA's high-resolution nighttime lights product that captures Earth's artificial illumination patterns at at 500-meter or finer spatial resolution compared to the standard 750-meter resolution. These data products are derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB) sensor aboard the Suomi NPP and NOAA-20 satellites, which can detect even dim sources of visible and near-infrared light at night. The HD versions are often produced for specific areas of interest during disaster events or urban studies, providing enhanced visualization of power outages, infrastructure damage, and human activity patterns through careful atmospheric correction and stray light removal processing.",
     "extent": {
