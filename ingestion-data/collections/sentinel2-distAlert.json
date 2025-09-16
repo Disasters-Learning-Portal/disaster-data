@@ -2,7 +2,7 @@
     "id": "sentinel2-distAlert",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
-    "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX)",
+    "title": "Sentinel-2 ARIA OPERA Disturbance Alert",
     "description": "The Advanced Rapid Imaging and Analysis (ARIA) team at NASA's Jet Propulsion Laboratory and California Institute of Technology created the Vegetation Disturbance Status and Maximum Vegetation Anomaly maps using the OPERA Surface Disturbance (DIST) product suite derived from Sentinel-2 scene acquisitions.",
     "extent": {
         "spatial": {
