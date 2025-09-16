@@ -25,29 +25,29 @@
         }
     },
     "item_assets": {
-        "202409_Hurricane_Helene_S2A_colorInfrared": {
-        "description": "S2A color infrared imagery composites - 2024 Hurricane Helene.",
-        "roles": ["data", "layer"],
-        "title": "Sentinel-2 A Color Infrared [2024 Hurricane Helene]",
-        "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        "S2A_colorInfrared": {
+            "description": "S2A color infrared imagery composites - 2024 Hurricane Helene.",
+            "roles": ["data", "layer"],
+            "title": "Sentinel-2 A Color Infrared [2024 Hurricane Helene]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "202409_Hurricane_Helene_S2A_MSIL2A_colorInfrared": {
-        "description": "S2A MSIL color infrared imagery composites - 2024 Hurricane Helene.",
-        "roles": ["data", "layer"],
-        "title": "Sentinel-2 A Mission Standard Image Level (MSIL) Color Infrared [2024 Hurricane Helene]",
-        "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        "S2A_MSIL2A_colorInfrared": {
+            "description": "S2A MSIL color infrared imagery composites - 2024 Hurricane Helene.",
+            "roles": ["data", "layer"],
+            "title": "Sentinel-2 A Mission Standard Image Level (MSIL) Color Infrared [2024 Hurricane Helene]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "202409_Hurricane_Helene_S2B_colorInfrared": {
-        "description": "S2B color infrared imagery composites - 2024 Hurricane Helene.",
-        "roles": ["data", "layer"],
-        "title": "Sentinel-2 B Color Infrared [2024 Hurricane Helene]",
-        "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        "S2B_colorInfrared": {
+            "description": "S2B color infrared imagery composites - 2024 Hurricane Helene.",
+            "roles": ["data", "layer"],
+            "title": "Sentinel-2 B Color Infrared [2024 Hurricane Helene]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "202409_Hurricane_Helene_S2B_MSIL2A_colorInfrared": {
-        "description": "S2B MSIL color infrared imagery composites - 2024 Hurricane Helene.",
-        "roles": ["data", "layer"],
-        "title": "Sentinel-2 B Mission Standard Image Level (MSIL) Color Infrared [2024 Hurricane Helene]",
-        "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        "S2B_MSIL2A_colorInfrared": {
+            "description": "S2B MSIL color infrared imagery composites - 2024 Hurricane Helene.",
+            "roles": ["data", "layer"],
+            "title": "Sentinel-2 B Mission Standard Image Level (MSIL) Color Infrared [2024 Hurricane Helene]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
     "license": "CC0-1.0",
@@ -62,12 +62,45 @@
           }
     ],
     "renders": {
-        "dashboard": {
+        "S2A_colorInfrared": {
             "assets": [
-                "202409_Hurricane_Helene_S2A_colorInfrared",
-                "202409_Hurricane_Helene_S2A_MSIL2A_colorInfrared",
-                "202409_Hurricane_Helene_S2B_colorInfrared",
-                "202409_Hurricane_Helene_S2B_MSIL2A_colorInfrared"             
+                "S2A_colorInfrared"           
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2A_MSIL2A_colorInfrared": {
+            "assets": [
+                "S2A_MSIL2A_colorInfrared"          
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2B_colorInfrared": {
+            "assets": [
+                "S2B_colorInfrared"           
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2B_MSIL2A_colorInfrared": {
+            "assets": [
+                "S2B_MSIL2A_colorInfrared"         
             ],
             "bidx": [1,2,3],
             "rescale": [
