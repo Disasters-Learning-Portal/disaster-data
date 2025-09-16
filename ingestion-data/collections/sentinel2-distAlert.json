@@ -25,13 +25,31 @@
         }
     },
     "item_assets": {
-        "202409_Hurricane_Helene_ARIA_OPERA-DIST-ALERT_VEG-ANOM-MAX_S2A-2m": {
-            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly - 2024 Hurricane Helene.",
+        "veg-anom-max": {
+            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly value.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX) [2024 Hurricane Helene]",
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "veg-dist-status": {
+            "description": "S2 ARIA OPERA vegetation disturbance status.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG DIST STATUS)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "gen-anom-max": {
+            "description": "Generic disturbance maximum anomaly value.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN ANOM MAX)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
@@ -47,9 +65,33 @@
           }
     ],
     "renders": {
-        "dashboard": {
+        "veg-anom-max": {
             "assets": [
-                "202409_Hurricane_Helene_ARIA_OPERA-DIST-ALERT_VEG-ANOM-MAX_S2A-2m"
+                "veg-anom-max"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "veg-dist-status": {
+            "assets": [
+                "veg-dist-status"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "gen-anom-max": {
+            "assets": [
+                "gen-anom-max"
             ],
             "colormap_name": "ylorrd",
             "rescale": [
