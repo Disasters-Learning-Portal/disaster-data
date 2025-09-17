@@ -61,9 +61,20 @@
                 ]
             ]
         },
-        "cloud-mask-c2": {
+        "qf-cloud-mask-c2": {
             "assets": [
-                "cloud-mask-c2"           
+                "qf-cloud-mask-c2"           
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        },
+        "qf-cloud-mask": {
+            "assets": [
+                "qf-cloud-mask"           
             ],
             "rescale": [
                 [

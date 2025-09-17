@@ -5,16 +5,21 @@
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
-    "filename_regex": ".*QF_Cloud_.*.tif$",
+    "filename_regex": ".*.tif$",
     "assets": {
         "cloud-mask": {
             "description": "Black marble cloud mask",
-            "regex": ".*_QF_Cloud_Mask_.*",
+            "regex": ".*Cloud_V.*.tif",
             "title": "Black marble cloud mask"
         },
-        "cloud-mask-c2": {
+        "qf-cloud-mask-c2": {
             "description": "Black marble cloud mask c2",
             "regex": ".*_QF_Cloud_MaskC2_.*",
+            "title": "Black marble cloud mask c2"
+        },
+        "qf-cloud-mask": {
+            "description": "Black marble cloud mask c2",
+            "regex": ".*_QF_Cloud_.*",
             "title": "Black marble cloud mask c2"
         }
     },
