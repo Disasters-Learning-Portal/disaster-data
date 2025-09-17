@@ -1,7 +1,7 @@
 {
     "id": "ndvi-change",
     "dashboard:is_periodic": false,
-    "dashboard:time_interval": "day",
+    "dashboard:time_interval": "P1D",
     "description": "TBD",
     "extent": {
         "spatial": {
