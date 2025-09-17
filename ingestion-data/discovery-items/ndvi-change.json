@@ -1,0 +1,18 @@
+{
+    "collection": "ndvi-change",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-2/NDVI",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*NDVIchange.*.tif$",
+    "assets": {
+        "ndvi-change": {
+            "description": "NDVI Change",
+            "regex": ".*NDVIchange.tif$",
+            "title": "NDVI Change"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "{}"
+}
