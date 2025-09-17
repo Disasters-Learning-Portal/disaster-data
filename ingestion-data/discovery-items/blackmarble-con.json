@@ -9,25 +9,25 @@
     "assets": {
         "VJ146A31": {
             "description": "Black marble VJ146A31",
-            "regex": ".*_BRDFCorrected.*.tif$",
+            "regex": ".*VJ146A31.*.tif$",
             "title": "Black marble VJ146A31"
         },
         "VJ146A32": {
             "description": "Black marble VJ146A32",
-            "regex": ".*_BRDFCorrected.*.tif$",
+            "regex": ".*VJ146A32.*.tif$",
             "title": "Black marble VJ146A32"
         },
         "VJ146A33": {
             "description": "Black marble VJ146A33",
-            "regex": ".*_BRDFCorrected.*.tif$",
+            "regex": ".*VJ146A33.*.tif$",
             "title": "Black marble VJ146A33"
         },
         "VJ146A34": {
             "description": "Black marble VJ146A34",
-            "regex": ".*_BRDFCorrected.*.tif$",
+            "regex": ".*VJ146A34.*.tif$",
             "title": "Black marble VJ146A34"
         }
     },
-    "id_regex": ".*_(.*).tif$",
-    "id_template": "{}"
+    "id_regex": ".*_(\\d{4}-\\d{2}_monthly)\\.tif",
+    "id_template": "blackmarble_Con-{}"
 }

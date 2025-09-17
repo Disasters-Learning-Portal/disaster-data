@@ -14,5 +14,5 @@
         }
     },
     "id_regex": "(.*).tif$",
-    "id_template": "{}"
+    "id_template": "blackmarble-hd-{}"
 }

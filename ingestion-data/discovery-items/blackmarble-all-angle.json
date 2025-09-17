@@ -1,18 +1,18 @@
 {
-    "collection": "blackmarble-brdf",
+    "collection": "blackmarble-all-angle",
     "bucket": "nasa-disasters",
-    "prefix": "drcs_activations_new/Blackmarble/brdf-corrected/",
+    "prefix": "drcs_activations_new/Blackmarble/all-angle/",
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
     "filename_regex": ".*.tif$",
     "assets": {
         "brdf": {
-            "description": "Black marble BRDF",
-            "regex": ".*_BRDFCorrected.*.tif$",
-            "title": "Black marble BRDF Corrected"
+            "description": "Black marble All Angle Composite",
+            "regex": ".*.tif$",
+            "title": "Black marble  All Angle Composite"
         }
     },
-    "id_regex": ".*_(.*).tif$",
+    "id_regex": "(.*).tif$",
     "id_template": "{}"
 }
