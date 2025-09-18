@@ -24,7 +24,25 @@
         }
     },
     "item_assets": {
-        "s1-opera-dswx": {
+        "wtr": {
+            "description": "Sentinel-1_opera_dswx",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-1_opera_dswx",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bwtr": {
+            "description": "Sentinel-1_opera_dswx",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-1_opera_dswx",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bwtr-changeMap": {
             "description": "Sentinel-1_opera_dswx",
             "roles": [
                 "data",
@@ -42,14 +60,25 @@
         }
     ],
     "renders": {
-        "dashboard": {
+        "wtr": {
             "assets": [
-                "s1-opera-dswx"
+                "wtr"
             ],
             "rescale": [
                 [
                     0,
-                    255
+                    1
+                ]
+            ]
+        },
+        "bwtr": {
+            "assets": [
+                "bwtr"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
                 ]
             ]
         }
