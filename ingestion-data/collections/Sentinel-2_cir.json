@@ -25,31 +25,31 @@
         }
     },
     "item_assets": {
-        "S2A_colorInfrared": {
+        "S2A": {
             "description": "S2A color infrared imagery composites.",
             "roles": ["data", "layer"],
             "title": "Sentinel-2 A Color Infrared",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "S2A_MSIL2A_colorInfrared": {
+        "S2A_MSIL2A": {
             "description": "S2A MSIL color infrared imagery composites.",
             "roles": ["data", "layer"],
             "title": "Sentinel-2 A Mission Standard Image Level (MSIL) Color Infrared",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "S2B_colorInfrared": {
+        "S2B": {
             "description": "S2B color infrared imagery composites.",
             "roles": ["data", "layer"],
             "title": "Sentinel-2 B Color Infrared",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "S2B_MSIL2A_colorInfrared": {
+        "S2B_MSIL2A": {
             "description": "S2B MSIL color infrared imagery composites.",
             "roles": ["data", "layer"],
             "title": "Sentinel-2 B Mission Standard Image Level (MSIL) Color Infrared",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "S2C_colorInfrared": {
+        "S2C": {
             "description": "S2C color infrared imagery composites.",
             "roles": ["data", "layer"],
             "title": "Sentinel-2 B Color Infrared",
@@ -68,9 +68,9 @@
           }
     ],
     "renders": {
-        "S2A_colorInfrared": {
+        "S2A": {
             "assets": [
-                "S2A_colorInfrared"           
+                "S2A"           
             ],
             "bidx": [1,2,3],
             "rescale": [
@@ -80,9 +80,9 @@
                 ]
             ]
         },
-        "S2A_MSIL2A_colorInfrared": {
+        "S2A_MSIL2A": {
             "assets": [
-                "S2A_MSIL2A_colorInfrared"          
+                "S2A_MSIL2A"          
             ],
             "bidx": [1,2,3],
             "rescale": [
@@ -92,9 +92,9 @@
                 ]
             ]
         },
-        "S2B_colorInfrared": {
+        "S2B": {
             "assets": [
-                "S2B_colorInfrared"           
+                "S2B"           
             ],
             "bidx": [1,2,3],
             "rescale": [
@@ -104,9 +104,21 @@
                 ]
             ]
         },
-        "S2B_MSIL2A_colorInfrared": {
+        "S2B_MSIL2A": {
             "assets": [
-                "S2B_MSIL2A_colorInfrared"         
+                "S2B_MSIL2A"         
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2C": {
+            "assets": [
+                "S2C"         
             ],
             "bidx": [1,2,3],
             "rescale": [

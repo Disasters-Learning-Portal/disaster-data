@@ -7,33 +7,33 @@
     "dry_run": false,
     "filename_regex": ".*.tif$",
     "assets": {
-      "S2A_colorInfrared": {
+      "S2A": {
         "description": "S2A color infrared imagery composites.",
         "regex": ".*_S2A_colorInfrared.*.tif$",
         "title": "Sentinel-2 A Color Infrared"
       },
-      "S2A_MSIL2A_colorInfrared": {
+      "S2A_MSIL2A": {
         "description": "S2A MSIL color infrared imagery composites.",
         "regex": ".*_S2A_MSIL2A_colorInfrared.*.tif$",
         "title": "Sentinel-2 A Mission Standard Image Level (MSIL) Color Infrared"
       },
-      "S2B_colorInfrared": {
+      "S2B": {
         "description": "S2B color infrared imagery composites.",
         "regex": ".*_S2B_colorInfrared.*.tif$",
         "title": "Sentinel-2 B Color Infrared"
       },
-      "S2B_MSIL2A_colorInfrared": {
+      "S2B_MSIL2A": {
         "description": "S2B MSIL color infrared imagery composites.",
         "regex": ".*_S2B_MSIL2A_colorInfrared.*.tif$",
         "title": "Sentinel-2 B Mission Standard Image Level (MSIL) Color Infrared"
       },
-      "S2C_MSIL2A_colorInfrared": {
+      "S2C": {
         "description": "S2C color infrared imagery composites.",
         "regex": ".*_S2C_colorInfrared.*.tif$",
         "title": "Sentinel-2 C Mission Standard Image Level (MSIL) Color Infrared"
       }
     },
-    "id_regex": "(.*).tif$",
+    "id_regex": ".*([^_]+_[^_]+_[^_]+).*?(\\d{4}-\\d{2}-\\d{2}_day)\\.tif$",
     "id_template": "{}"
   }
   
