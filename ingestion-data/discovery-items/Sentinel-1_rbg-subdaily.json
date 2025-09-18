@@ -1,0 +1,23 @@
+{
+    "collection": "S1-OperaDSWX",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/opera_dswx/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "wtr": {
+            "description": "Water mask",
+            "regex": ".*_WTR_.*\\.tif$",
+            "title": "Water mask"
+        },
+        "bwtr": {
+            "description": "Binary water mask",
+            "regex": ".*_BWTR_(?!ChngMap).*\\.tif$",
+            "title": "Binary water mask"
+        }
+    },
+    "id_regex": ".*_(\\d{4}-\\d{2}-\\d{2}_day)\\.tif$",
+    "id_template": "dswx-{}"
+}
