@@ -1,6 +1,6 @@
 {
     "id": "esi-12wk-global",
-    "dashboard:is_periodic": false,
+    "dashboard:is_periodic": true,
     "dashboard:time_interval": "P1W",
     "description": "The global dataset, called the Evaporative Stress Index (ESI), available online and produced weekly at 5-kilometer resolution for the entire globe, reveals regions of drought where vegetation is stressed due to lack of water, enabling agriculture ministries to provide farmers with actionable advice about irrigation. The ESI can capture early signals of “flash drought,” a condition brought on by extended periods of hot, dry, and windy conditions leading to rapid soil moisture depletion. Reduced rates of water loss can be observed through the use of land surface temperature before it can be observed through decreases in vegetation health or “greenness.” The ESI describes soil moisture across the landscape without using observed rainfall data. This is critical in developing regions and other parts of the world lacking sufficient ground-based observations of rainfall. The ESI is based on satellite observations of land surface temperature, which are used to estimate water loss due to evapotranspiration (ET), the loss of water via evaporation from soil and plant surfaces and via transpiration through plant leaves. Generally, healthy green vegetation with access to an adequate supply of water warms at a much slower rate than does dry and/or stressed vegetation. Based on variations in land surface temperature, the ESI indicates how the current rate of ET compares to normal conditions. Negative ESI values show below normal ET rates, indicating vegetation that stressed due to inadequate soil moisture. (Plants’ first response when stressed from lack of water is to reduce their transpiration to conserve water within the plant.)",
     "extent": {
@@ -8,7 +8,7 @@
             "bbox": [
                 [
                     -180,
-                    -90,
+                    -60,
                     180,
                     90
                 ]
@@ -49,8 +49,8 @@
             "colormap_name": "magma",
             "rescale": [
                 [
-                    -3,
-                    3
+                    -3.6,
+                    3.6
                 ]
             ]
         }
