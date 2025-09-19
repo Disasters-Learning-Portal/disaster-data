@@ -26,6 +26,7 @@
     "item_assets": {
         "vsm0-200cm": {
             "description": "Daily soil moisture percentiles for the full 0-200 cm soil column over CONUS. Values compare current conditions against a 33-year climatology, reflecting long-term wetness or dryness. This layer responds slowly to precipitation or drying, capturing deep soil changes useful for drought and groundwater studies.",
+            "roles": [
                 "data",
                 "layer"
             ],

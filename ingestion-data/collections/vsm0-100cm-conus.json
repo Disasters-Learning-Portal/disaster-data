@@ -26,6 +26,7 @@
     "item_assets": {
         "vsm0-100cm": {
             "description": "Daily soil moisture percentiles for the 0-100 cm cumulative soil layer over CONUS. Values compare current conditions against a 33-year climatology, providing context for how unusually wet or dry the soil is. This layer balances short-term surface changes with slower deep-layer responses, making it useful for drought, flood, and agricultural applications.",
+            "roles": [ 
                 "data",
                 "layer"
             ],
