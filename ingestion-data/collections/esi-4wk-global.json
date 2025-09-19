@@ -38,8 +38,12 @@
     "links": [],
     "providers": [
         {
-            "name": "NASA"
-        }
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
     ],
     "renders": {
         "dashboard": {
