@@ -1,11 +1,11 @@
 {
-    "collection": "sentinel-1-coherence-monthly",
+    "collection": "sentinel-1-coherence-yearly",
     "bucket": "nasa-disasters",
     "prefix": "drcs_activations_new/Sentinel-1/coherence/",
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
-    "filename_regex": ".*monthly.tif$",
+    "filename_regex": ".*year.*.tif$",
     "assets": {
         "ascending": {
             "description": "ascending",
@@ -18,6 +18,6 @@
             "title": "descending"
         }
     },
-    "id_regex": ".*(\\d{4}-\\d{2}_monthly)\\.tif$",
+    "id_regex": ".*_([^_]+_[^_]+_[^_]+_[^_]+)\\.tif$",
     "id_template": "sentinel-1-coherence-{}"
 }
