@@ -2,7 +2,7 @@
     "id": "vsm0-40cm-conus",
     "dashboard:is_periodic": true,
     "dashboard:time_interval": "P1D",
-    "description": "The NASA SPoRT (Short-term Prediction Research and Transition Center) Land Information System (LIS) provides critical relative soil moisture data products that support disaster monitoring and response efforts across the United States. These high-resolution datasets, typically available at 3-kilometer spatial resolution, offer daily updates on soil moisture conditions at multiple depths (0-40cm, 10-40cm, 40-100cm, and 0-200cm) using advanced land surface modeling techniques. The relative soil moisture products represent the current soil water content as a percentile compared to the historical record for that location and time of year, enabling disaster coordinators to quickly identify areas experiencing abnormally dry or wet conditions. This information proves invaluable for assessing drought severity, flood risk potential, wildfire danger, and agricultural stress, while also supporting post-disaster recovery efforts by helping determine baseline conditions and monitoring the return to normal moisture levels. The data, distributed in Cloud Optimized GeoTIFF (COG) format, integrates seamlessly with GIS platforms and web-based mapping applications, providing emergency managers, agricultural specialists, and water resource managers with near real-time intelligence for informed decision-making during critical disaster preparedness and response operations.",
+    "description": "The NASA SPoRT Land Information System (LIS) 0-40 cm Soil Moisture Percentile product provides daily maps of shallow subsurface soil moisture anomalies across the contiguous United States at ~3 km resolution. Percentiles are calculated against a 33-year climatology (1981-2013) to place current soil conditions in historical context. This cumulative layer combines the 0-10 cm and 10-40 cm depths, making it responsive to short-term precipitation, snowmelt, and drying episodes while still reflecting intermediate soil storage. Compared to the 0-10 cm layer, the 0-40 cm depth responds more gradually, with anomalies typically evolving over several days. This product is especially useful for drought onset monitoring, agricultural decision support, and fire-weather risk assessments, where short-to-intermediate timescale soil responses are most relevant.",
     "extent": {
         "spatial": {
             "bbox": [
@@ -25,7 +25,7 @@
     },
     "item_assets": {
         "vsm0-40cm": {
-            "description": "Daily estimates of volumetric soil moisture over CONUS.",
+            "description": "Daily soil moisture percentiles for the 0-40 cm cumulative soil layer over CONUS. Values compare present conditions with a 33-year climatology, showing how unusually wet or dry soils are relative to the day of year. This layer reacts quickly to rainfall or drying but more gradually than surface-only layers, making it valuable for agricultural, hydrological, and fire risk applications.",
             "roles": [
                 "data",
                 "layer"
