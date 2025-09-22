@@ -1,0 +1,23 @@
+{
+    "collection": "planet-truecolor-eq",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Planet/true",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "true-eq1": {
+            "description": "true-eq1",
+            "regex": ".*_EQ1_.*\\.tif$",
+            "title": "true-eq1"
+        },
+        "true-eq2": {
+            "description": "true-eq2",
+            "regex": ".*_EQ2_.*\\.tif$",
+            "title": "true-eq2"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}_day)\\.tif$",
+    "id_template": "planet-truecolor-eq-{}"
+}
