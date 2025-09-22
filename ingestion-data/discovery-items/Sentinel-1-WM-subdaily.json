@@ -1,0 +1,23 @@
+{
+    "collection": "sentinel-1-rgb-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/WM/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*Z.tif$",
+    "assets": {
+        "gpufed": {
+            "description": "Water mask",
+            "regex": ".*_gpufed_.*\\.tif$",
+            "title": "Water mask"
+        },
+        "gpuned": {
+            "description": "Binary water mask",
+            "regex": ".*_gpuned_.*\\.tif$",
+            "title": "Binary water mask"
+        }
+    },
+    "id_regex": ".*_(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z)\\.tif$",
+    "id_template": "sentinel-1-WM-{}"
+}

@@ -1,16 +1,16 @@
 {
-    "collection": "blackmarble-hd-daily-composite",
+    "collection": "blackmarble-daily-composite",
     "bucket": "nasa-disasters",
-    "prefix": "drcs_activations_new/Blackmarble/hd/",
+    "prefix": "drcs_activations_new/Blackmarble/daily-composite/",
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
     "filename_regex": ".*.tif$",
     "assets": {
-        "brdf": {
-            "description": "Black marble HD daily composite",
+        "bm-day": {
+            "description": "Black marble daily composite",
             "regex": ".*.tif$",
-            "title": "Black marble HD daily composite"
+            "title": "Black marble daily composite"
         }
     },
     "id_regex": "(.*).tif$",

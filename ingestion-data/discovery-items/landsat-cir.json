@@ -18,6 +18,6 @@
             "title": "Landsat 9 Colorinfrared"
         }
     },
-    "id_regex": "(.*).tif$",
-    "id_template": "{}"
+    "id_regex": ".*_(\\d{4}-\\d{2}-\\d{2}_day).tif$",
+    "id_template": "landsat-cir-{}"
 }
