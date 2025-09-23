@@ -1,0 +1,43 @@
+{
+    "collection": "ecostress-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/ECOSTRESS/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+      "control-lst": {
+          "regex": ".*ControlData.*SDS_LST(?!_err).*\\.tif$",
+          "title": "control-lst",
+          "description": "control-lst"
+      },
+      "control-lst-err": {
+          "regex": ".*ControlData.*SDS_LST_err.*\\.tif$",
+          "title": "control-lst-err",
+          "description": "control-lst-err"
+      },
+      "control-qc": {
+          "regex": ".*ControlData.*SDS_QC.*\\.tif$",
+          "title": "control-qc",
+          "description": "control-qc"
+      },
+      "lst": {
+          "regex": "^(?!.*ControlData).*SDS_LST(?!_err).*\\.tif$",
+          "title": "lst",
+          "description": "lst"
+      },
+      "lst-err": {
+          "regex": "^(?!.*ControlData).*SDS_LST_err.*\\.tif$",
+          "title": "lst-err",
+          "description": "lst-err"
+      },
+      "qc": {
+          "regex": "^(?!.*ControlData).*SDS_QC.*\\.tif$",
+          "title": "qc",
+          "description": "qc"
+      }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z)\\.tif$",
+    "id_template": "ecostress-{}"
+}
