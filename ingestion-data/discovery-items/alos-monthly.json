@@ -1,0 +1,23 @@
+{
+    "collection": "alos2-dpm-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/ALOS2/DPM",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_monthly.tif$",
+    "assets": {
+        "dpm": {
+            "description": "dpm",
+            "regex": "^(?!.*(_cvd_)).*\\.tif$",
+            "title": "dpm"
+        },
+        "dpm-cvd": {
+            "description": "dpm-cvd",
+            "regex": ".*cvd.*\\.tif$",
+            "title": "dpm-cvd"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}_monthly)\\.tif$",
+    "id_template": "alos2-dpm-{}"
+}
