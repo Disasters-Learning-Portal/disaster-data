@@ -24,31 +24,58 @@
         }
     },
     "item_assets": {
-        "gpufed": {
-            "description": "GPU fed.",
+        "gpufed-RTC20": {
+            "description": "GPU fed at 20m resolution.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpufed",
+            "title": "gpufed RTC20",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "gpuned": {
-            "description": "GPU ned.",
+        "gpufed-RTC30": {
+            "description": "GPU fed at 30m resolution.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpuned",
+            "title": "gpufed RTC30",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "gdufed": {
-            "description": "GPU fed.",
+        "gpuned-RTC20": {
+            "description": "GPU ned at 20m resolution.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gdufed",
+            "title": "gpuned RTC20",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "gpuned-RTC30": {
+            "description": "GPU ned at 30m resolution.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "gpuned RTC30",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "gdufed-RTC20": {
+            "description": "GDU fed at 20m resolution.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "gdufed RTC20",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "gdufed-RTC30": {
+            "description": "GDU fed at 30m resolution.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "gdufed RTC30",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
@@ -60,9 +87,9 @@
         }
     ],
     "renders": {
-        "gpufed": {
+        "gpufed-RTC20": {
             "assets": [
-                "gpufed"
+                "gpufed-RTC20"
             ],
             "bidx": [1,2,3],
             "rescale": [
@@ -72,9 +99,9 @@
                 ]
             ]
         },
-        "gpuned": {
+        "gpufed-RTC30": {
             "assets": [
-                "gpuned"
+                "gpufed-RTC30"
             ],
             "bidx": [1,2,3],
             "rescale": [
@@ -84,9 +111,45 @@
                 ]
             ]
         },
-        "gdufed": {
+        "gpuned-RTC20": {
             "assets": [
-                "gdufed"
+                "gpuned-RTC20"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "gpuned-RTC30": {
+            "assets": [
+                "gpuned-RTC30"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "gdufed-RTC20": {
+            "assets": [
+                "gdufed-RTC20"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "gdufed-RTC30": {
+            "assets": [
+                "gdufed-RTC30"
             ],
             "bidx": [1,2,3],
             "rescale": [
