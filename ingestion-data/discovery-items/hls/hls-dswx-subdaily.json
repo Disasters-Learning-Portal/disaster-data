@@ -1,0 +1,18 @@
+{
+    "collection": "hls-dswx-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/HLS/dswx/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*Z.tif$",
+    "assets": {
+        "S2A": {
+            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly - 2024 Hurricane Helene.",
+            "regex": ".*S2A_mosaic.*.tif$",
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX) [2024 Hurricane Helene]"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z).tif$",
+    "id_template": "hls-dswx-{}"
+}
