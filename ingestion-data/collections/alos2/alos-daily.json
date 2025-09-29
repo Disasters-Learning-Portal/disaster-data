@@ -2,7 +2,7 @@
     "id": "alos2-dpm-daily",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
-    "description": "The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, Sentinel-1A and Sentinel-1B, which provide all-weather, day-and-night radar imaging for land and ocean surfaces, monitoring the marine environment, vegetation mapping, and other major applications. With multi-temporal analyses, remote sensing gives a unique perspective of how cities evolve. The key element for mapping rural to urban land use change is the ability to discriminate between rural uses (farming, pasture, forests) and urban use (residential, commercial, recreational). Remote sensing methods can be employed to classify types of land use in a practical, economical and repetitive fashion, over large areas.",
+    "description": "The Advanced Land Observing Satellite-2 (ALOS-2, DAICHI-2) is a follow-on mission from the ALOS Daichi. ALOS has contributed to cartography, regional observation, disaster monitoring, and resource surveys, since its launch in 2006. ALOS-2 will succeed this mission with enhanced capabilities. JAXA conducted research and development activities for ALOS-2 to improve wide and high-resolution observation technologies developed for ALOS in order to further fulfill social needs. These social needs include: 1) Disaster monitoring of damage areas, both in considerable detail, and when these areas may be large 2) Continuous updating of data archives related to national land and infrastructure information 3) Effective monitoring of cultivated areas 4) Global monitoring of tropical rain forests to identify carbon sinks.",
     "extent": {
         "spatial": {
             "bbox": [

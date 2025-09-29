@@ -2,7 +2,8 @@
     "id": "sentinel-1-coherence-monthly",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1M",
-    "description": "The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, Sentinel-1A and Sentinel-1B, which provide all-weather, day-and-night radar imaging for land and ocean surfaces, monitoring the marine environment, vegetation mapping, and other major applications. With multi-temporal analyses, remote sensing gives a unique perspective of how cities evolve. The key element for mapping rural to urban land use change is the ability to discriminate between rural uses (farming, pasture, forests) and urban use (residential, commercial, recreational). Remote sensing methods can be employed to classify types of land use in a practical, economical and repetitive fashion, over large areas.",
+    "description": "Interferometric SAR (InSAR) compares the phase measurements of two SAR acquisitions to look for differences, which indicate that the ground has moved relative to the sensor in the time between the two acquisitions. The spectra of two images used for InSAR must overlap well enough to generate interferometric fringes, which are used to identify and quantify surface deformation. Correlation indicates the comparability of the phase information between the two acquisitions. The magnitude of the correlation is commonly referred to as coherence. Coherence values are also useful for change detection, or to determine the variability of surface characteristics in an area. Low coherence values serve as an indicator of change, and high coherence values identify areas with stable or persistent scatterers. When coherence values are aggregated over time, we can see patterns of variability across the landscape.",
+    "title": "Sentinel-1 Coherence Monthly",
     "extent": {
         "spatial": {
             "bbox": [
@@ -17,15 +18,15 @@
         "temporal": {
             "interval": [
                 [
-                    "2020-09-14T00:00:00Z",
-                    "2024-09-30T23:59:59Z"
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
                 ]
             ]
         }
     },
     "item_assets": {
         "ascending": {
-            "description": "ascending.",
+            "description": "ascending",
             "roles": [
                 "data",
                 "layer"
@@ -34,7 +35,7 @@
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "descending": {
-            "description": "descending.",
+            "description": "descending",
             "roles": [
                 "data",
                 "layer"
@@ -79,7 +80,6 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "Sentinel-1 Coherence Monthly",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }

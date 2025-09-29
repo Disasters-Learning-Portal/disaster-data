@@ -2,7 +2,8 @@
     "id": "sentinel-1-rgb-subdaily",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "PT1S",
-    "description": "The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, Sentinel-1A and Sentinel-1B, which provide all-weather, day-and-night radar imaging for land and ocean surfaces, monitoring the marine environment, vegetation mapping, and other major applications. With multi-temporal analyses, remote sensing gives a unique perspective of how cities evolve. The key element for mapping rural to urban land use change is the ability to discriminate between rural uses (farming, pasture, forests) and urban use (residential, commercial, recreational). Remote sensing methods can be employed to classify types of land use in a practical, economical and repetitive fashion, over large areas.",
+    "description": "The True Color RGB provides a product of how the surface would look to the naked eye from space. The True Color RGB is produced using the 3 visible wavelength bands (red, green, and blue) from the respective sensor. Some minor atmospheric corrections have occurred. A Color Infrared composite depicts healthy vegetation as red, water as blue. Some minor atmospheric corrections have occurred.",
+    "title": "Sentinel-1 RGB subdaily",
     "extent": {
         "spatial": {
             "bbox": [
@@ -17,65 +18,65 @@
         "temporal": {
             "interval": [
                 [
-                    "2023-01-01T01:59:40Z",
-                    "2024-11-23T23:48:10Z"
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
                 ]
             ]
         }
     },
     "item_assets": {
         "gpufed-RTC20": {
-            "description": "GPU fed at 20m resolution.",
+            "description": "gpufed-20m",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpufed RTC20",
+            "title": "gpufed-20m",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "gpufed-RTC30": {
-            "description": "GPU fed at 30m resolution.",
+            "description": "gpufed-30m",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpufed RTC30",
+            "title": "gpufed-30m",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "gpuned-RTC20": {
-            "description": "GPU ned at 20m resolution.",
+            "description": "gpuned-20m",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpuned RTC20",
+            "title": "gpuned-20m",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "gpuned-RTC30": {
-            "description": "GPU ned at 30m resolution.",
+            "description": "gpuned-30m",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpuned RTC30",
+            "title": "gpuned-30m",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "gdufed-RTC20": {
-            "description": "GDU fed at 20m resolution.",
+            "description": "gdufed-20m",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gdufed RTC20",
+            "title": "gdufed-20m",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "gdufed-RTC30": {
-            "description": "GDU fed at 30m resolution.",
+            "description": "gdufed-30m",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gdufed RTC30",
+            "title": "gdufed-30m",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
@@ -165,7 +166,6 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "Sentinel-1 RGB subdaily",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }

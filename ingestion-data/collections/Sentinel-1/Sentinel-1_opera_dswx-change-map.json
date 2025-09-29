@@ -2,7 +2,8 @@
     "id": "S1-OperaDSWX-changeMap",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
-    "description": "The Dynamic Surface Water eXtent (DSWx) products map pixel-wise surface water detections using optical or SAR imagery. The DSWx suite is composed of complementary products, which are named according to their input datasets. Specifically, a separate DSWx product is generated from Sentinel-1, NISAR, ,, and the Harmonized Landsat Sentinel-2 (HLS) data. The products are designed to share the same structure, GeoTiff file format, file-naming convention, and have posting of 30 m. These DSWx products are provided as an analysis ready dataset but are not harmonized across the different sensors. All products will be accessible through NASA’s Physical Oceanography Distributed Active Archive Center (PO.DAAC). Below we provide per DSWx product the product specification document as well as the corresponding product samples conforming to the detailed specifications. Interactive guides are provided demonstrating how products can be loaded and manipulated in an open-source GIS package. Interactive white papers provided through a Jupyter notebook environment outline product introductions and showcase select applications.",
+    "description": "The Dynamic Surface Water eXtent (DSWx) products map pixel-wise surface water detections using optical or SAR imagery. The DSWx suite is composed of complementary products, which are named according to their input datasets. Specifically, a separate DSWx product is generated from Sentinel-1, NISAR, ,, and the Harmonized Landsat Sentinel-2 (HLS) data. The products are designed to share the same structure, GeoTiff file format, file-naming convention, and have posting of 30 m. These DSWx products are provided as an analysis ready dataset but are not harmonized across the different sensors. All products will be accessible through NASA’s Physical Oceanography Distributed Active Archive Center (PO.DAAC).",
+    "title": "Sentinel 1 Opera DSWX Change map",
     "extent": {
         "spatial": {
             "bbox": [
@@ -17,20 +18,20 @@
         "temporal": {
             "interval": [
                 [
-                    "2024-09-26T00:00:00Z",
-                    "2024-10-11T00:00:00Z"
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-25T00:00:00Z"
                 ]
             ]
         }
     },
     "item_assets": {
         "bwtr-changeMap": {
-            "description": "Sentinel-1_opera_dswx",
+            "description": "Sentinel-1_opera_dswx-bwtr-changeMap",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Sentinel-1_opera_dswx",
+            "title": "Sentinel-1_opera_dswx-bwtr-changeMap",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
@@ -59,7 +60,6 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "Sentinel 1 Opera DSWX Change map",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }
