@@ -3,7 +3,7 @@
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
     "title": "Sentinel-2 Color Infrared Imagery",
-    "description": "Sentinel-2 color infrared (CIR) imagery uses near-infrared, red, and green bands to highlight vegetation health, land cover, and water features by displaying healthy vegetation in shades of red. This band combination enhances the contrast between vegetated and non-vegetated surfaces, making it valuable for monitoring agriculture, forestry, and ecological change.",
+    "description": "The Color Infrared composite is created using the near-infrared, red, and green channels, allowing for the ability to see areas impacted by the fires. The near-infrared gives the ability to see through thin clouds. Healthy vegetation is shown as red, water is in blue.",
     "extent": {
         "spatial": {
             "bbox": [
@@ -18,41 +18,41 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-01-01T00:00:00Z",
-                    null
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
                 ]
             ]
         }
     },
     "item_assets": {
         "S2A": {
-            "description": "S2A color infrared imagery composites.",
+            "description": "S2A_CIR_IMG_Comp",
             "roles": ["data", "layer"],
-            "title": "Sentinel-2 A Color Infrared",
+            "title": "S2A_CIR_IMG_Comp",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "S2A_MSIL2A": {
-            "description": "S2A MSIL color infrared imagery composites.",
+            "description": "S2A_MSIL_CIR_IMG_Comp",
             "roles": ["data", "layer"],
-            "title": "Sentinel-2 A Mission Standard Image Level (MSIL) Color Infrared",
+            "title": "S2A_MSIL_CIR_IMG_Comp",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "S2B": {
-            "description": "S2B color infrared imagery composites.",
+            "description": "S2B_CIR_IMG_Comp",
             "roles": ["data", "layer"],
-            "title": "Sentinel-2 B Color Infrared",
+            "title": "S2B_CIR_IMG_Comp",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "S2B_MSIL2A": {
-            "description": "S2B MSIL color infrared imagery composites.",
+            "description": "S2B_MSIL_CIR_IMG_Comp",
             "roles": ["data", "layer"],
-            "title": "Sentinel-2 B Mission Standard Image Level (MSIL) Color Infrared",
+            "title": "S2B_MSIL_CIR_IMG_Comp",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "S2C": {
-            "description": "S2C color infrared imagery composites.",
+            "description": "S2C_CIR_IMG_Comp",
             "roles": ["data", "layer"],
-            "title": "Sentinel-2 B Color Infrared",
+            "title": "S2C_CIR_IMG_Comp",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },

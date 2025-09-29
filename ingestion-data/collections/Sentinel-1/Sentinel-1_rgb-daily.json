@@ -2,7 +2,8 @@
     "id": "sentinel-1-rgb-daily",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
-    "description": "The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, Sentinel-1A and Sentinel-1B, which provide all-weather, day-and-night radar imaging for land and ocean surfaces, monitoring the marine environment, vegetation mapping, and other major applications. With multi-temporal analyses, remote sensing gives a unique perspective of how cities evolve. The key element for mapping rural to urban land use change is the ability to discriminate between rural uses (farming, pasture, forests) and urban use (residential, commercial, recreational). Remote sensing methods can be employed to classify types of land use in a practical, economical and repetitive fashion, over large areas.",
+    "description": "The True Color RGB provides a product of how the surface would look to the naked eye from space. The True Color RGB is produced using the 3 visible wavelength bands (red, green, and blue) from the respective sensor. Some minor atmospheric corrections have occurred. A Color Infrared composite depicts healthy vegetation as red, water as blue. Some minor atmospheric corrections have occurred.",
+    "title": "Sentinel-1 Daily RGB",
     "extent": {
         "spatial": {
             "bbox": [
@@ -17,24 +18,24 @@
         "temporal": {
             "interval": [
                 [
-                    "2024-09-14T00:00:00Z",
-                    "2024-09-26T23:00:00Z"
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-25T00:00:00Z"
                 ]
             ]
         }
     },
     "item_assets": {
         "n-rgb": {
-            "description": "GPU fed.",
+            "description": "n-rgb",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "gpufed",
+            "title": "n-rgb",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "rgb": {
-            "description": "rgb.",
+            "description": "rgb",
             "roles": [
                 "data",
                 "layer"
@@ -43,7 +44,7 @@
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "mosaic": {
-            "description": "mosaic.",
+            "description": "mosaic",
             "roles": [
                 "data",
                 "layer"
@@ -102,7 +103,6 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "Sentinel-1 RGB",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }

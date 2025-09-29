@@ -3,6 +3,7 @@
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
     "description": "The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, Sentinel-1A and Sentinel-1B, which provide all-weather, day-and-night radar imaging for land and ocean surfaces, monitoring the marine environment, vegetation mapping, and other major applications. With multi-temporal analyses, remote sensing gives a unique perspective of how cities evolve. The key element for mapping rural to urban land use change is the ability to discriminate between rural uses (farming, pasture, forests) and urban use (residential, commercial, recreational). Remote sensing methods can be employed to classify types of land use in a practical, economical and repetitive fashion, over large areas.",
+    "title": "Sentinel-1 AZI",
     "extent": {
         "spatial": {
             "bbox": [
@@ -60,7 +61,6 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "Sentinel-1 AZI",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }

@@ -3,7 +3,7 @@
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
     "title": "Blackmarble BRDF Corrected",
-    "description": "Black Marble HD is NASA's high-resolution nighttime lights product that captures Earth's artificial illumination patterns at at 500-meter or finer spatial resolution compared to the standard 750-meter resolution. These data products are derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB) sensor aboard the Suomi NPP and NOAA-20 satellites, which can detect even dim sources of visible and near-infrared light at night. The HD versions are often produced for specific areas of interest during disaster events or urban studies, providing enhanced visualization of power outages, infrastructure damage, and human activity patterns through careful atmospheric correction and stray light removal processing.",
+    "description": "Known by its long-name, VIIRS/NPP Lunar BRDF-Adjusted Nighttime Lights Yearly L3 Global 15 arc-second Linear Lat Lon Grid, this product contains 28 layers. They provide information on the NTL composite, the number of observations, quality, and standard deviation for multi-view zenith angle categories (near-nadir, off-nadir, and all angles), their snow-covered and snow-free statuses besides land-water mask, latitude and longitude coordinate information.",
     "extent": {
         "spatial": {
             "bbox": [
@@ -18,8 +18,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2024-09-28T00:00:00Z",
-                    "2025-09-28T23:59:59Z"
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
                 ]
             ]
         }
