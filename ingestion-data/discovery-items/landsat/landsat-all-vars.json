@@ -19,12 +19,12 @@
         },
         "nbr-ls08": {
             "description": "Index for identifying burned areas and assessing fire severity by comparing near-infrared and shortwave infrared reflectance.",
-            "regex": ".*(LC08|LS08)_NBR.*.tif$",
+            "regex": ".*(LC08|LS08).*NBR.*.tif$",
             "title": "Normalized burn ratio - Landsat 8"
         },
         "nbr-ls09": {
             "description": "Index for identifying burned areas and assessing fire severity by comparing near-infrared and shortwave infrared reflectance.",
-            "regex": ".*(LC09|LS09)_NBR.*.tif$",
+            "regex": ".*(LC09|LS09).*NBR.*.tif$",
             "title": "Normalized burn ratio - Landsat 9"
         },
         "mndwi-ls08": {
