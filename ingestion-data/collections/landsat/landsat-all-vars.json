@@ -1,0 +1,324 @@
+{
+    "id": "landsat-all-vars",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "day",
+    "description": "NASA Landsat satellites provide continuous Earth observations since 1972, capturing multispectral imagery across visible and infrared wavelengths. This collection includes multiple visualization products: true and natural color composites, color infrared for vegetation analysis, and calculated indices like NDVI for vegetation health, NBR for burn severity, and MNDWI for water detection. These products support environmental monitoring, disaster response, agriculture, and land cover mapping.",
+    "title": "Landsat - All Variables",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "cir-ls08": {
+            "description": "False-color composite using near-infrared, red, and green bands. Vegetation appears red, water dark, and urban areas gray-blue.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Color Infrared - Landsat 8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "cir-ls09": {
+            "description": "False-color composite using near-infrared, red, and green bands. Vegetation appears red, water dark, and urban areas gray-blue.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Color Infrared - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nbr-ls08": {
+            "description": "Index for identifying burned areas and assessing fire severity by comparing near-infrared and shortwave infrared reflectance.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Normalized burn ratio - Landsat 8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nbr-ls09": {
+            "description": "Index for identifying burned areas and assessing fire severity by comparing near-infrared and shortwave infrared reflectance.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Normalized burn ratio - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "mndwi-ls08": {
+            "description": "Water detection index using green and shortwave infrared bands. Enhances open water features and suppresses built-up areas.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Modified Normalized Difference Water Index - Landsat 8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "mndwi-ls09": {
+            "description": "Water detection index using green and shortwave infrared bands. Enhances open water features and suppresses built-up areas.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Modified Normalized Difference Water Index - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nc-ls08": {
+            "description": "Color-balanced composite using visible bands (red, green, blue) to approximate natural human vision of the landscape.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Natural Color - Landsat 8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nc-ls09": {
+            "description": "Color-balanced composite using visible bands (red, green, blue) to approximate natural human vision of the landscape.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Natural Color - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "ndvi-ls08": {
+            "description": "Vegetation health index comparing red and near-infrared reflectance. Higher values indicate healthier, denser vegetation.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Normalized Difference Vegetation Index - Landsat 8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "ndvi-ls09": {
+            "description": "Vegetation health index comparing red and near-infrared reflectance. Higher values indicate healthier, denser vegetation.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Normalized Difference Vegetation Index - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "tropics": {
+            "description": "Tropics - Landsat 9",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Tropics - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "tc-ls08": {
+            "description": "Standard RGB composite using visible bands (red, green, blue) without color balancing adjustments.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "True Color - Landsat 8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "tc-ls09": {
+            "description": "Standard RGB composite using visible bands (red, green, blue) without color balancing adjustments.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "True Color - Landsat 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "cir-ls08": {
+            "bidx": [1,2,3],
+            "assets": [
+                "cir-ls08"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "cir-ls09": {
+            "bidx": [1,2,3],
+            "assets": [
+                "cir-ls09"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "nbr-ls08": {
+            "assets": [
+                "nbr-ls08"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "nbr-ls09": {
+            "assets": [
+                "nbr-ls09"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "mndwi-ls08": {
+            "assets": [
+                "mndwi-ls08"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "mndwi-ls09": {
+            "assets": [
+                "mndwi-ls09"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "nc-ls08": {
+            "bidx": [1,2,3],
+            "assets": [
+                "nc-ls08"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "nc-ls09": {
+            "bidx": [1,2,3],
+            "assets": [
+                "nc-ls09"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "ndvi-ls08": {
+            "assets": [
+                "ndvi-ls08"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "ndvi-ls09": {
+            "assets": [
+                "ndvi-ls09"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "tropics": {
+            "assets": [
+                "tropics"
+            ],
+            "rescale": [
+                [
+                    0,
+                    300
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "tc-ls08": {
+            "bidx": [1,2,3],
+            "assets": [
+                "tc-ls08"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "tc-ls09": {
+            "bidx": [1,2,3],
+            "assets": [
+                "tc-ls09"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

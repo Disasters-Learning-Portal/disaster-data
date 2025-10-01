@@ -1,0 +1,78 @@
+{
+    "collection": "landsat-all-vars",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Landsat/colorIR",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "cir-ls08": {
+            "description": "False-color composite using near-infrared, red, and green bands. Vegetation appears red, water dark, and urban areas gray-blue.",
+            "regex": ".*(LC08|LS08).*(colorInfrared|colorIR).*.tif$",
+            "title": "Color Infrared - Landsat 8"
+        },
+        "cir-ls09": {
+            "description": "False-color composite using near-infrared, red, and green bands. Vegetation appears red, water dark, and urban areas gray-blue.",
+            "regex": ".*(LC09|LS09).*(colorInfrared|colorIR).*.tif$",
+            "title": "Color Infrared - Landsat 9"
+        },
+        "nbr-ls08": {
+            "description": "Index for identifying burned areas and assessing fire severity by comparing near-infrared and shortwave infrared reflectance.",
+            "regex": ".*(LC08|LS08)_NBR.*.tif$",
+            "title": "Normalized burn ratio - Landsat 8"
+        },
+        "nbr-ls09": {
+            "description": "Index for identifying burned areas and assessing fire severity by comparing near-infrared and shortwave infrared reflectance.",
+            "regex": ".*(LC09|LS09)_NBR.*.tif$",
+            "title": "Normalized burn ratio - Landsat 9"
+        },
+        "mndwi-ls08": {
+            "description": "Water detection index using green and shortwave infrared bands. Enhances open water features and suppresses built-up areas.",
+            "regex": ".*(LC08|LS08)_MNDWI.*.tif$",
+            "title": "Modified Normalized Difference Water Index - Landsat 8"
+        },
+        "mndwi-ls09": {
+            "description": "Water detection index using green and shortwave infrared bands. Enhances open water features and suppresses built-up areas.",
+            "regex": ".*(LC09|LS09)_MNDWI.*.tif$",
+            "title": "Modified Normalized Difference Water Index - Landsat 9"
+        },
+        "nc-ls08": {
+            "description": "Color-balanced composite using visible bands (red, green, blue) to approximate natural human vision of the landscape.",
+            "regex": ".*(LC08|LS08).*(naturalColor).*.tif$",
+            "title": "Natural Color - Landsat 8"
+        },
+        "nc-ls09": {
+            "description": "Color-balanced composite using visible bands (red, green, blue) to approximate natural human vision of the landscape.",
+            "regex": ".*(LC09|LS09).*(naturalColor).*.tif$",
+            "title": "Natural Color - Landsat 9"
+        },
+        "ndvi-ls08": {
+            "description": "Vegetation health index comparing red and near-infrared reflectance. Higher values indicate healthier, denser vegetation.",
+            "regex": ".*(LC08|LS08).*(NDVI).*.tif$",
+            "title": "Normalized Difference Vegetation Index - Landsat 8"
+        },
+        "ndvi-ls09": {
+            "description": "Vegetation health index comparing red and near-infrared reflectance. Higher values indicate healthier, denser vegetation.",
+            "regex": ".*(LC09|LS09).*(NDVI).*.tif$",
+            "title": "Normalized Difference Vegetation Index - Landsat 9"
+        },
+        "tropics": {
+            "description": "Tropics - Landsat 9",
+            "regex": ".*(TROPICS).*.tif$",
+            "title": "Tropics - Landsat 9"
+        },
+        "tc-ls08": {
+            "description": "Standard RGB composite using visible bands (red, green, blue) without color balancing adjustments.",
+            "regex": ".*(LC08|LS08).*(trueColor).*.tif$",
+            "title": "True Color - Landsat 8"
+        },
+        "tc-ls09": {
+            "description": "Standard RGB composite using visible bands (red, green, blue) without color balancing adjustments.",
+            "regex": ".*(LC09|LS09).*(trueColor).*.tif$",
+            "title": "True Color - Landsat 9"
+        }
+    },
+    "id_regex": ".*_(\\d{4}-\\d{2}-\\d{2}_day).tif$",
+    "id_template": "landsat-{}"
+}
