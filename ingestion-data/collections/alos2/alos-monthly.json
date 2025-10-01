@@ -18,7 +18,7 @@
             "interval": [
                 [
                     "2020-09-14T00:00:00Z",
-                    "2025-09-26T23:00:00Z"
+                    null
                 ]
             ]
         }
@@ -81,7 +81,7 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "ALOS2 DPM Monthly",
+    "title": "ALOS2 DPM Monthly timestep",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }
