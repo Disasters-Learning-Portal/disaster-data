@@ -1,0 +1,215 @@
+{
+    "id": "sentinel-1-all-vars-daily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "Sentinel-1 is a C-band synthetic aperture radar (SAR) mission providing all-weather, day-and-night imaging for disaster monitoring. This collection includes multiple SAR-derived products: RGB composites for visual analysis, displacement and deformation measurements for ground movement detection, damage assessment products for disaster impact evaluation, and water mapping layers for flood monitoring. SAR's ability to penetrate clouds makes it essential for rapid disaster response and environmental monitoring.",
+    "title": "Sentinel-1 Daily",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "aria": {
+            "description": "RGB composite derived from ARIA SAR processing for visual interpretation of radar backscatter patterns.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "ARIA RGB Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "azi": {
+            "description": "Azimuth offset measurements detecting horizontal ground displacement perpendicular to satellite flight direction.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Azimuth Offset",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "displacement": {
+            "description": "Ground displacement measurements derived from SAR interferometry showing surface movement magnitude.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Ground Displacement",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "deformation": {
+            "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Surface Deformation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "dmgAssess": {
+            "description": "Damage assessment product identifying areas of potential structural damage from disaster events.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Damage Assessment",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "dpm": {
+            "description": "Damage Proxy Map showing changes in SAR backscatter indicating potential building damage or destruction.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Damage Proxy Map",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hydrosar-wm-diff": {
+            "description": "Water mapping difference product showing changes in surface water extent between time periods for flood detection.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HydroSAR Water Map Difference",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rgb": {
+            "description": "RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RGB Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "aria": {
+            "assets": [
+                "aria"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "azi": {
+            "assets": [
+                "azi"
+            ],
+            "rescale": [
+                [
+                    -200,
+                    200
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "displacement": {
+            "assets": [
+                "displacement"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999
+        },
+        "deformation": {
+            "assets": [
+                "deformation"
+            ],
+            "rescale": [
+                [
+                    -60,
+                    60
+                ]
+            ],
+            "nodata": -9999
+        },
+        "dmgAssess": {
+            "assets": [
+                "dmgAssess"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "dpm": {
+            "assets": [
+                "dpm"
+            ],
+            "bidx": [1,2,3,4],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "hydrosar-wm-diff": {
+            "assets": [
+                "hydrosar-wm-diff"
+            ],
+            "rescale": [
+                [
+                    0,
+                    3
+                ]
+            ],
+            "nodata": 255
+        },
+        "rgb": {
+            "assets": [
+                "rgb"
+            ],
+            "bidx": [1,2,3,4],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
