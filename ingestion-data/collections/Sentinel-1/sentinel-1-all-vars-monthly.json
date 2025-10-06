@@ -1,0 +1,151 @@
+{
+    "id": "sentinel-1-all-vars-monthly",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1M",
+    "description": "Sentinel-1 is a C-band synthetic aperture radar (SAR) mission providing all-weather, day-and-night imaging for disaster monitoring. This collection includes multiple SAR-derived products: RGB composites for visual analysis, displacement and deformation measurements for ground movement detection, damage assessment products for disaster impact evaluation, and water mapping layers for flood monitoring. SAR's ability to penetrate clouds makes it essential for rapid disaster response and environmental monitoring.",
+    "title": "Sentinel-1 Monthly",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "aria": {
+            "description": "RGB composite from NASA's ARIA project combining SAR polarizations for visual analysis of surface features and changes.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "ARIA RGB Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "coherence": {
+            "description": "Interferometric coherence measuring surface stability between SAR image pairs, where high values (near 1) indicate minimal change and low values (near 0) indicate significant surface change from events like floods, earthquakes, or land cover changes.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Interferometric Coherence",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "dpm": {
+            "description": "Damage Proxy Map showing changes in SAR backscatter indicating potential building damage or destruction.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Damage Proxy Map",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "floodedArea": {
+            "description": "Binary flood extent map identifying areas currently inundated with water, derived from SAR analysis for disaster response and monitoring.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Flooded Area",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rtc": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RTC Backscatter",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "aria": {
+            "assets": [
+                "aria"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "coherence": {
+            "assets": [
+                "coherence"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "dpm": {
+            "assets": [
+                "dpm"
+            ],
+            "bidx": [1,2,3,4],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "floodedArea": {
+            "assets": [
+                "floodedArea"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "rtc": {
+            "assets": [
+                "rtc"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": -9999.0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

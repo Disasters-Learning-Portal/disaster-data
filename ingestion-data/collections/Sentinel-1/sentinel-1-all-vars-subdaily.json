@@ -1,0 +1,109 @@
+{
+    "id": "sentinel-1-all-vars-subdaily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1S",
+    "description": "Sentinel-1 is a C-band synthetic aperture radar (SAR) mission providing all-weather, day-and-night imaging for disaster monitoring. This collection includes multiple SAR-derived products: RGB composites for visual analysis, displacement and deformation measurements for ground movement detection, damage assessment products for disaster impact evaluation, and water mapping layers for flood monitoring. SAR's ability to penetrate clouds makes it essential for rapid disaster response and environmental monitoring.",
+    "title": "Sentinel-1 Subdaily",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "hydrosar-wm": {
+            "description": "HydroSAR water mapping product identifying surface water extent using SAR data for flood monitoring and wetland analysis.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HydroSAR Water Map",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rgb": {
+            "description": "RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RGB Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rtc": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RTC Backscatter",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "hydrosar-wm": {
+            "assets": [
+                "hydrosar-wm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    3
+                ]
+            ],
+            "nodata": 255
+        },
+        "rgb": {
+            "assets": [
+                "rgb"
+            ],
+            "bidx": [1,2,3,4],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "rtc": {
+            "assets": [
+                "rtc"
+            ],
+            "rescale": [
+                [
+                    0,
+                    50
+                ]
+            ],
+            "nodata": -9999.0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
