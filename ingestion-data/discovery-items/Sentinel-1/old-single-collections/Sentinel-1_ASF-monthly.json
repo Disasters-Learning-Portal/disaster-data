@@ -1,0 +1,18 @@
+{
+    "collection": "sentinel-1-asf-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/ASF/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*changedetection.*.tif$",
+    "assets": {
+        "change_detection": {
+            "description": "change_detection",
+            "regex": ".*_changedetection_.*\\.tif$",
+            "title": "change_detection"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-monthly)\\.tif$",
+    "id_template": "{}"
+}

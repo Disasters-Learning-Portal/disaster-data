@@ -1,0 +1,38 @@
+{
+    "collection": "sentinel-1-all-vars-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_monthly.tif$",
+    "assets": {
+        "aria": {
+            "description": "RGB composite from NASA's ARIA project combining SAR polarizations for visual analysis of surface features and changes.",
+            "regex": ".*aria.*.tif$",
+            "title": "ARIA RGB Composite"
+        },
+        "coherence": {
+            "description": "Interferometric coherence measuring surface stability between SAR image pairs, where high values (near 1) indicate minimal change and low values (near 0) indicate significant surface change from events like floods, earthquakes, or land cover changes.",
+            "regex": ".*Avg12dayCoh.*.tif$",
+            "title": "Interferometric Coherence"
+        },
+        "dpm": {
+            "description": "Damage Proxy Map showing changes in SAR backscatter indicating potential building damage or destruction.",
+            "regex": ".*DPM.*.tif$",
+            "title": "Damage Proxy Map"
+        },
+        "floodedArea": {
+            "description": "Binary flood extent map identifying areas currently inundated with water, derived from SAR analysis for disaster response and monitoring.",
+            "regex": ".*Flooded.*.tif$",
+            "title": "Flooded Area"
+        },
+        "rtc": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*changedetection.*.tif$",
+            "title": "RTC Backscatter"
+        }
+    },
+    "id_regex": "^(.*).tif$",
+    "id_template": "{}"
+}

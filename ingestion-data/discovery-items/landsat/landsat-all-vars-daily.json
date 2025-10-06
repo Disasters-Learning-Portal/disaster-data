@@ -1,11 +1,11 @@
 {
-    "collection": "landsat-all-vars",
+    "collection": "landsat-all-vars-daily",
     "bucket": "nasa-disasters",
     "prefix": "drcs_activations_new/Landsat",
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,
-    "filename_regex": ".*.tif$",
+    "filename_regex": ".*day.tif$",
     "assets": {
         "cir-ls08": {
             "description": "False-color composite using near-infrared, red, and green bands. Vegetation appears red, water dark, and urban areas gray-blue.",
