@@ -19,25 +19,25 @@
         },
         "vsm0-10cm": {
             "description": "Volumetric soil moisture percentile for the 0-10cm surface layer. This layer responds rapidly to precipitation and drying, making it especially useful for short-term monitoring of drought, flooding potential, and fire risk.",
-            "regex": ".*sport_lis_vsm0-10cm_conus.*",
+            "regex": ".*sport_lis_vsm0-10cm_percentile_conus.*",
             "title": "Volumetric Soil Moisture (0-10cm)"
         },
         "vsm0-40cm": {
             "description": "Volumetric soil moisture percentile for the 0-40cm cumulative layer. This layer responds more gradually than surface layers, balancing short-term rainfall response with intermediate soil storage, useful for agricultural and fire risk applications.",
-            "regex": ".*sport_lis_vsm0-40cm_conus.*",
+            "regex": ".*sport_lis_vsm0-40cm_percentile_conus.*",
             "title": "Volumetric Soil Moisture (0-40cm)"
         },
         "vsm0-100cm": {
             "description": "Volumetric soil moisture percentile for the 0-100cm cumulative layer. This layer integrates surface and subsurface moisture, responding over weeks to months, valuable for drought monitoring, hydrology, and agriculture.",
-            "regex": ".*sport_lis_vsm0-100cm_conus.*",
+            "regex": ".*sport_lis_vsm0-100cm_percentile_conus.*",
             "title": "Volumetric Soil Moisture (0-100cm)"
         },
         "vsm0-200cm": {
             "description": "Volumetric soil moisture percentile for the full 0-200cm soil column. This layer responds slowly, capturing deep soil changes on seasonal to multi-year timescales, essential for long-term drought and groundwater assessments.",
-            "regex": ".*sport_lis_vsm0-200cm_conus.*",
+            "regex": ".*sport_lis_vsm0-200cm_percentile_conus.*",
             "title": "Volumetric Soil Moisture (0-200cm)"
         }
     },
     "id_regex": ".*_(.*).tif$",
-    "id_template": "{}"
+    "id_template": "sport-lis-sm-{}"
 }
