@@ -1,0 +1,43 @@
+{
+    "collection": "sport-lis-sm-all-vars-daily-conus",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/sport-lis-cog/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "rsm0-10cm": {
+            "description": "Relative soil moisture for the 0-10cm surface layer, representing current soil water content as a percentile compared to historical records, useful for short-term drought and flood risk assessment.",
+            "regex": ".*sport_lis_rsm0-10cm_conus.*",
+            "title": "Relative Soil Moisture (0-10cm)"
+        },
+        "rsm0-2m": {
+            "description": "Relative soil moisture for the full 0-2m soil column, providing deep soil moisture percentiles for long-term drought monitoring and groundwater assessment.",
+            "regex": ".*sport_lis_rsm0-2m_conus.*",
+            "title": "Relative Soil Moisture (0-2m)"
+        },
+        "vsm0-10cm": {
+            "description": "Volumetric soil moisture percentile for the 0-10cm surface layer. This layer responds rapidly to precipitation and drying, making it especially useful for short-term monitoring of drought, flooding potential, and fire risk.",
+            "regex": ".*sport_lis_vsm0-10cm_conus.*",
+            "title": "Volumetric Soil Moisture (0-10cm)"
+        },
+        "vsm0-40cm": {
+            "description": "Volumetric soil moisture percentile for the 0-40cm cumulative layer. This layer responds more gradually than surface layers, balancing short-term rainfall response with intermediate soil storage, useful for agricultural and fire risk applications.",
+            "regex": ".*sport_lis_vsm0-40cm_conus.*",
+            "title": "Volumetric Soil Moisture (0-40cm)"
+        },
+        "vsm0-100cm": {
+            "description": "Volumetric soil moisture percentile for the 0-100cm cumulative layer. This layer integrates surface and subsurface moisture, responding over weeks to months, valuable for drought monitoring, hydrology, and agriculture.",
+            "regex": ".*sport_lis_vsm0-100cm_conus.*",
+            "title": "Volumetric Soil Moisture (0-100cm)"
+        },
+        "vsm0-200cm": {
+            "description": "Volumetric soil moisture percentile for the full 0-200cm soil column. This layer responds slowly, capturing deep soil changes on seasonal to multi-year timescales, essential for long-term drought and groundwater assessments.",
+            "regex": ".*sport_lis_vsm0-200cm_conus.*",
+            "title": "Volumetric Soil Moisture (0-200cm)"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "{}"
+}
