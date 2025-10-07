@@ -1,5 +1,5 @@
 {
-    "collection": "sentinel-1-all-vars-daily",
+    "collection": "sentinel-1-all-vars-daily-TESTaddMetadata",
     "bucket": "nasa-disasters",
     "prefix": "drcs_activations_new/Sentinel-1/",
     "cogify": false,

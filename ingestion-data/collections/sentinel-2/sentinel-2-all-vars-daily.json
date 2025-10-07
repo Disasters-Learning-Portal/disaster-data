@@ -1,9 +1,9 @@
 {
-    "id": "sentinel-1-all-vars-daily-TESTaddMetadata",
+    "id": "sentinel-2-all-vars-daily",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
-    "description": "Sentinel-1 is a C-band synthetic aperture radar (SAR) mission providing all-weather, day-and-night imaging for disaster monitoring. This collection includes multiple SAR-derived products: RGB composites for visual analysis, displacement and deformation measurements for ground movement detection, damage assessment products for disaster impact evaluation, and water mapping layers for flood monitoring. SAR's ability to penetrate clouds makes it essential for rapid disaster response and environmental monitoring.",
-    "title": "Sentinel-1 Daily",
+    "description": "Sentinel-2 is a multispectral optical imaging mission providing high-resolution imagery for disaster monitoring and environmental assessment. This collection includes multiple spectral band products and derived indices: true color and false color composites for visual analysis, NDVI for vegetation health monitoring, burn ratio for fire damage assessment, MNDWI for water detection, and cloud masks for data quality filtering.",
+    "title": "Sentinel-2 Daily",
     "extent": {
         "spatial": {
             "bbox": [
@@ -25,76 +25,76 @@
         }
     },
     "item_assets": {
-        "aria": {
-            "description": "RGB composite derived from ARIA SAR processing for visual interpretation of radar backscatter patterns.",
+        "burnRatio": {
+            "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "ARIA RGB Composite",
+            "title": "Burn Ratio",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "azi": {
-            "description": "Azimuth offset measurements detecting horizontal ground displacement perpendicular to satellite flight direction.",
+        "cloudMask": {
+            "description": "Cloud and cloud shadow mask identifying pixels obscured by atmospheric conditions for data quality filtering.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Azimuth Offset",
+            "title": "Cloud Mask",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "displacement": {
-            "description": "Ground displacement measurements derived from SAR interferometry showing surface movement magnitude.",
+        "colorIR": {
+            "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Ground Displacement",
+            "title": "Color Infrared",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "deformation": {
-            "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
+        "mndwi": {
+            "description": "Modified Normalized Difference Water Index for detecting and mapping surface water bodies and flood extent.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Surface Deformation",
+            "title": "MNDWI",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "dmgAssess": {
-            "description": "Damage assessment product identifying areas of potential structural damage from disaster events.",
+        "naturalColor": {
+            "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Damage Assessment",
+            "title": "Natural Color",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "dpm": {
-            "description": "Damage Proxy Map showing changes in SAR backscatter indicating potential building damage or destruction.",
+        "ndvi": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "Damage Proxy Map",
+            "title": "NDVI",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "hydrosar-wm-diff": {
-            "description": "Water mapping difference product showing changes in surface water extent between time periods for flood detection.",
+        "shortwaveIR": {
+            "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "HydroSAR Water Map Difference",
+            "title": "Shortwave Infrared",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "rgb": {
-            "description": "RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+        "trueColor": {
+            "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "RGB Composite",
+            "title": "True Color",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
@@ -106,33 +106,9 @@
         }
     ],
     "renders": {
-        "aria": {
+        "burnRatio": {
             "assets": [
-                "aria"
-            ],
-            "rescale": [
-                [
-                    0,
-                    255
-                ]
-            ],
-            "nodata": 0
-        },
-        "azi": {
-            "assets": [
-                "azi"
-            ],
-            "rescale": [
-                [
-                    -200,
-                    200
-                ]
-            ],
-            "nodata": -9999.0
-        },
-        "displacement": {
-            "assets": [
-                "displacement"
+                "burnRatio"
             ],
             "rescale": [
                 [
@@ -142,21 +118,9 @@
             ],
             "nodata": -9999
         },
-        "deformation": {
+        "cloudMask": {
             "assets": [
-                "deformation"
-            ],
-            "rescale": [
-                [
-                    -60,
-                    60
-                ]
-            ],
-            "nodata": -9999
-        },
-        "dmgAssess": {
-            "assets": [
-                "dmgAssess"
+                "cloudMask"
             ],
             "rescale": [
                 [
@@ -166,11 +130,11 @@
             ],
             "nodata": 0
         },
-        "dpm": {
+        "colorIR": {
             "assets": [
-                "dpm"
+                "colorIR"
             ],
-            "bidx": [1,2,3,4],
+            "bidx": [1,2,3],
             "rescale": [
                 [
                     0,
@@ -179,23 +143,61 @@
             ],
             "nodata": 0
         },
-        "hydrosar-wm-diff": {
+        "mndwi": {
             "assets": [
-                "hydrosar-wm-diff"
+                "mndwi"
             ],
             "rescale": [
                 [
-                    0,
-                    3
+                    -1,
+                    1
                 ]
             ],
-            "nodata": 255
+            "nodata": 999
         },
-        "rgb": {
+        "naturalColor": {
             "assets": [
-                "rgb"
+                "naturalColor"
             ],
-            "bidx": [1,2,3,4],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "ndvi": {
+            "assets": [
+                "ndvi"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "shortwaveIR": {
+            "assets": [
+                "shortwaveIR"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "trueColor": {
+            "assets": [
+                "trueColor"
+            ],
+            "bidx": [1,2,3],
             "rescale": [
                 [
                     0,

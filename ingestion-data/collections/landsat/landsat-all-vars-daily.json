@@ -1,7 +1,7 @@
 {
-    "id": "landsat-all-vars",
+    "id": "landsat-all-vars-daily",
     "dashboard:is_periodic": false,
-    "dashboard:time_interval": "day",
+    "dashboard:time_interval": "P1D",
     "description": "NASA Landsat satellites provide continuous Earth observations since 1972, capturing multispectral imagery across visible and infrared wavelengths. This collection includes multiple visualization products: true and natural color composites, color infrared for vegetation analysis, and calculated indices like NDVI for vegetation health, NBR for burn severity, and MNDWI for water detection. These products support environmental monitoring, disaster response, agriculture, and land cover mapping.",
     "title": "Landsat - All Variables",
     "extent": {

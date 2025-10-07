@@ -1,0 +1,53 @@
+{
+    "collection": "sentinel-2-all-vars-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-2/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*day.tif$",
+    "assets": {
+        "burnRatio": {
+            "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
+            "regex": ".*(dnbr|NBR).*\\.tif$",
+            "title": "Burn Ratio"
+        },
+        "cloudMask": {
+            "description": "Cloud and cloud shadow mask identifying pixels obscured by atmospheric conditions for data quality filtering.",
+            "regex": ".*cloudMask.*\\.tif$",
+            "title": "Cloud Mask"
+        },
+        "colorIR": {
+            "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
+            "regex": ".*(colorIR|colorInfrared).*\\.tif$",
+            "title": "Color Infrared"
+        },
+        "mndwi": {
+            "description": "Modified Normalized Difference Water Index for detecting and mapping surface water bodies and flood extent.",
+            "regex": ".*MNDWI.*\\.tif$",
+            "title": "MNDWI"
+        },
+        "naturalColor": {
+            "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
+            "regex": ".*naturalColor.*\\.tif$",
+            "title": "Natural Color"
+        },
+        "ndvi": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+            "regex": ".*NDVI.*\\.tif$",
+            "title": "NDVI"
+        },
+        "shortwaveIR": {
+            "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
+            "regex": ".*(shortwaveIR|SWI).*\\.tif$",
+            "title": "Shortwave Infrared"
+        },
+        "trueColor": {
+            "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
+            "regex": ".*(trueColor|TCI).*\\.tif$",
+            "title": "True Color"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "{}"
+}
