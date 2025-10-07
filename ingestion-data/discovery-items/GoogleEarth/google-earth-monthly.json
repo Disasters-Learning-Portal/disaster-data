@@ -8,9 +8,9 @@
     "filename_regex": ".*_monthly.tif$",
     "assets": {
         "fwDET": {
-            "description": "fwDET",
+            "description": "Flood Water Detection - Monthly composite of surface water extent derived from Google Earth Engine Sentinel-1 SAR data, identifying areas of standing water and flood inundation.",
             "regex": ".*FwDET.*\\.tif$",
-            "title": "fwDET"
+            "title": "Flood Water Detection"
         }
     },
     "id_regex": ".*(\\d{4}-\\d{2}_monthly)\\.tif$",

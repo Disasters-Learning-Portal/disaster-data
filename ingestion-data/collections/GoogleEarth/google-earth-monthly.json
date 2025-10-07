@@ -25,12 +25,12 @@
     },
     "item_assets": {
         "fwDET": {
-            "description": "fwDET.",
+            "description": "Flood Water Detection - Monthly composite of surface water extent derived from Google Earth Engine Sentinel-1 SAR data, identifying areas of standing water and flood inundation.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "fwDET",
+            "title": "Flood Water Detection",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
