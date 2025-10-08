@@ -1,0 +1,28 @@
+{
+    "collection": "maxar-all-vars-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Maxar/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*monthly.tif$",
+    "assets": {
+        "preEvent": {
+            "description": "High-resolution satellite imagery captured before a disaster event, providing baseline conditions for comparison and damage assessment purposes.",
+            "regex": ".*Pre.*.tif$",
+            "title": "Pre-Event Imagery"
+        },
+        "postEvent": {
+            "description": "High-resolution satellite imagery captured after a disaster event, showing current conditions for damage assessment and disaster impact analysis.",
+            "regex": ".*Post.*.tif$",
+            "title": "Post-Event Imagery"
+        },
+        "sta": {
+            "description": "Short-Term Analysis product highlighting changes between pre-event and post-event imagery, facilitating rapid identification of affected areas and damage assessment.",
+            "regex": ".*sta.*.tif$",
+            "title": "Short-Term Analysis"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}_monthly)\\.tif$",
+    "id_template": "maxar-{}"
+}
