@@ -1,7 +1,7 @@
 {
-    "collection": "alos2-dpm-daily",
+    "collection": "alos2-all-vars-daily",
     "bucket": "nasa-disasters",
-    "prefix": "drcs_activations_new/ALOS2",
+    "prefix": "drcs_activations_new/ALOS2/",
     "cogify": false,
     "discovery": "s3",
     "dry_run": false,

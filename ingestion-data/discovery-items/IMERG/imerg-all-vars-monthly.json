@@ -1,0 +1,38 @@
+{
+    "collection": "imerg-all-vars-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/IMERG/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*monthly.tif$",
+    "assets": {
+        "rank": {
+            "description": "Precipitation ranking indicating the percentile of monthly total precipitation compared to historical climatology for the same month.",
+            "regex": ".*rank.*.tif$",
+            "title": "Precipitation Rank"
+        },
+        "equiv": {
+            "description": "Equivalent precipitation metric providing normalized precipitation values for comparison across different regions and time periods.",
+            "regex": ".*equiv.*.tif$",
+            "title": "Equivalent Precipitation"
+        },
+        "total": {
+            "description": "Total monthly precipitation accumulation derived from IMERG daily data, representing the sum of all precipitation for the month.",
+            "regex": ".*tot.*.tif$",
+            "title": "Total Monthly Precipitation"
+        },
+        "Rx1d": {
+            "description": "Maximum 1-day precipitation total during the month, identifying the wettest single day and useful for flood risk assessment.",
+            "regex": ".*Rx1d.*.tif$",
+            "title": "Maximum 1-Day Precipitation"
+        },
+        "tqv": {
+            "description": "Total precipitable water vapor in the atmospheric column, indicating the amount of moisture available for precipitation.",
+            "regex": ".*tqv.*.tif$",
+            "title": "Total Precipitable Water Vapor"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}_monthly)\\.tif$",
+    "id_template": "imerg-{}"
+}
