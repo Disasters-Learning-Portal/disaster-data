@@ -1,5 +1,5 @@
 {
-    "id": "alos2-dpm-daily",
+    "id": "alos2-all-vars-daily",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
     "description": "The Advanced Land Observing Satellite-2 (ALOS-2, DAICHI-2) is a follow-on mission from the ALOS Daichi. ALOS has contributed to cartography, regional observation, disaster monitoring, and resource surveys, since its launch in 2006. ALOS-2 will succeed this mission with enhanced capabilities. JAXA conducted research and development activities for ALOS-2 to improve wide and high-resolution observation technologies developed for ALOS in order to further fulfill social needs. These social needs include: 1) Disaster monitoring of damage areas, both in considerable detail, and when these areas may be large 2) Continuous updating of data archives related to national land and infrastructure information 3) Effective monitoring of cultivated areas 4) Global monitoring of tropical rain forests to identify carbon sinks.",
@@ -25,21 +25,21 @@
     },
     "item_assets": {
         "dpm": {
-            "description": "dpm.",
+            "description": "Damage Proxy Map derived from ALOS-2 SAR data showing changes in radar backscatter that indicate potential structural damage or building destruction from disaster events.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "dpm",
+            "title": "Damage Proxy Map",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "dpm-cvd": {
-            "description": "dpm.",
+            "description": "Damage Proxy Map with colorblind-friendly color scheme, derived from ALOS-2 SAR data showing changes in radar backscatter indicating potential structural damage or building destruction.",
             "roles": [
                 "data",
                 "layer"
             ],
-            "title": "dpm",
+            "title": "Damage Proxy Map (CVD)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     },
@@ -81,7 +81,7 @@
         "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
     ],
     "stac_version": "1.0.0",
-    "title": "ALOS2 DPM daily timestep",
+    "title": "ALOS2 All Variables daily timestep",
     "type": "Collection",
     "tenant": ["nasa-disasters"]
 }

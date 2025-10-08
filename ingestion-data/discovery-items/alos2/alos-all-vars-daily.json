@@ -1,0 +1,23 @@
+{
+    "collection": "alos2-dpm-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/ALOS2",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_day.tif$",
+    "assets": {
+        "dpm": {
+            "description": "Damage Proxy Map derived from ALOS-2 SAR data showing changes in radar backscatter that indicate potential structural damage or building destruction from disaster events.",
+            "regex": "^(?!.*(_cvd_)).*DPM.*\\.tif$",
+            "title": "Damage Proxy Map"
+        },
+        "dpm-cvd": {
+            "description": "Damage Proxy Map with colorblind-friendly color scheme, derived from ALOS-2 SAR data showing changes in radar backscatter indicating potential structural damage or building destruction.",
+            "regex": ".*DPM.*cvd.*\\.tif$",
+            "title": "Damage Proxy Map (CVD)"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}_day)\\.tif$",
+    "id_template": "alos2-{}"
+}
