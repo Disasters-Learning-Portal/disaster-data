@@ -9,20 +9,35 @@
     "assets": {
         "hydrosar-wm": {
             "description": "HydroSAR water mapping product identifying surface water extent using SAR data for flood monitoring and wetland analysis.",
-            "regex": ".*WM_\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z\\.tif$",
+            "regex": ".*_WM_\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z\\.tif$",
             "title": "HydroSAR Water Map"
         },
         "rgb": {
             "description": "RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
-            "regex": "^(?!.*_AZI_).*(RGB|rgb).*.tif$",
+            "regex": "^(?!.*USDA).*(RGB|rgb).*Z.tif$",
             "title": "RGB Composite"
         },
-        "rtc": {
-            "description": "Radiometric Terrain Corrected (RTC) SAR backscatter data normalized for terrain effects, providing calibrated intensity measurements for surface analysis.",
-            "regex": ".*RTC(20|30)_(VV|VH|WM)_[A-Za-z0-9]{4}_\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z\\.tif$",
+        "rgb-usda": {
+            "description": "USDA RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "regex": ".*USDA.*(RGB|rgb).*Z.tif$",
+            "title": "USDA RGB Composite"
+        },
+        "rtc-VV": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*RTC(20|30)_VV_.*Z.tif$",
+            "title": "RTC Backscatter"
+        },
+        "rtc-VH": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*RTC(20|30)_VH_.*Z.tif$",
+            "title": "RTC Backscatter"
+        },
+        "rtc-WM": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*RTC(20|30)_WM_[A-Fa-f0-9]{4}_.*Z\\.tif$",
             "title": "RTC Backscatter"
         }
     },
-    "id_regex": "^(.*).tif$",
-    "id_template": "{}"
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z)\\.tif$",
+    "id_template": "sentinel-1-{}"
 }

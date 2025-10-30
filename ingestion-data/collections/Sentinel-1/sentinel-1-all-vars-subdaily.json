@@ -43,7 +43,34 @@
             "title": "RGB Composite",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "rtc": {
+        "rgb-usda": {
+            "description": "USDA RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "USDA RGB Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rtc-VV": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RTC Backscatter",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rtc-VH": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RTC Backscatter",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rtc-WM": {
             "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
             "roles": [
                 "data",
@@ -73,11 +100,11 @@
             ],
             "nodata": 255
         },
-        "rgb": {
+        "rgb-usda": {
             "assets": [
-                "rgb"
+                "rgb-usda"
             ],
-            "bidx": [1,2,3,4],
+            "bidx": [1,2,3],
             "rescale": [
                 [
                     0,
@@ -86,9 +113,46 @@
             ],
             "nodata": 0
         },
-        "rtc": {
+        "rgb": {
             "assets": [
-                "rtc"
+                "rgb"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "rtc-VV": {
+            "assets": [
+                "rtc-VV"
+            ],
+            "rescale": [
+                [
+                    0,
+                    50
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "rtc-VH": {
+            "assets": [
+                "rtc-VH"
+            ],
+            "rescale": [
+                [
+                    0,
+                    50
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "rtc-WM": {
+            "assets": [
+                "rtc-WM"
             ],
             "rescale": [
                 [
