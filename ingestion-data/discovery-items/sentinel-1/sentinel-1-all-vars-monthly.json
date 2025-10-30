@@ -33,6 +33,6 @@
             "title": "RTC Backscatter"
         }
     },
-    "id_regex": "^(.*).tif$",
-    "id_template": "{}"
+    "id_regex": ".*(\\d{4}-\\d{2})_monthly.tif$",
+    "id_template": "sentinel-1-{}"
 }
