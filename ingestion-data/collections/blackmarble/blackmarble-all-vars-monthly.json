@@ -1,0 +1,153 @@
+{
+    "id": "blackmarble-all-vars-monthly",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1M",
+    "title": "Black Marble Monthly",
+    "description": "Black Marble is NASA's high-resolution nighttime lights product derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB) sensor aboard the Suomi NPP and NOAA-20 satellites. This monthly collection includes BMHD monthly composites providing temporal aggregation of nighttime lights, all-angle composites capturing light from multiple viewing geometries, and continuous monitoring (Con) layers for consistent monthly observations at 500-meter resolution.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "bm-month": {
+            "description": "High-definition monthly composite of nighttime lights providing temporal aggregation for trend analysis and change detection.",
+            "roles": ["data", "layer"],
+            "title": "Black Marble Monthly Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bm-mosaic-c2": {
+            "description": "High-definition monthly composite of nighttime lights providing temporal aggregation for trend analysis and change detection.",
+            "roles": ["data", "layer"],
+            "title": "Black Marble Monthly Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "mosaic-c2": {
+            "description": "High-definition monthly composite of nighttime lights providing temporal aggregation for trend analysis and change detection.",
+            "roles": ["data", "layer"],
+            "title": "Black Marble Monthly Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "all-Angle": {
+            "description": "All-angle monthly composite capturing nighttime lights from multiple viewing geometries for comprehensive illumination analysis.",
+            "roles": ["data", "layer"],
+            "title": "All Angle Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "con": {
+            "description": "Continuous monitoring monthly layer providing consistent nighttime lights observations for long-term monitoring.",
+            "roles": ["data", "layer"],
+            "title": "Con Monthly",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bmhd": {
+            "description": "Continuous monitoring monthly layer providing consistent nighttime lights observations for long-term monitoring.",
+            "roles": ["data", "layer"],
+            "title": "Con Monthly",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "bm-month": {
+            "assets": [
+                "bm-month"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "bm-mosaic-c2": {
+            "assets": [
+                "bm-mosaic-c2"
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "mosaic-c2": {
+            "assets": [
+                "mosaic-c2"
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "all-Angle": {
+            "assets": [
+                "all-Angle"
+            ],
+            "rescale": [
+                [
+                    0,
+                    110
+                ]
+            ]
+        },
+        "con": {
+            "assets": [
+                "con"
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "bmhd": {
+            "assets": [
+                "bmhd"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
