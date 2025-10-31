@@ -1,0 +1,136 @@
+{
+    "id": "blackmarble-all-vars-daily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "title": "Black Marble Daily",
+    "description": "Black Marble is NASA's high-resolution nighttime lights product derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB) sensor aboard the Suomi NPP and NOAA-20 satellites. This collection includes multiple products: BRDF-corrected nighttime lights, continuous monitoring (Con) layers at 500-meter resolution, daily composites for standard and high-definition (HD) observations, Day/Night Band (DNB) mosaics, and cloud mask layers. These products capture Earth's artificial illumination patterns at 500-meter or finer spatial resolution, providing enhanced visualization of power outages, infrastructure damage, and human activity patterns through careful atmospheric correction and stray light removal processing.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "brdf": {
+            "description": "BRDF-corrected nighttime lights composite providing standardized radiance measurements with bidirectional reflectance corrections.",
+            "roles": ["data", "layer"],
+            "title": "BRDF Corrected",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bm": {
+            "description": "Daily composite of nighttime lights at standard resolution for consistent temporal monitoring.",
+            "roles": ["data", "layer"],
+            "title": "Daily Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bmhd": {
+            "description": "High-definition daily composite of nighttime lights at enhanced spatial resolution for detailed analysis.",
+            "roles": ["data", "layer"],
+            "title": "HD Daily Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "cloud-mask": {
+            "description": "Cloud mask layer identifying cloud-covered pixels for quality control and interpretation.",
+            "roles": ["data", "layer"],
+            "title": "Cloud Mask",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "cloud-mask-c2": {
+            "description": "Alternative cloud mask layer (C2) using different detection algorithms for quality assessment.",
+            "roles": ["data", "layer"],
+            "title": "Cloud Mask C2",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "brdf": {
+            "assets": [
+                "brdf"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "bm": {
+            "assets": [
+                "bm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "bmhd": {
+            "assets": [
+                "bmhd"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "cloud-mask": {
+            "assets": [
+                "cloud-mask"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        },
+        "cloud-mask-c2": {
+            "assets": [
+                "cloud-mask-c2"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
