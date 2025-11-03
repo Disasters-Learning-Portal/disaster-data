@@ -1,0 +1,354 @@
+{
+    "id": "opera-all-vars-daily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "title": "OPERA All Variables Daily",
+    "description": "OPERA (Observational Products for End-Users from Remote Sensing Analysis) provides multiple Earth observation products including InSAR displacement measurements, vegetation disturbance alerts, and surface water extent mapping. This collection combines OPERA-InSAR displacement products (unwrapped/wrapped phase, azimuth and range offsets), ARIA OPERA vegetation disturbance status and anomaly products derived from Sentinel-2, and HLS-derived dynamic surface water extent products for comprehensive land surface monitoring.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "AZ": {
+            "description": "Azimuth offset measurements detecting horizontal ground displacement perpendicular to satellite flight direction from InSAR processing.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Azimuth Offset",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "RNG": {
+            "description": "Range offset measurements detecting ground displacement parallel to satellite line-of-sight from InSAR processing.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Range Offset",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "UNW": {
+            "description": "Unwrapped interferometric phase representing ground displacement measurements after phase ambiguity resolution.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Unwrapped Phase",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "WRP": {
+            "description": "Wrapped interferometric phase showing ground displacement within 2π phase cycles before unwrapping.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Wrapped Phase",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "VEG-ANOM-MAX": {
+            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly value.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "VEG-DIST-STATUS": {
+            "description": "S2 ARIA OPERA vegetation disturbance status.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG DIST STATUS)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "GEN-ANOM-MAX": {
+            "description": "Generic disturbance maximum anomaly value.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN ANOM MAX)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "GEN-DIST-STATUS": {
+            "description": "Generic disturbance status.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN DIST STATUS)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-DWSx": {
+            "description": "HLS Dynamic Surface Water Extent product showing water presence and classification.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Dynamic Surface Water Extent",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-FloodMap": {
+            "description": "HLS-derived flood extent map identifying inundated areas.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Flood Map",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-NoSnowIce": {
+            "description": "HLS water extent excluding snow and ice coverage.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Water No Snow/Ice",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-WTR": {
+            "description": "HLS water classification layer.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Water",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-BWTR": {
+            "description": "HLS binary water classification.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Binary Water",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-changeMap-date1": {
+            "description": "HLS surface water change detection map showing changes in water extent between time periods.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Change Map",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "hls-changeMap-date2": {
+            "description": "HLS surface water change detection map showing changes in water extent between time periods.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "HLS Change Map",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+                "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+        }
+    ],
+    "renders": {
+        "AZ": {
+            "assets": [
+                "AZ"
+            ],
+            "rescale": [
+                [
+                    -10,
+                    72
+                ]
+            ]
+        },
+        "RNG": {
+            "assets": [
+                "RNG"
+            ],
+            "rescale": [
+                [
+                    -15,
+                    15
+                ]
+            ]
+        },
+        "UNW": {
+            "assets": [
+                "UNW"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ]
+        },
+        "WRP": {
+            "assets": [
+                "WRP"
+            ],
+            "rescale": [
+                [
+                    -3.14,
+                    3.14
+                ]
+            ]
+        },
+        "VEG-ANOM-MAX": {
+            "assets": [
+                "VEG-ANOM-MAX"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "VEG-DIST-STATUS": {
+            "assets": [
+                "VEG-DIST-STATUS"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "GEN-ANOM-MAX": {
+            "assets": [
+                "GEN-ANOM-MAX"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        },
+        "GEN-DIST-STATUS": {
+            "assets": [
+                "GEN-DIST-STATUS"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "hls-DWSx": {
+            "assets": [
+                "hls-DWSx"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "hls-FloodMap": {
+            "assets": [
+                "hls-FloodMap"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        },
+        "hls-NoSnowIce": {
+            "assets": [
+                "hls-NoSnowIce"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "hls-WTR": {
+            "assets": [
+                "hls-WTR"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "hls-BWTR": {
+            "assets": [
+                "hls-BWTR"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "hls-changeMap-date1": {
+            "assets": [
+                "hls-changeMap-date1"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        },
+        "hls-changeMap-date2": {
+            "assets": [
+                "hls-changeMap-date2"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        }
+
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

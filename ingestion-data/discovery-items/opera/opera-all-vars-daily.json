@@ -64,12 +64,12 @@
         },
         "hls-WTR": {
             "description": "HLS water classification layer.",
-            "regex": "^(?!.*BWTR).*HLS.*WTR.*\\.tif$",
+            "regex": "^(?!.*BWTR)(?!.*ChngMap).*DSWx.*WTR.*\\.tif$",
             "title": "HLS Water"
         },
         "hls-BWTR": {
             "description": "HLS binary water classification.",
-            "regex": ".*HLS.*BWTR.*\\.tif$",
+            "regex": "^(?!.*ChngMap).*DSWx.*BWTR.*\\.tif$",
             "title": "HLS Binary Water"
         },
         "hls-changeMap-date1": {
