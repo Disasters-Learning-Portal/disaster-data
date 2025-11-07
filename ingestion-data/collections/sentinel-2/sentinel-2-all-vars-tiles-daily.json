@@ -1,0 +1,175 @@
+{
+    "id": "sentinel-2-all-vars-tiles-daily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "Sentinel-2 is a multispectral optical imaging mission providing high-resolution imagery for disaster monitoring and environmental assessment. This collection includes multiple spectral band products and derived indices: true color and false color composites for visual analysis, NDVI for vegetation health monitoring, burn ratio for fire damage assessment, MNDWI for water detection, and cloud masks for data quality filtering.",
+    "title": "Sentinel-2 Daily",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "colorIR": {
+            "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Color Infrared",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "naturalColor": {
+            "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Natural Color",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "ndvi": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "NDVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "ndviChange": {
+            "description": "Normalized Difference Vegetation Index change between dates measuring vegetation health and density using near-infrared and red bands.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "NDVI Change",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "shortwaveIR": {
+            "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Shortwave Infrared",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "trueColor": {
+            "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "True Color",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "colorIR": {
+            "assets": [
+                "colorIR"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "naturalColor": {
+            "assets": [
+                "naturalColor"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "ndvi": {
+            "assets": [
+                "ndvi"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "ndviChange": {
+            "assets": [
+                "ndviChange"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "shortwaveIR": {
+            "assets": [
+                "shortwaveIR"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "trueColor": {
+            "assets": [
+                "trueColor"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
