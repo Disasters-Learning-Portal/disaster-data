@@ -1,0 +1,33 @@
+{
+    "collection": "uavsar-all-vars-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/UAVSAR",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*day.tif$",
+    "assets": {
+        "displacement": {
+            "description": "Surface displacement measurements derived from interferometric SAR processing, showing ground movement in meters.",
+            "regex": ".*PV_DISP.*.tif$",
+            "title": "Displacement"
+        },
+        "rgb": {
+            "description": "RGB composite visualization combining multiple polarization channels for enhanced interpretation of radar backscatter.",
+            "regex": ".*(rgb|RGB).*.tif$",
+            "title": "RGB Composite"
+        },
+        "UNet-predictedScore": {
+            "description": "Machine learning predicted score from U-Net model analysis of SAR imagery, providing confidence values for feature detection.",
+            "regex": ".*UNet_predicted_score.*tif$",
+            "title": "UNet Predicted Score"
+        },
+        "UNet-class": {
+            "description": "Classification output from U-Net model applied to SAR data, identifying distinct surface features and land cover types.",
+            "regex": ".*UNet_class.*.tif$",
+            "title": "UNet Classification"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "{}"
+}

@@ -1,0 +1,87 @@
+{
+    "id": "landsat-colorIR",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "day",
+    "description": "NASA Landsat color infrared imagery is created by combining satellite data from the near-infrared, red, and green bands. In this false-color composite, healthy vegetation appears bright red because plants strongly reflect near-infrared light, while water looks dark and urban areas appear gray or blue. This visualization helps scientists assess plant health, map land cover, and monitor changes in ecosystems. It’s widely used for agriculture, forestry, and environmental monitoring.",
+    "title": "Landsat Color Infrared",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "null"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "cir-ls08": {
+            "description": "Landsat_CIR_LS8",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Landsat_CIR_LS8",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "cir-ls09": {
+            "description": "Landsat_CIR_LS9",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Landsat_CIR_LS9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "cir-ls08": {
+            "bidx": [1,2,3],
+            "assets": [
+                "cir-ls08"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "cir-ls09": {
+            "bidx": [1,2,3],
+            "assets": [
+                "cir-ls09"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

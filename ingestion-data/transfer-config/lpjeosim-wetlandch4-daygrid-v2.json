@@ -1,7 +1,0 @@
-{
-    "collection": "lpjeosim-wetlandch4-daygrid-v2",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "lpjeosim-wetlandch4-daygrid-v2/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}

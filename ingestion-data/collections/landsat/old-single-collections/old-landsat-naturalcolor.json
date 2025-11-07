@@ -1,0 +1,87 @@
+{
+    "id": "landsat-naturalcolor",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "NASA Landsat color infrared imagery is created by combining satellite data from the near-infrared, red, and green bands. In this false-color composite, healthy vegetation appears bright red because plants strongly reflect near-infrared light, while water looks dark and urban areas appear gray or blue. This visualization helps scientists assess plant health, map land cover, and monitor changes in ecosystems. It’s widely used for agriculture, forestry, and environmental monitoring.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-06-28T00:00:00Z",
+                    "2025-02-19T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "nc-ls08": {
+            "description": "Landsat CIR",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Landsat Color Infrared",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nc-ls09": {
+            "description": "Landsat CIR",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Landsat Color Infrared",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "nc-ls08": {
+            "bidx": [1,2,3],
+            "assets": [
+                "nc-ls08"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "nc-ls09": {
+            "bidx": [1,2,3],
+            "assets": [
+                "nc-ls09"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Landsat Natural Color",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

@@ -1,0 +1,23 @@
+{
+    "collection": "uavsar-all-vars-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/UAVSAR",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*Z.tif$",
+    "assets": {
+        "class": {
+            "description": "Classification quicklook visualization showing categorized surface features and land cover types derived from SAR analysis.",
+            "regex": ".*quicklook_class.*.tif$",
+            "title": "Quicklook Classification"
+        },
+        "rgb": {
+            "description": "RGB quicklook composite providing rapid visual interpretation of radar backscatter across multiple polarizations.",
+            "regex": ".*quicklook_rgb.*.tif$",
+            "title": "Quicklook RGB"
+        }
+    },
+    "id_regex": ".*_(\\d{5})_.*\\.tif$",
+    "id_template": "{}"
+}

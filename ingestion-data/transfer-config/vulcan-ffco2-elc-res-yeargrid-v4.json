@@ -1,7 +1,0 @@
-{
-    "collection": "vulcan-ffco2-elc-res-yeargrid-v4",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "transformed_cogs/vulcan-ffco2-elc-res-yeargrid-v4/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}
