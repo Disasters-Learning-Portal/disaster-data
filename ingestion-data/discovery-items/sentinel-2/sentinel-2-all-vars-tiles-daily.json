@@ -38,6 +38,6 @@
             "title": "True Color"
         }
     },
-    "id_regex": ".*(T[0-9A-Z]{5}).*(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+    "id_regex": ".*(T[0-9A-Z]{5})_.*_(\\d{4}-\\d{2}-\\d{2})_day.tif$",
     "id_template": "sentinel-2-{}"
 }

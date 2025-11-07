@@ -9,42 +9,47 @@
     "assets": {
         "burnRatio": {
             "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
-            "regex": ".*(dnbr|NBR).*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*(dnbr|NBR).*\\.tif$",
             "title": "Burn Ratio"
         },
         "cloudMask": {
             "description": "Cloud and cloud shadow mask identifying pixels obscured by atmospheric conditions for data quality filtering.",
-            "regex": ".*cloudMask.*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*cloudMask.*\\.tif$",
             "title": "Cloud Mask"
         },
         "colorIR": {
             "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
-            "regex": ".*(colorIR|colorInfrared|colorinfrared).*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*(colorIR|colorInfrared|colorinfrared).*\\.tif$",
             "title": "Color Infrared"
         },
         "mndwi": {
             "description": "Modified Normalized Difference Water Index for detecting and mapping surface water bodies and flood extent.",
-            "regex": ".*MNDWI.*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*MNDWI.*\\.tif$",
             "title": "MNDWI"
         },
         "naturalColor": {
             "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
-            "regex": ".*(naturalColor|naturalColorRGB|naturalcolor).*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*(naturalColor|naturalColorRGB|naturalcolor).*\\.tif$",
             "title": "Natural Color"
         },
         "ndvi": {
             "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
-            "regex": ".*NDVI.*\\.tif$",
+            "regex": "^(?!.*_NDVIchange_)(?!.*_T[0-9A-Z]{5}_).*(NDVI|ndvi).*\\.tif$",
+            "title": "NDVI"
+        },
+        "ndviChange": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*NDVIchange.*\\.tif$",
             "title": "NDVI"
         },
         "shortwaveIR": {
             "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
-            "regex": ".*(shortwaveIR|SWI|shortwaveInfrared|shortwaveinfrared).*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*(shortwaveIR|SWI|shortwaveInfrared|shortwaveinfrared).*\\.tif$",
             "title": "Shortwave Infrared"
         },
         "trueColor": {
             "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
-            "regex": ".*(trueColor||truecolor|TCI).*\\.tif$",
+            "regex": "^(?!.*_T[0-9A-Z]{5}_).*(trueColor||truecolor|TCI).*\\.tif$",
             "title": "True Color"
         }
     },

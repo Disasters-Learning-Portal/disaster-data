@@ -79,6 +79,15 @@
             "title": "NDVI",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
+        "ndviChange": {
+            "description": "Normalized Difference Vegetation Index change between dates measuring vegetation health and density using near-infrared and red bands.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "NDVI Change",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
         "shortwaveIR": {
             "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
             "roles": [
@@ -178,7 +187,19 @@
                     1
                 ]
             ],
-            "nodata": -9999.0
+            "nodata": 0
+        },
+        "ndviChange": {
+            "assets": [
+                "ndviChange"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": 0
         },
         "shortwaveIR": {
             "assets": [
