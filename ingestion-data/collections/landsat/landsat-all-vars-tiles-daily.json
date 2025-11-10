@@ -52,15 +52,6 @@
             "title": "Natural Color",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "tropics": {
-            "description": "Tropics",
-            "roles": [
-                "data",
-                "layer"
-            ],
-            "title": "Tropics",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
         "trueColor": {
             "description": "Standard RGB composite using visible bands (red, green, blue) without color balancing adjustments.",
             "roles": [
@@ -117,18 +108,6 @@
                 ]
             ],
             "nodata": 0
-        },
-        "tropics": {
-            "assets": [
-                "tropics"
-            ],
-            "rescale": [
-                [
-                    0,
-                    300
-                ]
-            ],
-            "nodata": -9999.0
         },
         "trueColor": {
             "bidx": [1,2,3],
