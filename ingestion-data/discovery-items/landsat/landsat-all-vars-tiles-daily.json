@@ -1,0 +1,38 @@
+{
+    "collection": "landsat-all-vars-tiles-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Landsat",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*day.tif$",
+    "assets": {
+        "nbr": {
+            "description": "The Normalized Burn Ratio (NBR) is a satellite-based index, primarily using Landsat imagery, that identifies burned areas and quantifies the severity of a fire. It is calculated using a ratio of near-infrared (NIR) and shortwave infrared (SWIR) bands, which are affected differently by fire, with higher NBR values indicating less damage and lower values indicating more severe burns. The difference between the pre-fire and post-fire NBR, known as the differenced NBR (dNBR), is used to map burn severity.",
+            "regex": ".*NBR.*.tif$",
+            "title": "Normalized Burn Ratio"
+        },
+        "colorInfrared": {
+            "description": "False-color composite using near-infrared, red, and green bands. Vegetation appears red, water dark, and urban areas gray-blue.",
+            "regex": ".*(colorInfrared|colorIR|colorinfrared).*.tif$",
+            "title": "Color Infrared"
+        },
+        "naturalColor": {
+            "description": "Color-balanced composite using visible bands (red, green, blue) to approximate natural human vision of the landscape.",
+            "regex": ".*(naturalColor|naturalcolor).*.tif$",
+            "title": "Natural Color"
+        },
+        "tropics": {
+            "description": "Tropics",
+            "regex": ".*(TROPICS).*.tif$",
+            "title": "Tropics"
+        },
+        "trueColor": {
+            "description": "Standard RGB composite using visible bands (red, green, blue) without color balancing adjustments.",
+            "regex": ".*(trueColor|truecolor).*.tif$",
+            "title": "True Color"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "{}"
+}
