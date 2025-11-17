@@ -1,7 +1,0 @@
-{
-    "collection": "gra2pes-ghg-monthgrid-v1",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "transformed_cogs/GRA2PES/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*GRA2PESv1.0_total.*.tif$"
-}

@@ -1,5 +1,5 @@
 {
-    "collection": "landsat-all-vars-daily",
+    "collection": "landsat-all-vars-tiles-daily",
     "bucket": "nasa-disasters",
     "prefix": "drcs_activations_new/Landsat",
     "cogify": false,
@@ -17,20 +17,10 @@
             "regex": ".*(colorInfrared|colorIR|colorinfrared).*.tif$",
             "title": "Color Infrared"
         },
-        "mndwi": {
-            "description": "Water detection index using green and shortwave infrared bands. Enhances open water features and suppresses built-up areas.",
-            "regex": ".*MNDWI.*.tif$",
-            "title": "Modified Normalized Difference Water Index"
-        },
         "naturalColor": {
             "description": "Color-balanced composite using visible bands (red, green, blue) to approximate natural human vision of the landscape.",
             "regex": ".*(naturalColor|naturalcolor).*.tif$",
             "title": "Natural Color"
-        },
-        "ndvi": {
-            "description": "Vegetation health index comparing red and near-infrared reflectance. Higher values indicate healthier, denser vegetation.",
-            "regex": ".*(NDVI).*.tif$",
-            "title": "Normalized Difference Vegetation Index"
         },
         "tropics": {
             "description": "Tropics",
@@ -43,6 +33,6 @@
             "title": "True Color"
         }
     },
-    "id_regex": "^(?!.*_(?:[0-9]{6})_).*_(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+    "id_regex": ".*_(Orbit\\d{5})_(\\d{4}-\\d{2}-\\d{2})_day.tif$|.*_([0-9]{6})_.*_(\\d{4}-\\d{2}-\\d{2})_day.tif$",
     "id_template": "landsat-{}"
 }

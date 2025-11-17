@@ -52,7 +52,16 @@
             "title": "Ground Displacement",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "deformation": {
+        "deformation-NS": {
+            "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Surface Deformation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "deformation-EW": {
             "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
             "roles": [
                 "data",
@@ -142,9 +151,21 @@
             ],
             "nodata": -9999
         },
-        "deformation": {
+        "deformation-NS": {
             "assets": [
-                "deformation"
+                "deformation-NS"
+            ],
+            "rescale": [
+                [
+                    -60,
+                    60
+                ]
+            ],
+            "nodata": -9999
+        },
+        "deformation-EW": {
+            "assets": [
+                "deformation-EW"
             ],
             "rescale": [
                 [

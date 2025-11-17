@@ -22,9 +22,14 @@
             "regex": ".*DISP.*.tif$",
             "title": "Ground Displacement"
         },
-        "deformation": {
+        "deformation-NS": {
             "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
-            "regex": ".*SAR_Deformation.*.tif$",
+            "regex": ".*SAR_Deformation_NS.*.tif$",
+            "title": "Surface Deformation"
+        },
+        "deformation-EW": {
+            "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
+            "regex": ".*SAR_Deformation_EW.*.tif$",
             "title": "Surface Deformation"
         },
         "dmgAssess": {
