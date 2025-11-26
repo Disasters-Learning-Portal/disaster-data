@@ -1,0 +1,65 @@
+{
+    "id": "imerg-all-vars-daily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "The Integrated Multi-satellitE Retrievals for GPM (IMERG) is a NASA precipitation product that combines observations from multiple satellites in the Global Precipitation Measurement (GPM) constellation to provide quasi-global precipitation estimates. IMERG provides spatially and temporally continuous precipitation data at high resolution (0.1 degree, approximately 10 km), making it valuable for disaster monitoring, flood forecasting, drought assessment, and water resource management. The algorithm merges precipitation estimates from passive microwave sensors aboard the GPM constellation satellites with infrared data from geostationary satellites, calibrated to the GPM Combined Radar-Radiometer Algorithm. IMERG produces three types of products: Early Run (4-hour latency), Late Run (14-hour latency), and Final Run (3.5-month latency), with the Final Run incorporating monthly gauge data for enhanced accuracy. This product is essential for tracking extreme precipitation events, supporting agricultural decision-making, and providing critical information for disaster preparedness and response operations.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-09-14T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "total": {
+            "description": "Total daily precipitation accumulation derived from IMERG satellite observations, providing spatially continuous rainfall estimates at 0.1 degree resolution for flood monitoring and water resource assessment.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Total Daily Precipitation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "total": {
+            "assets": [
+                "total"
+            ],
+            "rescale": [
+                [
+                    0,
+                    30
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "IMERG All Variables Daily",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

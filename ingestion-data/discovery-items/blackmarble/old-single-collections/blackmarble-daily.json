@@ -1,0 +1,18 @@
+{
+    "collection": "blackmarble-daily-composite",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Blackmarble/daily-composite/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "bm-day": {
+            "description": "Black marble daily composite",
+            "regex": ".*.tif$",
+            "title": "Black marble daily composite"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "{}"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "VIIRS_SNPP_DayNightBand_AtSensor_M15",
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "day",
+  "dashboard:time_interval": "P1D",
+  "description": "Black Marble Nighttime Blue/Yellow Composite derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB) sensor aboard the Suomi NPP satellite. This visualization layer provides at-sensor radiance measurements in a blue/yellow composite, capturing Earth's nighttime illumination patterns including artificial lights, auroras, and other nocturnal phenomena. The Day/Night Band is a low-light imaging sensor capable of detecting visible and near-infrared light wavelengths during nighttime conditions.",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2012-01-19T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "links": [
+    {
+      "href": "https://gibs{s}.earthdata.nasa.gov/wmts/epsg3857/best/wmts.cgi",
+      "rel": "wmts",
+      "type": "image/png",
+      "title": "Visualized through a WMTS",
+      "href:servers": ["-a", "-b"],
+      "wmts:dimensions": {
+        "STYLE": "default"
+      },
+      "wmts:layer": [
+        "VIIRS_SNPP_DayNightBand_AtSensor_M15"
+      ]
+    }
+  ],
+  "product_level": "L1",
+  "providers": [
+    {
+      "name": "NASA Global Imagery Browse Services (GIBS)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://nasa-gibs.github.io/gibs-api-docs/gis-usage/"
+    },
+    {
+      "name": "NASA Level-1 and Atmosphere Archive & Distribution System (LAADS) Distributed Active Archive Center (DAAC)",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.earthdata.nasa.gov/centers/laads-daac"
+    },
+    {
+      "name": "NASA's Earth Science Data and Information System (ESDIS)",
+      "roles": [
+        "licensor"
+      ],
+      "url": "https://www.earthdata.nasa.gov/about/esdis"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+  ],
+  "stac_version": "1.0.0",
+  "temporal_frequency": "daily",
+  "tilematrixset": "GoogleMapsCompatible_Level8",
+  "time_density": "day",
+  "time_interval": "P1D",
+  "title": "Black Marble Nighttime Blue/Yellow Composite (Day/Night Band, VIIRS, Suomi NPP)",
+  "type": "Collection",
+  "units": "W/cm^2/sr",
+  "keywords": ["nighttime lights", "VIIRS", "DNB", "Black Marble", "at-sensor radiance"],
+  "tenant": ["nasa-disasters"],
+  "summaries": {}
+}

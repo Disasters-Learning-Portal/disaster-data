@@ -1,0 +1,69 @@
+{
+    "id": "vsm0-10cm-conus",
+    "dashboard:is_periodic": true,
+    "dashboard:time_interval": "P1D",
+    "description": "The NASA SPoRT Land Information System (LIS) 0-10 cm Soil Moisture Percentile provides daily, 3-km resolution estimates of shallow soil moisture conditions across the contiguous United States. Percentiles are derived by comparing real-time SPoRT-LIS analyses against a 33-year soil moisture climatology (1981-2013). The 0-10 cm layer responds rapidly to precipitation and drying, making it especially useful for short-term monitoring of drought, flooding potential, and fire risk. Products are referenced by agencies contributing to the U.S. Drought Monitor.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.94,
+                    25.06,
+                    -67.07,
+                    52.93
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "vsm0-10cm": {
+            "description": "Soil moisture percentile for the 0-10 cm surface layer, derived from SPoRT-LIS. Values represent the relative wetness or dryness of current soil moisture compared to the 33-year climatology, with low percentiles (≤30) indicating drier-than-normal conditions and high percentiles (≥70) indicating wetter-than-normal conditions.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sport LIS volumetric soil moisture (0-10cm) [CONUS]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "vsm0-10cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Sport LIS volumetric soil moisture (0-10cm) [CONUS]",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

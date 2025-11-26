@@ -1,0 +1,18 @@
+{
+    "collection": "vsm0-200cm-conus",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/sport-lis-cog/vsm0-200cm/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "vsm0-200cm": {
+            "description": "Daily estimates of volumetric soil moisture over CONUS.",
+            "regex": ".*.tif$",
+            "title": "Sport LIS volumetric soil moisture (0-200cm) [CONUS]"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "{}"
+}

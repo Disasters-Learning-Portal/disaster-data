@@ -1,0 +1,18 @@
+{
+    "collection": "sentinel-2-all-vars-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-2/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_monthly.tif$",
+    "assets": {
+        "burnRatio": {
+            "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
+            "regex": ".*(dnbr|NBR).*\\.tif$",
+            "title": "Burn Ratio"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2})_monthly.tif$",
+    "id_template": "sentinel-2-{}"
+}

@@ -1,0 +1,226 @@
+{
+    "id": "uavsar-all-vars-monthly",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1M",
+    "title": "UAVSAR - All Variables (Monthly)",
+    "description": "NASA's Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR) provides high-resolution L-band polarimetric radar imagery for Earth observations. This monthly collection aggregates radar measurements over time for trend analysis and includes multiple products: amplitude data showing radar backscatter intensity, correlation measurements for long-term change detection, interferometric products for cumulative surface deformation analysis, and polarimetric decompositions for characterizing surface properties. UAVSAR's fine spatial resolution and multiple polarization channels enable long-term monitoring of natural disasters and environmental changes, including earthquakes, volcanic activity, landslides, floods, oil spills, and wildfire recovery patterns.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "amplitude-hh": {
+            "description": "Monthly composite of horizontally transmitted and received radar amplitude showing strong returns from smooth surfaces and double-bounce scattering.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Amplitude HH Polarization",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "amplitude-hv": {
+            "description": "Monthly composite of cross-polarized amplitude sensitive to volume scattering from vegetation canopy and rough surfaces.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Amplitude HV Polarization",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "amplitude-vv": {
+            "description": "Monthly composite of vertically transmitted and received radar amplitude showing strong penetration into vegetation and soil moisture sensitivity.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Amplitude VV Polarization",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "correlation": {
+            "description": "Monthly interferometric correlation coefficient indicating long-term temporal stability and coherence between radar acquisitions.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Interferometric Correlation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "interferogram": {
+            "description": "Monthly phase difference measurement for detecting cumulative surface deformation, subsidence, and topographic changes.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Interferogram",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rgb-composite": {
+            "description": "Monthly false-color composite combining multiple polarizations for visual interpretation of surface characteristics.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "RGB Composite",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "deformation": {
+            "description": "Monthly surface deformation map derived from interferometric processing, showing cumulative ground displacement in millimeters.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Surface Deformation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "coherence-change": {
+            "description": "Monthly coherence change detection layer identifying areas with significant temporal decorrelation due to land cover changes or disturbances.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Coherence Change Detection",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Jet Propulsion Laboratory",
+            "roles": [
+                "producer",
+                "processor"
+            ],
+            "url": "https://uavsar.jpl.nasa.gov/"
+        },
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+                "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+        }
+    ],
+    "renders": {
+        "amplitude-hh": {
+            "assets": [
+                "amplitude-hh"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "amplitude-hv": {
+            "assets": [
+                "amplitude-hv"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "amplitude-vv": {
+            "assets": [
+                "amplitude-vv"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": 0
+        },
+        "correlation": {
+            "assets": [
+                "correlation"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "interferogram": {
+            "assets": [
+                "interferogram"
+            ],
+            "rescale": [
+                [
+                    -3.14159,
+                    3.14159
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "rgb-composite": {
+            "bidx": [1, 2, 3],
+            "assets": [
+                "rgb-composite"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "deformation": {
+            "assets": [
+                "deformation"
+            ],
+            "rescale": [
+                [
+                    -500,
+                    500
+                ]
+            ],
+            "nodata": -9999.0
+        },
+        "coherence-change": {
+            "assets": [
+                "coherence-change"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": -9999.0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

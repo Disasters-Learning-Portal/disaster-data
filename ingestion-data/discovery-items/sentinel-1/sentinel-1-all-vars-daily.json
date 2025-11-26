@@ -1,0 +1,58 @@
+{
+    "collection": "sentinel-1-all-vars-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_day.tif$",
+    "assets": {
+        "aria": {
+            "description": "RGB composite derived from ARIA SAR processing for visual interpretation of radar backscatter patterns.",
+            "regex": ".*aria.*.tif$",
+            "title": "ARIA RGB Composite"
+        },
+        "azi": {
+            "description": "Azimuth offset measurements detecting horizontal ground displacement perpendicular to satellite flight direction.",
+            "regex": ".*AZI.*.tif$",
+            "title": "Azimuth Offset"
+        },
+        "displacement": {
+            "description": "Ground displacement measurements derived from SAR interferometry showing surface movement magnitude.",
+            "regex": ".*DISP.*.tif$",
+            "title": "Ground Displacement"
+        },
+        "deformation-NS": {
+            "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
+            "regex": ".*SAR_Deformation_NS.*.tif$",
+            "title": "Surface Deformation"
+        },
+        "deformation-EW": {
+            "description": "Surface deformation measurements from interferometric SAR processing showing vertical and horizontal ground movement.",
+            "regex": ".*SAR_Deformation_EW.*.tif$",
+            "title": "Surface Deformation"
+        },
+        "dmgAssess": {
+            "description": "Damage assessment product identifying areas of potential structural damage from disaster events.",
+            "regex": ".*dmgassessment.*.tif$",
+            "title": "Damage Assessment"
+        },
+        "dpm": {
+            "description": "Damage Proxy Map showing changes in SAR backscatter indicating potential building damage or destruction.",
+            "regex": ".*DPM.*.tif$",
+            "title": "Damage Proxy Map"
+        },
+        "hydrosar-wm-diff": {
+            "description": "Water mapping difference product showing changes in surface water extent between time periods for flood detection.",
+            "regex": ".*WM_d\\d{4}-\\d{2}-\\d{2}_.*.tif$",
+            "title": "HydroSAR Water Map Difference"
+        },
+        "rgb": {
+            "description": "RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "regex": ".*(RGB|rgb).*.tif$",
+            "title": "RGB Composite"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+    "id_template": "sentinel-1-{}"
+}

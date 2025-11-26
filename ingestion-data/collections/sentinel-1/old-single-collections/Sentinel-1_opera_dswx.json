@@ -1,0 +1,94 @@
+{
+    "id": "S1-OperaDSWX",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "The Dynamic Surface Water eXtent (DSWx) products map pixel-wise surface water detections using optical or SAR imagery. The DSWx suite is composed of complementary products, which are named according to their input datasets. Specifically, a separate DSWx product is generated from Sentinel-1, NISAR, and the Harmonized Landsat Sentinel-2 (HLS) data. The products are designed to share the same structure, GeoTiff file format, file-naming convention, and have posting of 30 m. These DSWx products are provided as an analysis ready dataset but are not harmonized across the different sensors. All products will be accessible through NASA’s Physical Oceanography Distributed Active Archive Center (PO.DAAC).",
+    "title": "Sentinel 1 Opera DSWX",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-25T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "wtr": {
+            "description": "Sentinel-1_opera_dswx-wtr",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-1_opera_dswx-wtr",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bwtr": {
+            "description": "Sentinel-1_opera_dswx-bwtr",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-1_opera_dswx-bwtr",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "bwtr-changeMap": {
+            "description": "Sentinel-1_opera_dswx-bwtr-changeMap",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-1_opera_dswx-bwtr-changeMap",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "wtr": {
+            "assets": [
+                "wtr"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        },
+        "bwtr": {
+            "assets": [
+                "bwtr"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

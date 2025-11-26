@@ -1,7 +1,0 @@
-{
-    "collection": "oco2geos-co2-daygrid-v10r",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "oco2geos-co2-daygrid-v10r/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}

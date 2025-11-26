@@ -1,0 +1,18 @@
+{
+    "collection": "rsm0-10cm-conus",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/sport-lis-cog/rsm0-10cm/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "rsm0-10cm": {
+            "description": "Daily estimates of relative soil moisture over CONUS.",
+            "regex": ".*.tif$",
+            "title": "Sport LIS Relative soil moisture (0-10cm) [CONUS]"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "{}"
+}

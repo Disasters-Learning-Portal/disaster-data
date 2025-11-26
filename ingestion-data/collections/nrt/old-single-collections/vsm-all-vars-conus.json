@@ -1,0 +1,129 @@
+{
+    "id": "vsm-all-vars-conus",
+    "dashboard:is_periodic": true,
+    "dashboard:time_interval": "P1D",
+    "description": "The NASA SPoRT Land Information System (LIS) Volumetric Soil Moisture Percentile products provide daily assessments of soil wetness conditions across the contiguous United States at approximately 3-kilometer resolution. Percentiles are calculated against a 33-year climatology (1981-2013) to show how unusual current soil moisture values are for the given day of year. This collection includes multiple soil depth layers (0-10cm, 0-40cm, 0-100cm, and 0-200cm), each responding to precipitation and drying at different timescales. Surface layers (0-10cm) respond rapidly to short-term weather events, making them useful for fire risk and flash drought monitoring. Intermediate layers (0-40cm, 0-100cm) balance short-term surface changes with slower subsurface responses, supporting agricultural and hydrological applications. The full column layer (0-200cm) captures long-term drought and groundwater trends. These products are widely used by agencies contributing to the U.S. Drought Monitor and support disaster monitoring, agricultural decision-making, and water resource management.",
+    "title": "SPoRT LIS Volumetric Soil Moisture - All Variables [CONUS]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.94,
+                    25.06,
+                    -67.07,
+                    52.93
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "vsm0-10cm": {
+            "description": "Volumetric soil moisture percentile for the 0-10cm surface layer. This layer responds rapidly to precipitation and drying, making it especially useful for short-term monitoring of drought, flooding potential, and fire risk.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Volumetric Soil Moisture (0-10cm)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "vsm0-40cm": {
+            "description": "Volumetric soil moisture percentile for the 0-40cm cumulative layer. This layer responds more gradually than surface layers, balancing short-term rainfall response with intermediate soil storage, useful for agricultural and fire risk applications.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Volumetric Soil Moisture (0-40cm)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "vsm0-100cm": {
+            "description": "Volumetric soil moisture percentile for the 0-100cm cumulative layer. This layer integrates surface and subsurface moisture, responding over weeks to months, valuable for drought monitoring, hydrology, and agriculture.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Volumetric Soil Moisture (0-100cm)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "vsm0-200cm": {
+            "description": "Volumetric soil moisture percentile for the full 0-200cm soil column. This layer responds slowly, capturing deep soil changes on seasonal to multi-year timescales, essential for long-term drought and groundwater assessments.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Volumetric Soil Moisture (0-200cm)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "vsm0-10cm": {
+            "assets": [
+                "vsm0-10cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        },
+        "vsm0-40cm": {
+            "assets": [
+                "vsm0-40cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        },
+        "vsm0-100cm": {
+            "assets": [
+                "vsm0-100cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        },
+        "vsm0-200cm": {
+            "assets": [
+                "vsm0-200cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
