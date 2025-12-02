@@ -1,0 +1,112 @@
+{
+    "id": "planet-all-vars-daily",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "Collection containing Cloud Mask (binary) and NDVI (-1 to 1) layers derived from Planet imagery.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2025-12-31T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "cloudMask": {
+            "description": "Binary cloud mask (0 = clear, 1 = cloud).",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Cloud Mask",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "ndvi": {
+            "description": "Normalized Difference Vegetation Index (NDVI), scaled between -1 and 1.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "NDVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "renders": {
+        "cloudMask": {
+            "assets": [
+                "cloudMask"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "nodata": 999
+        },
+        "ndvi": {
+            "assets": [
+                "ndvi"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ]
+        }
+    },
+    "discovery_items": [
+        {
+            "assets": {
+                "cloudMask": {
+                    "description": "Binary cloud mask (0 = clear, 1 = cloud).",
+                    "regex": ".*cloudMask.*\\.tif$",
+                    "title": "Cloud Mask"
+                },
+                "ndvi": {
+                    "description": "Normalized Difference Vegetation Index (NDVI), scaled between -1 and 1.",
+                    "regex": ".*NDVI.*\\.tif$",
+                    "title": "NDVI"
+                }
+            },
+            "bucket": "nasa-disasters",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*\\.tif$",
+            "id_regex": ".*_(.*)\\.tif$",
+            "id_template": "planet-{}",
+            "prefix": "drcs_activations_new/Planet/"
+        }
+    ],
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Planet All Variables - Daily Time Step",
+    "type": "Collection",
+    "tenant": [
+        "nasa-disasters"
+    ]
+}
