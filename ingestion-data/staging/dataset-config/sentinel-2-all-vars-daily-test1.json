@@ -1,0 +1,337 @@
+{
+  "collection": "sentinel-2-all-vars-daily-test1",
+  "title": "Sentinel-2 Daily",
+  "description": "Sentinel-2 is a multispectral optical imaging mission providing high-resolution imagery for disaster monitoring and environmental assessment. This collection includes multiple spectral band products and derived indices: true color and false color composites for visual analysis, NDVI for vegetation health monitoring, burn ratio for fire damage assessment, MNDWI for water detection, and cloud masks for data quality filtering.",
+  "license": "CC0-1.0",
+  "stac_version": "1.0.0",
+  "dashboard:is_periodic": false,
+  "dashboard:time_interval": "P1D",
+  "links": [],
+  "spatial_extent": {
+    "xmin": -125,
+    "ymin": -24,
+    "xmax": 66,
+    "ymax": 49
+  },
+  "temporal_extent": {
+    "startdate": "2020-01-01T00:00:00Z",
+    "enddate": null
+  },
+  "discovery_items": [
+    {
+      "discovery": "s3",
+      "prefix": "drcs_activations_new/Sentinel-2/",
+      "bucket": "nasa-disasters",
+      "filename_regex": ".*day.tif$",
+      "id_regex": ".*(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+      "id_template": "sentinel-2-{}",
+      "use_multithreading": false,
+      "collection": "sentinel-2-all-vars-daily-test1",
+      "cogify": false,
+      "dry_run": false,
+      "assets": {
+        "burnRatio": {
+          "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*(dnbr|NBR).*\\.tif$",
+          "title": "Burn Ratio"
+        },
+        "cloudMask": {
+          "description": "Cloud and cloud shadow mask identifying pixels obscured by atmospheric conditions for data quality filtering.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*cloudMask.*\\.tif$",
+          "title": "Cloud Mask"
+        },
+        "colorIR": {
+          "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*(colorIR|colorInfrared|colorinfrared).*\\.tif$",
+          "title": "Color Infrared"
+        },
+        "mndwi": {
+          "description": "Modified Normalized Difference Water Index for detecting and mapping surface water bodies and flood extent.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*MNDWI.*\\.tif$",
+          "title": "MNDWI"
+        },
+        "naturalColor": {
+          "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*(naturalColor|naturalColorRGB|naturalcolor).*\\.tif$",
+          "title": "Natural Color"
+        },
+        "ndvi": {
+          "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+          "regex": "^(?!.*_NDVIchange_)(?!.*_T[0-9A-Z]{5}_).*(NDVI|ndvi).*\\.tif$",
+          "title": "NDVI"
+        },
+        "ndviChange": {
+          "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*NDVIchange.*\\.tif$",
+          "title": "NDVI"
+        },
+        "shortwaveIR": {
+          "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*(shortwaveIR|SWI|shortwaveInfrared|shortwaveinfrared).*\\.tif$",
+          "title": "Shortwave Infrared"
+        },
+        "trueColor": {
+          "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
+          "regex": "^(?!.*_T[0-9A-Z]{5}_).*(trueColor||truecolor|TCI).*\\.tif$",
+          "title": "True Color"
+        }
+      }
+    }
+  ],
+  "sample_files": [
+    ""
+  ],
+  "data_type": "cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "item_assets": {
+    "cog_default": {
+      "roles": []
+    },
+    "burnRatio": {
+      "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Burn Ratio",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "cloudMask": {
+      "description": "Cloud and cloud shadow mask identifying pixels obscured by atmospheric conditions for data quality filtering.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Cloud Mask",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "colorIR": {
+      "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Color Infrared",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "mndwi": {
+      "description": "Modified Normalized Difference Water Index for detecting and mapping surface water bodies and flood extent.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "MNDWI",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "naturalColor": {
+      "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Natural Color",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "ndvi": {
+      "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "NDVI",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "ndviChange": {
+      "description": "Normalized Difference Vegetation Index change between dates measuring vegetation health and density using near-infrared and red bands.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "NDVI Change",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "shortwaveIR": {
+      "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Shortwave Infrared",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "trueColor": {
+      "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "True Color",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  },
+  "renders": {
+    "dashboard": {
+      "assets": [
+        "burnRatio"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "nodata": -9999
+    },
+    "burnRatio": {
+      "assets": [
+        "burnRatio"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "nodata": -9999
+    },
+    "cloudMask": {
+      "assets": [
+        "cloudMask"
+      ],
+      "rescale": [
+        [
+          0,
+          1
+        ]
+      ],
+      "nodata": 0
+    },
+    "colorIR": {
+      "assets": [
+        "colorIR"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ],
+      "rescale": [
+        [
+          0,
+          255
+        ]
+      ],
+      "nodata": 0
+    },
+    "mndwi": {
+      "assets": [
+        "mndwi"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "nodata": 999
+    },
+    "naturalColor": {
+      "assets": [
+        "naturalColor"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ],
+      "rescale": [
+        [
+          0,
+          255
+        ]
+      ],
+      "nodata": 0
+    },
+    "ndvi": {
+      "assets": [
+        "ndvi"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "nodata": 0
+    },
+    "ndviChange": {
+      "assets": [
+        "ndviChange"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "nodata": 0
+    },
+    "shortwaveIR": {
+      "assets": [
+        "shortwaveIR"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ],
+      "rescale": [
+        [
+          0,
+          255
+        ]
+      ],
+      "nodata": 0
+    },
+    "trueColor": {
+      "assets": [
+        "trueColor"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ],
+      "rescale": [
+        [
+          0,
+          255
+        ]
+      ],
+      "nodata": 0
+    }
+  },
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.earthdata.nasa.gov/dashboard/"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "title": "Thumbnail",
+      "description": "test",
+      "href": "https://veda-thumbnails.s3.us-west-2.amazonaws.com/cattle_cover_2000x1000.png",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
