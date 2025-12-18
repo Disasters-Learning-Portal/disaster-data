@@ -1,5 +1,5 @@
-# ghgc-data
-This repository houses data and config used to create STAC records to be published to the [US GHG Center Data Catalog](https://radiantearth.github.io/stac-browser/#/external/earth.gov/ghgcenter/api/stac/?.language=en). Inclusion in the US GHG Center catalog is a prerequisite for displaying the dataset in the [US GHG Center web portal](https://earth.gov/ghgcenter).
+# disasters-data
+This repository houses data and config used to create STAC records to be published to the Disasters STAC catalog.
 
 # Repository layout
 The repo follows the following folder structure:
