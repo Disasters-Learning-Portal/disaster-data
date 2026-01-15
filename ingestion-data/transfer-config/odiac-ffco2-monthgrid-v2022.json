@@ -1,7 +1,0 @@
-{
-    "collection": "odiac-ffco2-monthgrid-v2022",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "odiac-ffco2-monthgrid-v2022/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}

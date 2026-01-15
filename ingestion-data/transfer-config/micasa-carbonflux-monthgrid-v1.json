@@ -1,7 +1,0 @@
-{
-    "collection": "micasa-carbonflux-monthgrid-v1",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "micasa-carbonflux-monthgrid-v1/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*MiCASA_v1.*.tif$"
-}

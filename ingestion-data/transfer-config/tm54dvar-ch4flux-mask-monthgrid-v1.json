@@ -1,7 +1,0 @@
-{
-    "collection": "tm54dvar-ch4flux-mask-monthgrid-v1",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "tm54dvar-ch4flux-mask-monthgrid-v1/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}
