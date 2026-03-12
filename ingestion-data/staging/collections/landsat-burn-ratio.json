@@ -1,0 +1,103 @@
+{
+  "type": "Collection",
+  "id": "landsat-burn-ratio",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/renders/v1.0.0/schema.json"
+  ],
+  "title": "Landsat Normalized Burn Ratio",
+  "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
+  "license": "CC0-1.0",
+  "keywords": [
+    "landsat",
+    "nbr",
+    "normalized burn ratio",
+    "composites"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "item_assets": {
+    "nbr": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Normalized Burn Ratio",
+      "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment."
+    }
+  },
+  "renders": {
+    "nbr": {
+      "assets": [
+        "nbr"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "nodata": -9999
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://example.com/stac/collections/landsat-burn-ratio",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "https://example.com/stac",
+      "type": "application/json"
+    }
+  ],
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": [
+        "producer",
+        "host"
+      ],
+      "url": "https://www.nasa.gov"
+    }
+  ],
+  "product": "nbr",
+  "sensor": "landsat",
+  "summaries": {
+    "hazards": [
+      "landslide",
+      "hurricane",
+      "flooding",
+      "earthquake"
+    ],
+    "themes": [
+      "drcs",
+      "response",
+      "recovery"
+    ],
+    "event_names": [
+      "empty array, ready to populate per event"
+    ]
+  }
+}
