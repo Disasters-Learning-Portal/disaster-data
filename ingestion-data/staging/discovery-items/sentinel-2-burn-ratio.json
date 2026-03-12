@@ -11,12 +11,12 @@
                 "event_names": "Fire CA",
                 "hazards": ["fire"],
                 "sensor": "sentinel-2",
-                "product": "burn-ratio",
-                "assets": {
-                    "burn-ratio": {
-                        "title": "Normalized Burn Ratio",
-                        "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment."
-                    }
+                "product": "burn-ratio"
+            },
+            "assets": {
+                "burn-ratio": {
+                    "title": "Normalized Burn Ratio",
+                    "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment."
                 }
             }
         }
