@@ -11,8 +11,7 @@
   "license": "CC0-1.0",
   "keywords": [
     "landsat",
-    "nbr",
-    "normalized burn ratio",
+    "burn-ratio",
     "composites"
   ],
   "extent": {
@@ -36,7 +35,7 @@
     }
   },
   "item_assets": {
-    "nbr": {
+    "burn-ratio": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data",
@@ -47,9 +46,9 @@
     }
   },
   "renders": {
-    "nbr": {
+    "burn-ratio": {
       "assets": [
-        "nbr"
+        "burn-ratio"
       ],
       "rescale": [
         [
@@ -76,9 +75,7 @@
   "summaries": {
     "hazards": [
       "landslide",
-      "hurricane",
-      "flooding",
-      "earthquake"
+      "fire"
     ],
     "themes": [
       "drcs",

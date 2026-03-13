@@ -11,7 +11,7 @@
   "license": "CC0-1.0",
   "keywords": [
     "sentinel-2",
-    "nbr",
+    "burn-ratio",
     "composites"
   ],
   "extent": {
@@ -46,9 +46,9 @@
     }
   },
   "renders": {
-    "nbr": {
+    "burn-ratio": {
       "assets": [
-        "nbr"
+        "burn-ratio"
       ],
       "rescale": [
         [
@@ -70,14 +70,12 @@
       "url": "https://www.nasa.gov"
     }
   ],
-  "product": "nbr",
+  "product": "burn-ratio",
   "sensor": "sentinel-2",
   "summaries": {
     "hazards": [
       "landslide",
-      "hurricane",
-      "flooding",
-      "earthquake"
+      "fire"
     ],
     "themes": [
       "drcs",
