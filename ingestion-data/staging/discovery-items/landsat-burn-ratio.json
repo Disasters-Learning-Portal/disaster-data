@@ -4,7 +4,7 @@
             "collection": "landsat-burn-ratio",
             "prefix": "drcs_activations_new/Landsat/burnRatio/",
             "bucket": "nasa-disasters",
-            "filename_regex": "^(.*).Fire_CA.*_day.tif$",
+            "filename_regex": "^(.*).Fire_CA_LC.*_day.tif$",
             "discovery": "s3",
             "datetime_range": "day",
             "properties": {

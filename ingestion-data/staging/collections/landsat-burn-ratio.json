@@ -59,7 +59,8 @@
           1
         ]
       ],
-      "nodata": -9999
+      "nodata": -9999.0,
+      "colormap_name": "viridis"
     },
     "burn-ratio": {
       "assets": [
@@ -71,7 +72,8 @@
           1
         ]
       ],
-      "nodata": -9999
+      "nodata": -9999.0,
+      "colormap_name": "viridis"
     }
   },
   "links": [],
