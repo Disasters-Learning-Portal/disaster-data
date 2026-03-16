@@ -1,7 +1,7 @@
 {
     "discovery_items": [
         {
-            "collection": "sentinel-true-color",
+            "collection": "sentinel-2-true-color",
             "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
             "bucket": "nasa-disasters",
             "filename_regex": "^(.*)Earthquake_Turkiye(.*)trueColorRGB.*.tif$",
@@ -21,10 +21,10 @@
             }
         },
         {
-            "collection": "sentinel-true-color",
+            "collection": "sentinel-2-true-color",
             "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
             "bucket": "nasa-disasters",
-            "filename_regex": "^(.*)Flood_NewEngland(.*)trueColorRGB.*.tif$",
+            "filename_regex": "^(.*)Flood_NewEngland(.*)trueColor.*_day.tif$",
             "discovery": "s3",
             "datetime_range": "day",
             "properties": {
@@ -41,10 +41,10 @@
             }
         },
         {
-            "collection": "sentinel-true-color",
+            "collection": "sentinel-2-true-color",
             "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
             "bucket": "nasa-disasters",
-            "filename_regex": "^(.*)Fire_Guatemala(.*)trueColorRGB.*.tif$",
+            "filename_regex": "^(.*)Fire_Guatemala(.*)trueColor.*_day.tif$",
             "discovery": "s3",
             "datetime_range": "day",
             "properties": {
@@ -61,10 +61,10 @@
             }
         },
         {
-            "collection": "sentinel-true-color",
+            "collection": "sentinel-2-true-color",
             "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
             "bucket": "nasa-disasters",
-            "filename_regex": "^(.*)Flood_Brasil(.*)trueColorRGB.*.tif$",
+            "filename_regex": "^(.*)Flood_Brasil(.*)trueColor.*_day.tif$",
             "discovery": "s3",
             "datetime_range": "day",
             "properties": {

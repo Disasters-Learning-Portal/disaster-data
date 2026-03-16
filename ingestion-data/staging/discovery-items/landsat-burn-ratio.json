@@ -10,7 +10,7 @@
             "properties": {
                 "event_names": ["Fire CA"],
                 "hazards": ["fire"],
-                "sensor": "sentinel-2",
+                "sensor": "landsat",
                 "product": "burn-ratio"
             },
             "assets": {
