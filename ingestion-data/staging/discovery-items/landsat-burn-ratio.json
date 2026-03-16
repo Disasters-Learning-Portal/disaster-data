@@ -8,7 +8,7 @@
             "discovery": "s3",
             "datetime_range": "day",
             "properties": {
-                "event_names": "Fire CA",
+                "event_names": ["Fire CA"],
                 "hazards": ["fire"],
                 "sensor": "sentinel-2",
                 "product": "burn-ratio"

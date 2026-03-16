@@ -14,6 +14,9 @@
     "burn-ratio",
     "composites"
   ],
+  "dashboard:is_periodic": false,
+  "dashboard:time_interval": "P1D",
+  "dashboard:time_density": "day",
   "extent": {
     "spatial": {
       "bbox": [
@@ -75,15 +78,17 @@
   "summaries": {
     "hazards": [
       "landslide",
-      "fire"
+      "fire",
+      "could be updated per event with a pgstac cron"
     ],
     "themes": [
       "drcs",
       "response",
-      "recovery"
+      "recovery",
+      "could be updated per event with a pgstac cron"
     ],
     "event_names": [
-      "empty array, ready to populate per event"
+      "empty array, could be updated per event with a pgstac cron"
     ]
   }
 }
