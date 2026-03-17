@@ -1,0 +1,25 @@
+{
+    "discovery_items": [
+        {
+            "collection": "landsat-burn-ratio",
+            "prefix": "drcs_activations_new/Landsat/burnRatio/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*).Fire_CA_LC.*_day.tif$",
+            "discovery": "s3",
+            "properties": {
+                "event_names": ["Fire CA"],
+                "hazards": ["fire"],
+                "sensor": "landsat",
+                "product": "burn-ratio",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "burn-ratio": {
+                    "title": "Normalized Burn Ratio",
+                    "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment."
+                }
+            }
+        }
+    ]
+}

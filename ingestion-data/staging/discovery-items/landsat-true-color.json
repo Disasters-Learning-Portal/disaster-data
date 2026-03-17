@@ -1,0 +1,92 @@
+{
+    "discovery_items": [
+        {
+            "collection": "landsat-true-color",
+            "prefix": "drcs_activations_new/Landsat/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Earthquake_Turkiye(.*)trueColor(.*)_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Earthquake Turkiye"],
+                "hazards": ["earthquake"],
+                "sensor": "landsat",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "landsat-true-color",
+            "prefix": "drcs_activations_new/Landsat/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Hurricane_Idalia(.*)trueColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Hurricane Idalia"],
+                "hazards": ["hurricaine"],
+                "sensor": "landsat",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "landsat-true-color",
+            "prefix": "drcs_activations_new/Landsat/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)TropicalStorm_Debby(.*)trueColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["TropicalStorm Debby"],
+                "hazards": ["tropical storm"],
+                "sensor": "landsat",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "landsat-true-color",
+            "prefix": "drcs_activations_new/Landsat/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Flood_OhioValley(.*)trueColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Flood Ohio Valley"],
+                "hazards": ["flood"],
+                "sensor": "landsat",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        }
+    ]
+}

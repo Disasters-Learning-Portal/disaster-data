@@ -1,0 +1,92 @@
+{
+    "discovery_items": [
+        {
+            "collection": "landsat-natural-color",
+            "prefix": "drcs_activations_new/Landsat/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Earthquake_Turkiye(.*)naturalColor(.*)_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Earthquake Turkiye"],
+                "hazards": ["earthquake"],
+                "sensor": "landsat",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "landsat-natural-color",
+            "prefix": "drcs_activations_new/Landsat/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Hurricane_Idalia(.*)naturalColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Hurricane Idalia"],
+                "hazards": ["hurricaine"],
+                "sensor": "landsat",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "landsat-natural-color",
+            "prefix": "drcs_activations_new/Landsat/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)TropicalStorm_Debby(.*)naturalColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["TropicalStorm Debby"],
+                "hazards": ["tropical storm"],
+                "sensor": "landsat",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "landsat-natural-color",
+            "prefix": "drcs_activations_new/Landsat/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Flood_OhioValley(.*)naturalColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Flood Ohio Valley"],
+                "hazards": ["flood"],
+                "sensor": "landsat",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        }
+    ]
+}

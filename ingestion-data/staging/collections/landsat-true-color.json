@@ -1,0 +1,85 @@
+{
+  "type": "Collection",
+  "id": "landsat-true-color",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/renders/v1.0.0/schema.json"
+  ],
+  "title": "Landsat True Color Composites",
+  "description": "True color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
+  "license": "CC0-1.0",
+  "keywords": [
+    "landsat",
+    "true-color",
+    "composites"
+  ],
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "day",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "item_assets": {
+    "true-color": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "True Color",
+      "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+    }
+  },
+  "renders": {
+    "dashboard": {
+      "assets": [
+        "true-color"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ]
+    },
+    "true-color": {
+      "assets": [
+        "true-color"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "links": [],
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": [
+        "producer",
+        "host"
+      ],
+      "url": "https://www.nasa.gov"
+    }
+  ],
+  "product": "true-color",
+  "sensor": "landsat"
+}

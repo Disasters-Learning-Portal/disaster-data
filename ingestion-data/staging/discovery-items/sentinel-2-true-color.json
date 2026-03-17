@@ -1,0 +1,92 @@
+{
+    "discovery_items": [
+        {
+            "collection": "sentinel-2-true-color",
+            "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Earthquake_Turkiye(.*)trueColorRGB.*.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Earthquake Turkiye"],
+                "hazards": ["earthquake"],
+                "sensor": "sentinel-2",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "sentinel-2-true-color",
+            "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Flood_NewEngland(.*)trueColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Flood New England"],
+                "hazards": ["flood"],
+                "sensor": "sentinel-2",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "sentinel-2-true-color",
+            "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Fire_Guatemala(.*)trueColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Fire Guatemala"],
+                "hazards": ["fire"],
+                "sensor": "sentinel-2",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "sentinel-2-true-color",
+            "prefix": "drcs_activations_new/Sentinel-2/trueColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Flood_Brasil(.*)trueColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Flood Brasil"],
+                "hazards": ["flood"],
+                "sensor": "sentinel-2",
+                "product": "true-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "true-color": {
+                    "title": "True Color RGB",
+                    "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        }
+    ]
+}

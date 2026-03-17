@@ -1,0 +1,26 @@
+{
+    "discovery_items": [
+        {
+            "collection": "sentinel-2-burn-ratio",
+            "prefix": "drcs_activations_new/Sentinel-2/burnRatio/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*).Fire_CA.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Fire CA"],
+                "hazards": ["fire"],
+                "sensor": "sentinel-2",
+                "product": "burn-ratio",
+                "program": "drcs",
+                "routine": false
+            },
+            "assets": {
+                "burn-ratio": {
+                    "title": "Normalized Burn Ratio",
+                    "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment."
+                }
+            }
+        }
+    ]
+}

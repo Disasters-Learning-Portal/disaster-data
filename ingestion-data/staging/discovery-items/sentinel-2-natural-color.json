@@ -1,0 +1,92 @@
+{
+    "discovery_items": [
+        {
+            "collection": "sentinel-2-natural-color",
+            "prefix": "drcs_activations_new/Sentinel-2/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Earthquake_Turkiye(.*)naturalColorRGB.*.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Earthquake Turkiye"],
+                "hazards": ["earthquake"],
+                "sensor": "sentinel-2",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "sentinel-2-natural-color",
+            "prefix": "drcs_activations_new/Sentinel-2/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Hurricane_Idalia(.*)naturalColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Hurricane Idalia"],
+                "hazards": ["hurricaine"],
+                "sensor": "sentinel-2",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "sentinel-2-natural-color",
+            "prefix": "drcs_activations_new/Sentinel-2/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)TropicalStorm_Debby(.*)naturalColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["TropicalStorm Debby"],
+                "hazards": ["tropical storm"],
+                "sensor": "sentinel-2",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        },
+        {
+            "collection": "sentinel-2-natural-color",
+            "prefix": "drcs_activations_new/Sentinel-2/naturalColor/",
+            "bucket": "nasa-disasters",
+            "filename_regex": "^(.*)Flood_OhioValley(.*)naturalColor.*_day.tif$",
+            "discovery": "s3",
+            "datetime_range": "day",
+            "properties": {
+                "event_names": ["Flood Ohio Valley"],
+                "hazards": ["flood"],
+                "sensor": "sentinel-2",
+                "product": "natural-color",
+                "programs": ["drcs"],
+                "routine": false
+            },
+            "assets": {
+                "natural-color": {
+                    "title": "Natural Color RGB",
+                    "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+                }
+            }
+        }
+    ]
+}

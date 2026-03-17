@@ -1,0 +1,85 @@
+{
+  "type": "Collection",
+  "id": "sentinel-2-natural-color",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/renders/v1.0.0/schema.json"
+  ],
+  "title": "Sentinel-2 Natural Color Composites",
+  "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.. Sentinel-2 is a multispectral optical imaging mission providing high-resolution imagery for disaster monitoring and environmental assessment.",
+  "license": "CC0-1.0",
+  "keywords": [
+    "sentinel-2",
+    "natural color",
+    "composites"
+  ],
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "day",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "item_assets": {
+    "true-color": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Natural Color RGB",
+      "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
+    }
+  },
+  "renders": {
+    "dashboard": {
+      "assets": [
+        "natural-color"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ]
+    },
+    "natural-color": {
+      "assets": [
+        "natural-color"
+      ],
+      "bidx": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "links": [],
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": [
+        "producer",
+        "host"
+      ],
+      "url": "https://www.nasa.gov"
+    }
+  ],
+  "product": "natural-color",
+  "sensor": "sentinel-2"
+}
