@@ -1,17 +1,17 @@
 {
   "type": "Collection",
-  "id": "landsat-burn-ratio",
+  "id": "landsat-natural-color",
   "stac_version": "1.0.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
     "https://stac-extensions.github.io/renders/v1.0.0/schema.json"
   ],
-  "title": "Landsat Normalized Burn Ratio",
-  "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment.",
+  "title": "Landsat Natural Color Composites",
+  "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
   "license": "CC0-1.0",
   "keywords": [
     "landsat",
-    "burn-ratio",
+    "natural-color",
     "composites"
   ],
   "dashboard:is_periodic": false,
@@ -37,42 +37,36 @@
     }
   },
   "item_assets": {
-    "burn-ratio": {
+    "natural-color": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data",
         "layer"
       ],
-      "title": "Normalized Burn Ratio",
-      "description": "Normalized Burn Ratio (NBR) index highlighting burned areas by comparing near-infrared and shortwave infrared bands for fire damage assessment."
+      "title": "Natural Color",
+      "description": "Natural color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface."
     }
   },
   "renders": {
     "dashboard": {
       "assets": [
-        "burn-ratio"
+        "natural-color"
       ],
-      "rescale": [
-        [
-          -1,
-          1
-        ]
-      ],
-      "nodata": -9999.0,
-      "colormap_name": "viridis"
+      "bidx": [
+        1,
+        2,
+        3
+      ]
     },
-    "burn-ratio": {
+    "natural-color": {
       "assets": [
-        "burn-ratio"
+        "natural-color"
       ],
-      "rescale": [
-        [
-          -1,
-          1
-        ]
-      ],
-      "nodata": -9999.0,
-      "colormap_name": "viridis"
+      "bidx": [
+        1,
+        2,
+        3
+      ]
     }
   },
   "links": [],
@@ -86,6 +80,6 @@
       "url": "https://www.nasa.gov"
     }
   ],
-  "product": "burn-ratio",
+  "product": "natural-color",
   "sensor": "landsat"
 }

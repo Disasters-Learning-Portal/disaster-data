@@ -6,12 +6,13 @@
             "bucket": "nasa-disasters",
             "filename_regex": "^(.*).Fire_CA_LC.*_day.tif$",
             "discovery": "s3",
-            "datetime_range": "day",
             "properties": {
                 "event_names": ["Fire CA"],
                 "hazards": ["fire"],
                 "sensor": "landsat",
-                "product": "burn-ratio"
+                "product": "burn-ratio",
+                "programs": ["drcs"],
+                "routine": false
             },
             "assets": {
                 "burn-ratio": {

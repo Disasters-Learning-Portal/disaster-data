@@ -11,7 +11,9 @@
                 "event_names": ["Fire CA"],
                 "hazards": ["fire"],
                 "sensor": "sentinel-2",
-                "product": "burn-ratio"
+                "product": "burn-ratio",
+                "program": "drcs",
+                "routine": false
             },
             "assets": {
                 "burn-ratio": {
