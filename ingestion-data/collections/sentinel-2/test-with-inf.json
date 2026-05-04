@@ -1,0 +1,90 @@
+{
+    "collection": "error-handling-test",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "description": "Sentinel-2 is a multispectral optical imaging mission providing high-resolution imagery for disaster monitoring and environmental assessment. This collection includes multiple spectral band products and derived indices: true color and false color composites for visual analysis, NDVI for vegetation health monitoring, burn ratio for fire damage assessment, MNDWI for water detection, and cloud masks for data quality filtering.",
+    "title": "Sentinel-2 Daily",
+    "data_type": "cog",
+    "spatial_extent": {
+        "xmin": -125,
+        "ymin": -24,
+        "xmax": 66,
+        "ymax": 49
+    },
+    "temporal_extent": {
+        "startdate": "2020-01-01T00:00:00Z",
+        "enddate": null
+    },
+    "item_assets": {
+        "ndvi": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "NDVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "sample_files": [
+        ""
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "ndvi"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999
+        },
+        "ndvi": {
+            "assets": [
+                "ndvi"
+            ],
+            "rescale": [
+                [
+                    -1,
+                    1
+                ]
+            ],
+            "nodata": -9999
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "discovery_items": [
+        {
+            "collection": "error-handling-test",
+            "bucket": "nasa-disasters",
+            "prefix": "test_uploads/",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*day.tif$",
+            "assets": {
+                "ndvi": {
+                    "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+                    "regex": ".*(NDVI|ndvi).*\\.tif$",
+                    "title": "NDVI"
+                }
+            },
+            "id_regex": ".*(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+            "id_template": "error-handling-test-{}"
+        }
+    ]
+}

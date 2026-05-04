@@ -1,0 +1,18 @@
+{
+    "collection": "landsat-demo",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Landsat-demo",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "swir": {
+        "description": "SWIR Info",
+        "regex": ".*swir.*.tif$",
+        "title": "SWIR"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}_day)\\.tif$",
+    "id_template": "landsat-demo-{}"
+}

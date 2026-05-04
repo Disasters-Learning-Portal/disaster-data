@@ -1,0 +1,88 @@
+{
+    "collection": "landsat-demo",
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "day",
+    "description": "NASA Landsat satellites provide continuous Earth observations since 1972, capturing multispectral imagery across visible and infrared wavelengths. This collection includes multiple visualization products: true and natural color composites, color infrared for vegetation analysis, and calculated indices like NDVI for vegetation health, NBR for burn severity, and MNDWI for water detection. These products support environmental monitoring, disaster response, agriculture, and land cover mapping.",
+    "title": "Landsat - All Variables",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "swir": {
+            "description": "Info about SWIR band.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "SWIR",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "swir": {
+            "bidx": [1,2,3],
+            "assets": [
+                "swir"
+            ],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": -0
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"],
+    "discovery_items": [
+        {
+            "collection": "landsat-demo",
+            "datetime_range": "day",
+            "bucket": "nasa-disasters",
+            "prefix": "drcs_activations_new/Landsat-demo/",
+            "cogify": false,
+            "discovery": "s3",
+            "dry_run": false,
+            "filename_regex": ".*_day.tif$",
+            "assets": {
+                "swir": {
+                    "description": "Info about SWIR.",
+                    "regex": ".*swir.*.tif$",
+                    "title": "SWIR"
+                }
+            },
+            "id_regex": ".*([0-9]{6})_.*_(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+            "id_template": "landsat-demo-{}"
+        }
+    ]
+}

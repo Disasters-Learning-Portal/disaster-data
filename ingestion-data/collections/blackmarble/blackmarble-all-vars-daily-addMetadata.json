@@ -1,5 +1,5 @@
 {
-    "collection": "blackmarble-all-vars-daily",
+    "collection": "blackmarble-all-vars-daily-addMetadata",
     "dashboard:is_periodic": false,
     "dashboard:time_interval": "P1D",
     "title": "Black Marble Daily",
@@ -125,9 +125,11 @@
     "tenant": ["nasa-disasters"],
     "discovery_items": [
         {
-            "collection": "blackmarble-all-vars-daily",
+            "collection": "blackmarble-all-vars-daily-addMetadata",
             "bucket": "nasa-disasters",
             "prefix": "drcs_activations_new/Blackmarble/",
+            "disasters:extract_event_name": true,
+            "disasters:monty": true,
             "cogify": false,
             "discovery": "s3",
             "dry_run": false,
