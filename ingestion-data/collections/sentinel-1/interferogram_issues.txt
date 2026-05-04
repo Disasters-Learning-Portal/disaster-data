@@ -1,0 +1,39 @@
+There are different bands and values for seemingly the exact same data type. Cannot properly differentiate.  
+The filenames need to be different in order to understand the data
+        "interferogram-wrp": {
+            "assets": [
+                "interferogram"
+            ],
+            "bidx": [1,2,3,4],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "interferogram-uwrp": {
+            "assets": [
+                "interferogram"
+            ],
+            "rescale": [
+                [
+                    0,
+                    10
+                ]
+            ],
+            "nodata": 0
+        },
+        "interferogram-uwrp-s1": {
+            "assets": [
+                "interferogram"
+            ],
+            "bidx": [1,2,3,4],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0

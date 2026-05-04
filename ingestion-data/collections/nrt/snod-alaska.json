@@ -1,0 +1,65 @@
+{
+    "id": "snod-alaska",
+    "dashboard:is_periodic": true,
+    "dashboard:time_interval": "PT3H",
+    "description": "Within LIS, the Noah Land Surface Model (LSM) is forced by this input data and produces analyses of soil temperature and moisture in 4 layers plus the snow state and fluxes of energy and water at the surface.  The Noah LSM accounts for snow accumulation based on the current LIS snow values in the continuous run and the forcing data from the atmospheric model.  Forcing variables influencing the snow depth in LIS include precipitation, air temperature, solar radiation.  Relevant modeled processes include compaction of snow, sublimation, and melting.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0, 
+                    51.0,  
+                    -130.0,  
+                    71.5  
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T15:00:00Z",
+                    "2025-09-12T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "snod": {
+            "description": "Daily estimates of relative soil moisture over Alaska.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sport LIS snow depth [Alaska]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "snod"
+            ],
+            "rescale": [
+                [
+                    0,
+                    1000
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Sport LIS snow depth [Alaska]",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

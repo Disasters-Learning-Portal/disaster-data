@@ -1,0 +1,28 @@
+{
+    "collection": "sentinel-1-dpm-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/DPM/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_day.tif$",
+    "assets": {
+        "dpm": {
+            "description": "dpm",
+            "regex": "^(?!.*(_monthly_|_cvd_|_DPMraw_)).*\\.tif$",
+            "title": "dpm"
+        },
+        "dpm-cvd": {
+            "description": "dpm-cvd",
+            "regex": ".*_cvd_.*\\.tif$",
+            "title": "dpm-cvd"
+        },
+        "dpm-raw": {
+            "description": "dpm-raw",
+            "regex": ".*_DPMraw_.*\\.tif$",
+            "title": "dpm-raw"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}_day)\\.tif$",
+    "id_template": "sentinel-1-DPM-{}"
+}

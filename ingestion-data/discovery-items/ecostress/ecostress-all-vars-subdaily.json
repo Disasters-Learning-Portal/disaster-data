@@ -1,0 +1,43 @@
+{
+    "collection": "ecostress-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/ECOSTRESS/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+      "control-lst": {
+          "regex": ".*ControlData.*SDS_LST(?!_err).*\\.tif$",
+          "title": "Control Land Surface Temperature",
+          "description": "Control Data Land Surface Temperature - Temperature measurements from the control dataset used for validation and comparison purposes."
+      },
+      "control-lst-err": {
+          "regex": ".*ControlData.*SDS_LST_err.*\\.tif$",
+          "title": "Control LST Error",
+          "description": "Control Data Land Surface Temperature Error - Uncertainty estimates associated with the control land surface temperature measurements."
+      },
+      "control-qc": {
+          "regex": ".*ControlData.*SDS_QC.*\\.tif$",
+          "title": "Control Quality Control",
+          "description": "Control Data Quality Control - Quality flags and indicators for the control dataset, used to assess data reliability and validity."
+      },
+      "lst": {
+          "regex": "^(?!.*ControlData).*SDS_LST(?!_err).*\\.tif$",
+          "title": "Land Surface Temperature",
+          "description": "Land Surface Temperature - ECOSTRESS-derived temperature measurements of the Earth's surface, measured in Kelvin and scaled by 0.02."
+      },
+      "lst-err": {
+          "regex": "^(?!.*ControlData).*SDS_LST_err.*\\.tif$",
+          "title": "LST Error",
+          "description": "Land Surface Temperature Error - Uncertainty estimates associated with the land surface temperature measurements, indicating measurement precision."
+      },
+      "qc": {
+          "regex": "^(?!.*ControlData).*SDS_QC.*\\.tif$",
+          "title": "Quality Control",
+          "description": "Quality Control - Quality assurance flags and cloud mask information to assess the reliability and usability of the LST data."
+      }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z)\\.tif$",
+    "id_template": "ecostress-{}"
+}

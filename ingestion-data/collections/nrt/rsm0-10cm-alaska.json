@@ -1,0 +1,66 @@
+{
+    "id": "rsm0-10cm-alaska",
+    "dashboard:is_periodic": true,
+    "dashboard:time_interval": "PT3H",
+    "description": "The NASA SPoRT (Short-term Prediction Research and Transition Center) Land Information System (LIS) provides critical relative soil moisture data products that support disaster monitoring and response efforts across the United States. These high-resolution datasets, typically available at 3-kilometer spatial resolution, offer daily updates on soil moisture conditions at multiple depths (0-10cm, 10-40cm, 40-100cm, and 0-200cm) using advanced land surface modeling techniques. The relative soil moisture products represent the current soil water content as a percentile compared to the historical record for that location and time of year, enabling disaster coordinators to quickly identify areas experiencing abnormally dry or wet conditions. This information proves invaluable for assessing drought severity, flood risk potential, wildfire danger, and agricultural stress, while also supporting post-disaster recovery efforts by helping determine baseline conditions and monitoring the return to normal moisture levels. The data, distributed in Cloud Optimized GeoTIFF (COG) format, integrates seamlessly with GIS platforms and web-based mapping applications, providing emergency managers, agricultural specialists, and water resource managers with near real-time intelligence for informed decision-making during critical disaster preparedness and response operations.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0, 
+                    51.0,  
+                    -130.0,  
+                    71.5  
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T15:00:00Z",
+                    "2025-09-12T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "rsm0-10cm": {
+            "description": "Daily estimates of relative soil moisture over Alaska.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sport LIS Relative soil moisture (0-10cm) [Alaska]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "rsm0-10cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ],
+            "colormap_name": "nipy_spectral_r"
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Sport LIS Relative soil moisture (0-10cm) [Alaska]",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

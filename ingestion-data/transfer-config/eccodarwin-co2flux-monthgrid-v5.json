@@ -1,7 +1,0 @@
-{
-    "collection": "eccodarwin-co2flux-monthgrid-v5",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "eccodarwin-co2flux-monthgrid-v5/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}

@@ -1,0 +1,69 @@
+{
+    "id": "vsm0-40cm-conus",
+    "dashboard:is_periodic": true,
+    "dashboard:time_interval": "P1D",
+    "description": "The NASA SPoRT Land Information System (LIS) 0-40 cm Soil Moisture Percentile product provides daily maps of shallow subsurface soil moisture anomalies across the contiguous United States at ~3 km resolution. Percentiles are calculated against a 33-year climatology (1981-2013) to place current soil conditions in historical context. This cumulative layer combines the 0-10 cm and 10-40 cm depths, making it responsive to short-term precipitation, snowmelt, and drying episodes while still reflecting intermediate soil storage. Compared to the 0-10 cm layer, the 0-40 cm depth responds more gradually, with anomalies typically evolving over several days. This product is especially useful for drought onset monitoring, agricultural decision support, and fire-weather risk assessments, where short-to-intermediate timescale soil responses are most relevant.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.94,
+                    25.06,
+                    -67.07,
+                    52.93
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "vsm0-40cm": {
+            "description": "Daily soil moisture percentiles for the 0-40 cm cumulative soil layer over CONUS. Values compare present conditions with a 33-year climatology, showing how unusually wet or dry soils are relative to the day of year. This layer reacts quickly to rainfall or drying but more gradually than surface-only layers, making it valuable for agricultural, hydrological, and fire risk applications.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sport LIS volumetric soil moisture (0-40cm) [CONUS]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "vsm0-40cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Sport LIS volumetric soil moisture (0-40cm) [CONUS]",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

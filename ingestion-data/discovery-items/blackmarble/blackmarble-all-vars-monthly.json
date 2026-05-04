@@ -1,0 +1,43 @@
+{
+    "collection": "blackmarble-all-vars-monthly",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Blackmarble/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_monthly.tif$",
+    "assets": {
+        "bm-month": {
+            "description": "High-definition monthly composite of nighttime lights providing temporal aggregation for trend analysis and change detection.",
+            "regex": ".*blackmarble.*MonthlyComposite.*.tif$",
+            "title": "Black Marble Monthly Composite"
+        },
+        "bm-mosaic-c2": {
+            "description": "High-definition monthly composite of nighttime lights providing temporal aggregation for trend analysis and change detection.",
+            "regex": ".*blackmarble.*Mosaic_C2.*.tif$",
+            "title": "Black Marble Monthly Composite"
+        },
+        "mosaic-c2": {
+            "description": "High-definition monthly composite of nighttime lights providing temporal aggregation for trend analysis and change detection.",
+            "regex": "^(?!.*blackmarble)(?!.*finalBMHD).*Mosaic_C2.*.tif$",
+            "title": "Black Marble Monthly Composite"
+        },
+        "all-Angle": {
+            "description": "All-angle monthly composite capturing nighttime lights from multiple viewing geometries for comprehensive illumination analysis.",
+            "regex": ".*AllAngle.*.tif$",
+            "title": "All Angle Composite"
+        },
+        "con": {
+            "description": "Continuous monitoring monthly layer providing consistent nighttime lights observations for long-term monitoring.",
+            "regex": ".*_Con_.*.tif$",
+            "title": "Con Monthly"
+        },
+        "bmhd": {
+            "description": "Continuous monitoring monthly layer providing consistent nighttime lights observations for long-term monitoring.",
+            "regex": ".*_finalBMHD.*.tif$",
+            "title": "Con Monthly"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2})_monthly.tif$",
+    "id_template": "blackmarble-{}"
+}

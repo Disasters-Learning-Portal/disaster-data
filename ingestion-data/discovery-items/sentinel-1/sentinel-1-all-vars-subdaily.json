@@ -1,0 +1,43 @@
+{
+    "collection": "sentinel-1-all-vars-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*Z.tif$",
+    "assets": {
+        "hydrosar-wm": {
+            "description": "HydroSAR water mapping product identifying surface water extent using SAR data for flood monitoring and wetland analysis.",
+            "regex": ".*_WM_\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z\\.tif$",
+            "title": "HydroSAR Water Map"
+        },
+        "rgb": {
+            "description": "RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "regex": "^(?!.*USDA).*(RGB|rgb).*Z.tif$",
+            "title": "RGB Composite"
+        },
+        "rgb-usda": {
+            "description": "USDA RGB composite visualization combining SAR polarization channels for enhanced feature interpretation.",
+            "regex": ".*USDA.*(RGB|rgb).*Z.tif$",
+            "title": "USDA RGB Composite"
+        },
+        "rtc-VV": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*RTC(20|30)_VV_.*Z.tif$",
+            "title": "RTC Backscatter"
+        },
+        "rtc-VH": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*RTC(20|30)_VH_.*Z.tif$",
+            "title": "RTC Backscatter"
+        },
+        "rtc-WM": {
+            "description": "Radiometric Terrain Corrected SAR backscatter imagery with terrain effects removed for accurate surface reflectivity analysis.",
+            "regex": ".*RTC(20|30)_WM_[A-Fa-f0-9]{4}_.*Z\\.tif$",
+            "title": "RTC Backscatter"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z)\\.tif$",
+    "id_template": "sentinel-1-{}"
+}

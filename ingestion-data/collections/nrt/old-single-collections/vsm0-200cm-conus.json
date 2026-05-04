@@ -1,0 +1,69 @@
+{
+    "id": "vsm0-200cm-conus",
+    "dashboard:is_periodic": true,
+    "dashboard:time_interval": "P1D",
+    "description": "The NASA SPoRT Land Information System (LIS) 0-200 cm Soil Moisture Percentile product provides daily estimates of subsurface wetness across the contiguous United States at ~3 km resolution. Percentiles are calculated relative to a 33-year climatology (1981-2013) and show how unusually wet or dry current conditions are for a given day of the year. The 0-200 cm cumulative layer integrates soil moisture from all four model depths (0-10, 10-40, 40-100, and 100-200 cm), offering a complete view of total column soil water content. Because deeper soil layers adjust slowly, anomalies in this product typically evolve on seasonal to multi-year timescales, making it valuable for long-term drought monitoring, groundwater assessments, and applications where persistent soil moisture deficits or surpluses are of concern.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.94,
+                    25.06,
+                    -67.07,
+                    52.93
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "vsm0-200cm": {
+            "description": "Daily soil moisture percentiles for the full 0-200 cm soil column over CONUS. Values compare current conditions against a 33-year climatology, reflecting long-term wetness or dryness. This layer responds slowly to precipitation or drying, capturing deep soil changes useful for drought and groundwater studies.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sport LIS volumetric soil moisture (0-200cm) [CONUS]",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "dashboard": {
+            "assets": [
+                "vsm0-200cm"
+            ],
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Sport LIS volumetric soil moisture (0-200cm) [CONUS]",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

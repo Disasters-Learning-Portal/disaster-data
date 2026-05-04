@@ -1,0 +1,18 @@
+{
+    "collection": "sentinel-1-dmg-assessment",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/dmg_assessment/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*dmgassessment.*.tif$",
+    "assets": {
+        "dmg": {
+            "description": "dmg",
+            "regex": ".*\\.tif$",
+            "title": "dmg"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "{}"
+}

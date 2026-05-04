@@ -1,7 +1,0 @@
-{
-    "collection": "epa-ch4emission-yeargrid-v2express",
-    "origin_bucket": "ghgc-data-store-develop",
-    "origin_prefix": "epa-ch4emission-yeargrid-v2express/",
-    "target_bucket": "ghgc-data-store",
-    "filename_regex": ".*tif"
-}

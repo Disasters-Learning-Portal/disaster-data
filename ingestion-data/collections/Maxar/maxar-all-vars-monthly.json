@@ -1,0 +1,110 @@
+{
+    "id": "maxar-all-vars-monthly",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1M",
+    "description": "Maxar Technologies provides high-resolution commercial satellite imagery for disaster monitoring and response through its WorldView and GeoEye constellation. These optical satellites capture sub-meter resolution imagery that enables detailed damage assessment, infrastructure monitoring, and change detection before and after disaster events. The collection includes pre-event baseline imagery, post-event damage assessment imagery, and short-term analysis (STA) products that highlight changes between the two time periods. Maxar's rapid tasking capabilities and high spatial resolution make it invaluable for detailed disaster impact analysis, including building damage assessment, infrastructure evaluation, and humanitarian response planning. The imagery supports emergency managers, relief organizations, and government agencies in making informed decisions during critical disaster response operations.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-09-14T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "preEvent": {
+            "description": "High-resolution satellite imagery captured before a disaster event, providing baseline conditions for comparison and damage assessment purposes.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Pre-Event Imagery",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "postEvent": {
+            "description": "High-resolution satellite imagery captured after a disaster event, showing current conditions for damage assessment and disaster impact analysis.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Post-Event Imagery",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "sta": {
+            "description": "Short-Term Analysis product highlighting changes between pre-event and post-event imagery, facilitating rapid identification of affected areas and damage assessment.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Short-Term Analysis",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "preEvent": {
+            "assets": [
+                "preEvent"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "postEvent": {
+            "assets": [
+                "postEvent"
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ],
+            "nodata": 0
+        },
+        "sta": {
+            "assets": [
+                "sta"
+            ],
+            "rescale": [
+                [
+                    0,
+                    3
+                ]
+            ],
+            "nodata": -9999
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "title": "Maxar All Variables Monthly",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

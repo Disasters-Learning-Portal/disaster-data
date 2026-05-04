@@ -1,0 +1,23 @@
+{
+    "collection": "esi-all-vars-weekly",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/servir-esi-cog/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "esi-4wk": {
+            "description": "Evaporative Stress Index calculated over a 4-week period, providing early detection of short-term vegetation water stress and rapid onset drought conditions.",
+            "regex": ".*4WK.*.tif$",
+            "title": "ESI 4-Week"
+        },
+        "esi-12wk": {
+            "description": "Evaporative Stress Index calculated over a 12-week period, indicating longer-term vegetation water stress patterns and sustained drought conditions.",
+            "regex": ".*12WK.*.tif$",
+            "title": "ESI 12-Week"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "esi-week-{}"
+}

@@ -1,0 +1,38 @@
+{
+    "collection": "blackmarble-all-vars-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Blackmarble/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "brdf": {
+            "description": "BRDF-corrected nighttime lights composite providing standardized radiance measurements with bidirectional reflectance corrections.",
+            "regex": ".*_(BRDFCorrected|BRDF-Corrected).*\\.tif$",
+            "title": "BRDF Corrected"
+        },
+        "bm": {
+            "description": "Daily composite of nighttime lights at standard resolution for consistent temporal monitoring.",
+            "regex": "^(?!.*_Con_).*blackmarble.*\\.tif$",
+            "title": "Daily Composite"
+        },
+        "bmhd": {
+            "description": "High-definition daily composite of nighttime lights at enhanced spatial resolution for detailed analysis.",
+            "regex": "^(?!.*_Cloud_).*(finalBMHD|BMHD).*\\.tif$",
+            "title": "HD Daily Composite"
+        },
+        "cloud-mask": {
+            "description": "Cloud mask layer identifying cloud-covered pixels for quality control and interpretation.",
+            "regex": "^(?!.*C2).*Cloud_.*\\.tif$",
+            "title": "Cloud Mask"
+        },
+        "cloud-mask-c2": {
+            "description": "Alternative cloud mask layer (C2) using different detection algorithms for quality assessment.",
+            "regex": ".*_Cloud_.*C2.*\\.tif$",
+            "title": "Cloud Mask C2"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+    "id_template": "blackmarble-{}"
+}

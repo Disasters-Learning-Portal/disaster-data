@@ -1,0 +1,18 @@
+{
+    "collection": "rsm0-2m-conus",
+    "bucket": "nasa-disasters",
+    "prefix": "nrt/sport-lis-cog/rsm0-2m/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*.tif$",
+    "assets": {
+        "rsm0-2m": {
+            "description": "Daily estimates of relative soil moisture over CONUS.",
+            "regex": ".*.tif$",
+            "title": "Sport LIS Relative soil moisture (0-2m) [CONUS]"
+        }
+    },
+    "id_regex": ".*_(.*).tif$",
+    "id_template": "{}"
+}

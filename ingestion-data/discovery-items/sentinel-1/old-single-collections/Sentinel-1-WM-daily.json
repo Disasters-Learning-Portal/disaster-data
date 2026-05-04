@@ -1,0 +1,18 @@
+{
+    "collection": "sentinel-1-WM-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-1/WM/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*day.tif$",
+    "assets": {
+        "wm-diff": {
+            "description": "Water mask",
+            "regex": ".*_d\\d{4}-\\d{2}-\\d{2}_.*\\.tif$",
+            "title": "Water mask"
+        }
+    },
+    "id_regex": "(.*).tif$",
+    "id_template": "sentinel-1-daily-WM-{}"
+}

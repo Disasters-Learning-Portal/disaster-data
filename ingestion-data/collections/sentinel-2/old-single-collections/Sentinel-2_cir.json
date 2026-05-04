@@ -1,0 +1,139 @@
+{
+    "id": "sentinel2-colorinfrared",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "title": "Sentinel-2 Color Infrared Imagery",
+    "description": "The Color Infrared composite is created using the near-infrared, red, and green channels, allowing for the ability to see areas impacted by the fires. The near-infrared gives the ability to see through thin clouds. Healthy vegetation is shown as red, water is in blue.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2025-09-26T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "S2A": {
+            "description": "S2A_CIR_IMG_Comp",
+            "roles": ["data", "layer"],
+            "title": "S2A_CIR_IMG_Comp",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "S2A_MSIL2A": {
+            "description": "S2A_MSIL_CIR_IMG_Comp",
+            "roles": ["data", "layer"],
+            "title": "S2A_MSIL_CIR_IMG_Comp",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "S2B": {
+            "description": "S2B_CIR_IMG_Comp",
+            "roles": ["data", "layer"],
+            "title": "S2B_CIR_IMG_Comp",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "S2B_MSIL2A": {
+            "description": "S2B_MSIL_CIR_IMG_Comp",
+            "roles": ["data", "layer"],
+            "title": "S2B_MSIL_CIR_IMG_Comp",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "S2C": {
+            "description": "S2C_CIR_IMG_Comp",
+            "roles": ["data", "layer"],
+            "title": "S2C_CIR_IMG_Comp",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "S2A": {
+            "assets": [
+                "S2A"           
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2A_MSIL2A": {
+            "assets": [
+                "S2A_MSIL2A"          
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2B": {
+            "assets": [
+                "S2B"           
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2B_MSIL2A": {
+            "assets": [
+                "S2B_MSIL2A"         
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "S2C": {
+            "assets": [
+                "S2C"         
+            ],
+            "bidx": [1,2,3],
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

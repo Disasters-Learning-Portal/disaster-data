@@ -1,0 +1,88 @@
+{
+    "collection": "opera-all-vars-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/OPERA/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*_day.tif$",
+    "assets": {
+        "AZ": {
+            "description": "Azimuth offset measurements detecting horizontal ground displacement perpendicular to satellite flight direction from InSAR processing.",
+            "regex": ".*_AZ_.*\\.tif$",
+            "title": "Azimuth Offset"
+        },
+        "RNG": {
+            "description": "Range offset measurements detecting ground displacement parallel to satellite line-of-sight from InSAR processing.",
+            "regex": ".*_RNG_.*\\.tif$",
+            "title": "Range Offset"
+        },
+        "UNW": {
+            "description": "Unwrapped interferometric phase representing ground displacement measurements after phase ambiguity resolution.",
+            "regex": ".*_UNW_.*\\.tif$",
+            "title": "Unwrapped Phase"
+        },
+        "WRP": {
+            "description": "Wrapped interferometric phase showing ground displacement within 2π phase cycles before unwrapping.",
+            "regex": ".*_WRP_.*\\.tif$",
+            "title": "Wrapped Phase"
+        },
+        "VEG-ANOM-MAX": {
+            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly value.",
+            "regex": ".*VEG-ANOM-MAX.*\\.tif$",
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX)"
+        },
+        "VEG-DIST-STATUS": {
+            "description": "S2 ARIA OPERA vegetation disturbance status.",
+            "regex": ".*VEG-DIST-STATUS.*\\.tif$",
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG DIST STATUS)"
+        },
+        "GEN-ANOM-MAX": {
+            "description": "Generic disturbance maximum anomaly value.",
+            "regex": ".*GEN-ANOM-MAX.*\\.tif$",
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN ANOM MAX)"
+        },
+        "GEN-DIST-STATUS": {
+            "description": "Generic disturbance status.",
+            "regex": ".*GEN-DIST-STATUS.*\\.tif$",
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN DIST STATUS)"
+        },
+        "hls-DWSx": {
+            "description": "HLS Dynamic Surface Water Extent product showing water presence and classification.",
+            "regex": "^(?!.*FloodMap)(?!.*NoSnowIce)(?!.*WTR).*DSWx.*HLS.*\\.tif$",
+            "title": "HLS Dynamic Surface Water Extent"
+        },
+        "hls-FloodMap": {
+            "description": "HLS-derived flood extent map identifying inundated areas.",
+            "regex": ".*FloodMap.*\\.tif$",
+            "title": "HLS Flood Map"
+        },
+        "hls-NoSnowIce": {
+            "description": "HLS water extent excluding snow and ice coverage.",
+            "regex": ".*NoSnowIce.*\\.tif$",
+            "title": "HLS Water No Snow/Ice"
+        },
+        "hls-WTR": {
+            "description": "HLS water classification layer.",
+            "regex": "^(?!.*BWTR)(?!.*ChngMap).*DSWx.*WTR.*\\.tif$",
+            "title": "HLS Water"
+        },
+        "hls-BWTR": {
+            "description": "HLS binary water classification.",
+            "regex": "^(?!.*ChngMap).*DSWx.*BWTR.*\\.tif$",
+            "title": "HLS Binary Water"
+        },
+        "hls-changeMap-date1": {
+            "description": "HLS surface water change detection map showing changes in water extent between time periods.",
+            "regex": ".*ChngMap.*date1.*\\d{4}-\\d{2}-\\d{2}_day.tif$",
+            "title": "HLS Change Map"
+        },
+        "hls-changeMap-date2": {
+            "description": "HLS surface water change detection map showing changes in water extent between time periods.",
+            "regex": ".*ChngMap.*date2.*\\d{4}-\\d{2}-\\d{2}_day.tif$",
+            "title": "HLS Change Map"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+    "id_template": "opera-{}"
+}

@@ -1,0 +1,133 @@
+{
+    "id": "hls-distAlert",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1D",
+    "title": "HLS ARIA OPERA Disturbance Alert",
+    "description": "The Advanced Rapid Imaging and Analysis (ARIA) team at NASA's Jet Propulsion Laboratory and California Institute of Technology created the Vegetation Disturbance Status and Maximum Vegetation Anomaly maps using the OPERA Surface Disturbance (DIST) product suite derived from Sentinel-2 scene acquisitions.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-10-02T00:00:00Z",
+                    "2025-10-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "veg-anom-max": {
+            "description": "S2 ARIA OPERA disturbance alert maximum vegetation anomaly value.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG ANOM MAX)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "veg-dist-status": {
+            "description": "S2 ARIA OPERA vegetation disturbance status.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (VEG DIST STATUS)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "gen-anom-max": {
+            "description": "Generic disturbance maximum anomaly value.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN ANOM MAX)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "dist-status": {
+            "description": "Generic disturbance maximum anomaly value.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Sentinel-2 ARIA OPERA Disturbance Alert (GEN ANOM MAX)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "veg-anom-max": {
+            "assets": [
+                "veg-anom-max"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "veg-dist-status": {
+            "assets": [
+                "veg-dist-status"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        },
+        "gen-anom-max": {
+            "assets": [
+                "gen-anom-max"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    100
+                ]
+            ]
+        },
+        "dist-status": {
+            "assets": [
+                "dist-status"
+            ],
+            "colormap_name": "ylorrd",
+            "rescale": [
+                [
+                    0,
+                    255
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

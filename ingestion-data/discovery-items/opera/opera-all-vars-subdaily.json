@@ -1,0 +1,28 @@
+{
+    "collection": "opera-all-vars-subdaily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/OPERA/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*Z.tif$",
+    "assets": {
+        "WTR": {
+            "description": "Surface water extent classification layer derived from SAR or optical imagery.",
+            "regex": ".*DSWx.*_WTR_.*.tif$",
+            "title": "Water Classification"
+        },
+        "hls-DSWx": {
+            "description": "HLS Dynamic Surface Water Extent product showing water presence and classification.",
+            "regex": ".*DSWx_HLS.*.tif$",
+            "title": "HLS Dynamic Surface Water Extent"
+        },
+        "dnbr": {
+            "description": "Delta Normalized Burn Ratio showing burn severity from pre- and post-fire imagery comparison.",
+            "regex": ".*dnbr.*Z.tif$",
+            "title": "Delta Normalized Burn Ratio"
+        }
+    },
+    "id_regex": ".*(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2})Z.tif$",
+    "id_template": "opera-{}"
+}

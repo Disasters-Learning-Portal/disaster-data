@@ -1,0 +1,117 @@
+{
+    "id": "blackmarble-con",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1M",
+    "title": "Blackmarble Con",
+    "description": "Black Marble HD is NASA's high-resolution nighttime lights product that captures Earth's artificial illumination patterns at at 500-meter or finer spatial resolution compared to the standard 750-meter resolution. These data products are derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB) sensor aboard the Suomi NPP and NOAA-20 satellites, which can detect even dim sources of visible and near-infrared light at night. The HD versions are often produced for specific areas of interest during disaster events or urban studies, providing enhanced visualization of power outages, infrastructure damage, and human activity patterns through careful atmospheric correction and stray light removal processing.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-10-01T00:00:00Z",
+                    "2025-10-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "VJ146A31": {
+            "description": "Blackmarble Con VJ146A31",
+            "roles": ["data", "layer"],
+            "title": "Blackmarble Con VJ146A31",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "VJ146A32": {
+            "description": "Blackmarble Con VJ146A32",
+            "roles": ["data", "layer"],
+            "title": "Blackmarble Con VJ146A32",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "VJ146A33": {
+            "description": "Blackmarble Con VJ146A33",
+            "roles": ["data", "layer"],
+            "title": "Blackmarble Con VJ146A33",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "VJ146A34": {
+            "description": "Blackmarble Con VJ146A34",
+            "roles": ["data", "layer"],
+            "title": "Blackmarble Con VJ146A34",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA Disasters Program",
+            "roles": [
+              "host"
+            ],
+            "url": "https://disasters.openveda.cloud"
+          }
+    ],
+    "renders": {
+        "VJ146A31": {
+            "assets": [
+                "VJ146A31"           
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "VJ146A32": {
+            "assets": [
+                "VJ146A32"           
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "VJ146A33": {
+            "assets": [
+                "VJ146A33"           
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        },
+        "VJ146A34": {
+            "assets": [
+                "VJ146A34"           
+            ],
+            "rescale": [
+                [
+                    0,
+                    313
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}

@@ -1,0 +1,43 @@
+{
+    "collection": "sentinel-2-all-vars-tiles-daily",
+    "bucket": "nasa-disasters",
+    "prefix": "drcs_activations_new/Sentinel-2/",
+    "cogify": false,
+    "discovery": "s3",
+    "dry_run": false,
+    "filename_regex": ".*day.tif$",
+    "assets": {
+        "colorIR": {
+            "description": "False color infrared composite (NIR, Red, Green) emphasizing vegetation health and vigor in red tones.",
+            "regex": ".*(colorIR|colorInfrared|colorinfrared).*\\.tif$",
+            "title": "Color Infrared"
+        },
+        "naturalColor": {
+            "description": "Natural color composite using visible bands (Red, Green, Blue) for intuitive visual interpretation of surface features.",
+            "regex": ".*(naturalColor|naturalColorRGB|naturalcolor).*\\.tif$",
+            "title": "Natural Color"
+        },
+        "ndvi": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+            "regex": "^(?!.*_NDVIchange_).*(NDVI|ndvi).*\\.tif$",
+            "title": "NDVI"
+        },
+        "ndviChange": {
+            "description": "Normalized Difference Vegetation Index measuring vegetation health and density using near-infrared and red bands.",
+            "regex": ".*NDVIchange.*\\.tif$",
+            "title": "NDVI"
+        },
+        "shortwaveIR": {
+            "description": "Shortwave infrared composite highlighting moisture content and penetrating smoke for fire and drought monitoring.",
+            "regex": ".*(shortwaveIR|SWI|shortwaveInfrared|shortwaveinfrared).*\\.tif$",
+            "title": "Shortwave Infrared"
+        },
+        "trueColor": {
+            "description": "True color RGB composite using visible wavelengths for natural-looking imagery of Earth's surface.",
+            "regex": ".*(trueColor||truecolor|TCI).*\\.tif$",
+            "title": "True Color"
+        }
+    },
+    "id_regex": ".*(T[0-9A-Z]{5})_.*_(\\d{4}-\\d{2}-\\d{2})_day.tif$",
+    "id_template": "sentinel-2-{}"
+}

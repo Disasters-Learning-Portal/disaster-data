@@ -1,0 +1,145 @@
+{
+    "id": "imerg-all-vars-monthly",
+    "dashboard:is_periodic": false,
+    "dashboard:time_interval": "P1M",
+    "description": "The Integrated Multi-satellitE Retrievals for GPM (IMERG) is a NASA precipitation product that combines observations from multiple satellites in the Global Precipitation Measurement (GPM) constellation to provide quasi-global precipitation estimates. This monthly collection includes precipitation statistics derived from daily IMERG data, providing essential information for climate monitoring, drought assessment, flood risk evaluation, and water resource management. The dataset includes total monthly precipitation accumulation, precipitation rankings, equivalent precipitation metrics, maximum 1-day rainfall totals, and total precipitable water vapor. These products support long-term climate analysis, agricultural planning, and hydrological modeling applications.",
+    "title": "IMERG All Variables Monthly",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    -24,
+                    -66,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "item_assets": {
+        "rank": {
+            "description": "Precipitation ranking indicating the percentile of monthly total precipitation compared to historical climatology for the same month.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Precipitation Rank",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "equiv": {
+            "description": "Equivalent precipitation metric providing normalized precipitation values for comparison across different regions and time periods.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Equivalent Precipitation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "total": {
+            "description": "Total monthly precipitation accumulation derived from IMERG daily data, representing the sum of all precipitation for the month.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Total Monthly Precipitation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "Rx1d": {
+            "description": "Maximum 1-day precipitation total during the month, identifying the wettest single day and useful for flood risk assessment.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Maximum 1-Day Precipitation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "tqv": {
+            "description": "Total precipitable water vapor in the atmospheric column, indicating the amount of moisture available for precipitation.",
+            "roles": [
+                "data",
+                "layer"
+            ],
+            "title": "Total Precipitable Water Vapor",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC0-1.0",
+    "links": [],
+    "providers": [
+        {
+            "name": "NASA"
+        }
+    ],
+    "renders": {
+        "rank": {
+            "assets": [
+                "rank"
+            ],
+            "rescale": [
+                [
+                    -10,
+                    120
+                ]
+            ]
+        },
+        "equiv": {
+            "assets": [
+                "equiv"
+            ],
+            "rescale": [
+                [
+                    0,
+                    60
+                ]
+            ]
+        },
+        "total": {
+            "assets": [
+                "total"
+            ],
+            "rescale": [
+                [
+                    0,
+                    15
+                ]
+            ]
+        },
+        "Rx1d": {
+            "assets": [
+                "Rx1d"
+            ],
+            "rescale": [
+                [
+                    -10,
+                    120
+                ]
+            ]
+        },
+        "tqv": {
+            "assets": [
+                "tqv"
+            ],
+            "rescale": [
+                [
+                    0,
+                    75
+                ]
+            ]
+        }
+    },
+    "stac_extensions": [
+        "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "tenant": ["nasa-disasters"]
+}
